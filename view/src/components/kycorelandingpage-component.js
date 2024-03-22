@@ -93,7 +93,31 @@ export default function KYcoreLandingPage(props) {
 
     <Row id="kycorelandingpage-coreloadingeffect">
     </Row>
+
+    <Row id="kycorelandingpage-dataview"> 
+     <Col xs={12}
+          md={12}
+          lg={12}
+          id="kycorelandingpage-dataview-closebuttoncontainer"> 
+       <button id="kycorelandingpage-dataview-closebuttoncontainer-closebutton">x</button>
+     </Col>
+     <Col id="kycorelandingpage-dataview-dataviewcontainer">
+      <HomeDataView />
+     </Col>
+    </Row>
    
   </Col>
  )
+}
+
+function HomeDataView(props) {
+
+  const homedataview = "marketing";
+
+   if ( homedataview === "marketing" ) {
+    return (
+      <Row className="homedataviewgridcontainer">
+      </Row>
+    )
+   }
 }
