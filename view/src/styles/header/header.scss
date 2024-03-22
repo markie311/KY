@@ -1,0 +1,85 @@
+$main-font: "Titillium Web", sans-serif;
+$sub-font: "Quicksand", sans-serif;
+$robotic-font: "Nova Round", cursive;
+$mainbgcolor: #2b2b31;
+$subbgcolor: #27272b;
+$containersonidlebgcolor: #e2e4e1;
+
+#kyheader {
+position:relative;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-left:auto;
+margin-right:auto;
+}
+/// header container 
+#kyheader-headercontainer {
+position:relative;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px 0px;
+}
+.kyheader-headerinication {
+position:relative;
+font: auto {
+ family: $sub-font;
+}
+color:white;
+text-align:center;
+}
+/// search bar container 
+#kyheader-searchbarcontainer {
+position:relative;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:0;
+}
+#kyheader-searchbarcontainer-searchbarlayoutgridcontainer {
+position:relative;
+height:100%;
+height:75%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+}
+#kyheader-searchbarcontainer-searchbarlayoutgridcontainer-searchbarcontainer {
+position:relative;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:0;
+}
+#kyheader-searchbarcontainer-searchbarlayoutgridcontainer-searchbar-searchbarinputfield {
+position:relative;
+border:none;
+border-radius:20px;
+height:60%;
+width:100%;
+font: auto {
+ family: $sub-font;
+}
+text-align:center;
+outline-style:none;
+}
+#kyheader-searchbarcontainer-searchbarlayoutgridcontainer-searchbuttoncontainer{
+position:relative;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+#kyheader-searchbarcontainer-searchbarlayoutgridcontainer-searchbutton {
+position:relative;
+border-radius:20px;
+height:50%;
+width:60%;
+}

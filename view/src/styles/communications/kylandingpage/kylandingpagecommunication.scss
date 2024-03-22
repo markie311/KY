@@ -1,0 +1,46 @@
+$main-font: "Titillium Web", sans-serif;
+$sub-font: "Quicksand", sans-serif;
+$robotic-font: "Nova Round", cursive;
+$mainbgcolor: #2b2b31;
+$subbgcolor: #27272b;
+$containersonidlebgcolor: #e2e4e1;
+
+#kylandingpagecommunication {
+position:relative;
+height:100%;
+width:35%;
+}
+//// chat options container
+#kylandingpagecommunication-chatoptionslayoutcontainer {
+position:relative;
+height:100%;
+width:100%;
+padding:0;
+}
+#kylandingpagecommunication-chatoptionslayoutcontainer-gridcontainer {
+position:relative;
+height:100%;
+width:100%;
+justify-content:space-evenly;
+margin-left:auto;
+margin-right:auto;
+}
+.kylandingpagecommunication-chatoptionslayoutcontainer-colcontainer {
+position:relative;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.kylandingpagecommunication-chatoptionslayoutcontainer-colcontainer-headerindication {
+position:relative;
+background-color:white;
+border-radius:5px;
+font: auto {
+ family: $sub-font;
+ weight:900;
+}
+color:black;
+padding:10px 50px;
+top:1.5vh;
+}

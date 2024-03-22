@@ -1,0 +1,112 @@
+$main-font: "Titillium Web", sans-serif;
+$sub-font: "Quicksand", sans-serif;
+$robotic-font: "Nova Round", cursive;
+$mainbgcolor: #2b2b31;
+$subbgcolor: #27272b;
+$supportbgcolor: rgb(19, 17, 17);
+$containersonidlebgcolor: #e2e4e1;
+
+//// social media and platforms account data container 
+#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer {
+position:relative;
+height:100%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+}
+.homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer {
+position:relative;
+background-color: white;
+border-bottom-right-radius:100px;
+border-bottom-left-radius:100px;
+height:60%;
+box-shadow: 0px 0px 5px 4px white;
+padding:30px;
+}
+#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer {
+position:relative;
+height:40%;
+padding:0;
+}
+#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagecontainer {
+position:absolute;
+background-color:white;
+border-top-right-radius:100px;
+border-top-left-radius:100px;
+height:100%;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow: 0px 0px 5px 4px white;
+}
+#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-astronautimage {
+position:relative;
+height:80%;
+width:50%;
+}
+#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer {
+position:absolute;
+background-color:#EEEEEE;
+border-radius:20px;
+box-shadow:0 1px 8px rgba(151, 142, 142, 0.5);
+height:200%;
+width:200%;
+z-index:2;
+transform:translate(45%, -25%);
+display:none;
+padding:20px 50px;
+}
+#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer::after {
+content:'';
+position:absolute;
+height:50px;
+width:50px;
+left:-5.5%;
+top:50%;
+transform:translate(50%,-50%) rotate(-45deg);
+background-color:#EEEEEE;
+box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+.homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication {
+position:relative;
+font: auto {
+  family: $sub-font;
+}
+}
+#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiper {
+position:relative;
+background-color:white;
+border-radius:50%;
+height:100%;
+width:100%;
+}
+#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-topicthumbnail {
+position:relative;
+background-color:$supportbgcolor;
+height:100%;
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+.homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-topicthumbnail-headerindication {
+position:relative;
+font: auto {
+ family: $main-font;
+}
+color:white;
+text-align:center;
+}
+.homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide {
+position:relative;
+height:100%;
+width:100%;
+}
+.homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-image {
+position:relative;
+height:100%;
+width:100%;
+}
+
