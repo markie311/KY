@@ -550,3 +550,76 @@ font: auto {
 }
 text-align:center;
 }
+//// skills compilation specification container
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer {
+position:relative;
+background-color: $supportbgcolor;
+border-radius:45px;
+height:100%;
+width:100%;
+box-shadow: 0px 0px 5px 2px white;
+padding:30px;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitespecificationsandorders {
+position:relative;
+border:0.1vh solid red;
+height:7%;
+width:100%;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentorders {
+position:relative;
+border:0.1vh solid green;
+height:13%;
+width:100%;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-queue {
+position:relative;
+border:0.1vh solid green;
+height:20%;
+width:100%;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdevelopers {
+position:relative;
+border:0.1vh solid green;
+height:15%;
+width:100%;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer {
+position:absolute;
+border:0.1vh solid white;
+height:100%;
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:20px 0px;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer {
+position:absolute;
+border:0.1vh solid black;
+background-color:white;
+height:30vh;
+width:100%;
+transform: translate(-115%, 0%);
+display:none;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer::after {
+content:'';
+position:absolute;
+width:30px;
+height:30px;
+right:0;
+top:50%;
+transform:translate(50%,-50%) rotate(-45deg);
+background-color:#EEEEEE;
+box-shadow:0 1px 8px rgba(0,0,0,0.5); 
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+}
+color:white;
+user-select:none;
+top:0.5vh;
+}

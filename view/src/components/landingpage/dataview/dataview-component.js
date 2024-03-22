@@ -115,6 +115,7 @@ function DataviewHomeComponent() {
                            const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
                            _skillscompilationcontainer[1].style.display = "none"; 
                            _skillscompilationcontainer[0].style.height = "100%";
+                           skillscompilationwebsitedevelopmentcb((view)=> view = "skills specification")
                           }}
                           onMouseLeave={()=> {
                             const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
@@ -148,7 +149,7 @@ function DataviewHomeComponent() {
                      </Col>
                   </Col>
                  </Row>
-                </Col>
+               </Col>
               <Col xs={6}
                    md={6}
                    lg={6}
@@ -220,329 +221,370 @@ function DataviewHomeComponent() {
                   skillscompilationwebsitedevelopment === "skills" ? 
                   (
                     <React.Fragment>               
-                    <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer">
+                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer"> 
 
-<div class="circle-wrap"
-     onMouseEnter={()=> {
-       const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
-       _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
-     }}
-     onMouseLeave={()=> {
-        // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
-       //  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
-       }}>
+                      <div class="circle-wrap" 
+                          onMouseEnter={()=> {
+                            const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                            _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+                          }}
+                          onMouseLeave={()=> {
+                              // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                            //  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+                            }}>
 
-   <div class="circle">
+                        <div class="circle">
 
-    <div class="mask full">
-     <div class="fill">
+                          <div class="mask full">
+                          <div class="fill">
 
-     </div>
-     </div>
+                          </div>
+                          </div>
 
-   <div class="mask half">
-    <div class="fill">
+                        <div class="mask half">
+                          <div class="fill">
 
-    </div>
-  </div>
+                          </div>
+                        </div>
 
-  <div class="inside-circle">
-   80%
-  </div>
+                        <div class="inside-circle">
+                        80%
+                        </div>
 
-  </div>
+                        </div>
 
-</div>
+                      </div>
 
-<p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-headerindication">{skillscompilation.compilationheader}</p>
+                      <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-headerindication">{skillscompilation.compilationheader}</p>
 
-                    </Col>
-                    <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer"
-                        onMouseLeave={()=> {
-                            const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
-                            _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
-                          }}> 
-                      <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer">
-                        <Col xs={12}
-                              md={6}
-                              lg={6}
-                              className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer"> 
-                          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">MARKUP PROGRAMMING LANGUAGE</p>
-                          <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
-                            <Col xs={12}
+                      </Col>
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer"
+                          onMouseLeave={()=> {
+                              const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                              _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+                            }}> 
+                        <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer">
+                          <Col xs={12}
                                 md={6}
-                                lg={6} 
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
-                              <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
-                                <Col  xs={12}
-                                      md={4}
-                                      lg={4}
-                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
-                                      onMouseEnter={()=> {
-                                        const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                        _programminglanguageindicationtooltipcontainer[0].style.display = "block";
-                                      }}
-                                      onMouseLeave={()=> {
+                                lg={6}
+                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer"> 
+                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">MARKUP PROGRAMMING LANGUAGE</p>
+                            <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
+                              <Col xs={12}
+                                  md={6}
+                                  lg={6} 
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
+                                <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
+                                  <Col  xs={12}
+                                        md={4}
+                                        lg={4}
+                                        className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
+                                        onMouseEnter={()=> {
+                                          const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                          _programminglanguageindicationtooltipcontainer[0].style.display = "block";
+                                        }}
+                                        onMouseLeave={()=> {
+                                            const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                            _programminglanguageindicationtooltipcontainer[0].style.display = "none";
+                                          }}>HTML</p>
+                                  </Col>
+                                  <Col xs={12}
+                                      md={8}
+                                      lg={8}
+                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">40%</p>
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-html"> 
+                                    </div>
+                                    </div>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={12}
+                                  md={12}
+                                  lg={12}
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
+                              <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">HTML</h1>
+                              <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(H) yper (T) ext (M) ark up (L) anguage</h6>
+                              <br />
+                              <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">HTML or hyper markup language is programming language for creating website layout or a web page. A website consists 1 or more than web page that is created using HTML by its pre-defined programming code elements. HTML elements are all considered very important on a way they not only used for website structures because it also give's message to a brower what will be it's header, title and author like "<header></header>" html element.</p>
+                              </Col>
+                            </Row>
+                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">STYLESHEET</p>
+
+                            <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
+                              <Col xs={12}
+                                  md={6}
+                                  lg={6} 
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
+                                <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
+                                  <Col  xs={12}
+                                        md={4}
+                                        lg={4}
+                                        className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
+                                        onMouseEnter={()=> {
+                                          const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                          _programminglanguageindicationtooltipcontainer[1].style.display = "block";
+                                        }}
+                                        onMouseLeave={()=> {
                                           const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                          _programminglanguageindicationtooltipcontainer[0].style.display = "none";
-                                        }}>HTML</p>
-                                </Col>
-                                <Col xs={12}
-                                    md={8}
-                                    lg={8}
-                                    className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">40%</p>
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-html"> 
-                                  </div>
-                                  </div>
-                                </Col>
-                              </Row>
-                            </Col>
-                            <Col xs={12}
-                                md={12}
-                                lg={12}
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
-                            <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">HTML</h1>
-                            <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(H) yper (T) ext (M) ark up (L) anguage</h6>
-                            <br />
-                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">HTML or hyper markup language is programming language for creating website layout or a web page. A website consists 1 or more than web page that is created using HTML by its pre-defined programming code elements. HTML elements are all considered very important on a way they not only used for website structures because it also give's message to a brower what will be it's header, title and author like "<header></header>" html element.</p>
-                            </Col>
-                          </Row>
-                          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">STYLESHEET</p>
-
-                          <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
-                            <Col xs={12}
+                                          _programminglanguageindicationtooltipcontainer[1].style.display = "none";
+                                        }}>CSS</p>
+                                  </Col>
+                                  <Col xs={12}
+                                      md={8}
+                                      lg={8}
+                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">85%</p>
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-css"> 
+                                    </div>
+                                    </div>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={12}
+                                  md={12}
+                                  lg={12}
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
+                              <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">CSS</h1>
+                              <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(C) ascading (S) tyle (S) heet</h6>
+                              <br />
+                              <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">CSS abbreviation stands for cascading style sheets. Its really popular and most used in designing webpage through communication on HTML by using tags to evaluate which structure of webpage needs to be colored, layout, gridded, columned or even animation because CSS also can animated lines and container. By the name itself, as cascading, a website consists of several web page and it is possible on each webpage there is a CSS file included.</p>
+                              </Col>
+                            </Row>
+                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">UI INTERACTION PROGRAMMING LANGUAGE</p>
+                            <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
+                              <Col xs={12}
+                                  md={6}
+                                  lg={6} 
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
+                                <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
+                                  <Col  xs={12}
+                                        md={4}
+                                        lg={4}
+                                        className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
+                                        onMouseEnter={()=> {
+                                          const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                          _programminglanguageindicationtooltipcontainer[2].style.display = "block";
+                                        }}
+                                        onMouseLeave={()=> {
+                                            const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                            _programminglanguageindicationtooltipcontainer[2].style.display = "none";
+                                          }}>JAVASCRIPT</p>
+                                  </Col>
+                                  <Col xs={12}
+                                      md={8}
+                                      lg={8}
+                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">90%</p>
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-js"> 
+                                    </div>
+                                    </div>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={12}
+                                  md={12}
+                                  lg={12}
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
+                              <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">JS</h1>
+                              <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(J) ava (S) cript</h6>
+                              <br />
+                              <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">What is JavaScript and why we use? JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive. It allows developers to create dynamically updating content, use animations, pop-up menus, clickable buttons, control multimedia to self host or embed from other social platforms if allowed. By Javascript and it's current capabilities to animate and interact on HTML and CSS domain, it's achievable to have the best UI for all purpose's.</p>
+                              </Col>
+                            </Row>
+                          </Col>
+                          <Col xs={12}
                                 md={6}
-                                lg={6} 
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
-                              <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
-                                <Col  xs={12}
-                                      md={4}
-                                      lg={4}
-                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
-                                      onMouseEnter={()=> {
-                                        const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                        _programminglanguageindicationtooltipcontainer[1].style.display = "block";
-                                      }}
-                                      onMouseLeave={()=> {
-                                        const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                        _programminglanguageindicationtooltipcontainer[1].style.display = "none";
-                                      }}>CSS</p>
-                                </Col>
-                                <Col xs={12}
-                                    md={8}
-                                    lg={8}
-                                    className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">85%</p>
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-css"> 
-                                  </div>
-                                  </div>
-                                </Col>
-                              </Row>
-                            </Col>
-                            <Col xs={12}
-                                md={12}
-                                lg={12}
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
-                            <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">CSS</h1>
-                            <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(C) ascading (S) tyle (S) heet</h6>
-                            <br />
-                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">CSS abbreviation stands for cascading style sheets. Its really popular and most used in designing webpage through communication on HTML by using tags to evaluate which structure of webpage needs to be colored, layout, gridded, columned or even animation because CSS also can animated lines and container. By the name itself, as cascading, a website consists of several web page and it is possible on each webpage there is a CSS file included.</p>
-                            </Col>
-                          </Row>
-                          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">UI INTERACTION PROGRAMMING LANGUAGE</p>
-                          <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
-                            <Col xs={12}
-                                md={6}
-                                lg={6} 
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
-                              <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
-                                <Col  xs={12}
-                                      md={4}
-                                      lg={4}
-                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
-                                      onMouseEnter={()=> {
-                                        const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                        _programminglanguageindicationtooltipcontainer[2].style.display = "block";
-                                      }}
-                                      onMouseLeave={()=> {
-                                          const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                          _programminglanguageindicationtooltipcontainer[2].style.display = "none";
-                                        }}>JAVASCRIPT</p>
-                                </Col>
-                                <Col xs={12}
-                                    md={8}
-                                    lg={8}
-                                    className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">90%</p>
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-js"> 
-                                  </div>
-                                  </div>
-                                </Col>
-                              </Row>
-                            </Col>
-                            <Col xs={12}
-                                md={12}
-                                lg={12}
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
-                            <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">JS</h1>
-                            <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(J) ava (S) cript</h6>
-                            <br />
-                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">What is JavaScript and why we use? JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive. It allows developers to create dynamically updating content, use animations, pop-up menus, clickable buttons, control multimedia to self host or embed from other social platforms if allowed. By Javascript and it's current capabilities to animate and interact on HTML and CSS domain, it's achievable to have the best UI for all purpose's.</p>
-                            </Col>
-                          </Row>
-                        </Col>
-                        <Col xs={12}
-                              md={6}
-                              lg={6}
-                              className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer">
-                          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">Other programming language</p>
-                          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">MARKUP PROGRAMMING LANGUAGE</p>
-                          <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
-                            <Col xs={12}
-                                md={6}
-                                lg={6} 
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
-                              <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
-                                <Col  xs={12}
-                                      md={4}
-                                      lg={4}
-                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
-                                      onMouseEnter={()=> {
-                                        const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                        _programminglanguageindicationtooltipcontainer[3].style.display = "block";
-                                      }}
-                                      onMouseLeave={()=> {
-                                          const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                          _programminglanguageindicationtooltipcontainer[3].style.display = "none";
-                                        }}>XML</p>
-                                </Col>
-                                <Col xs={12}
-                                    md={8}
-                                    lg={8}
-                                    className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">60%</p>
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-html"> 
-                                  </div>
-                                  </div>
-                                </Col>
-                              </Row>
-                            </Col>
-                            <Col xs={12}
-                                md={12}
-                                lg={12}
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
-                            <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">XML</h1>
-                            <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(E) xtensible (M) ark up (L) anguage</h6>
-                            <br />
-                            <br />
-                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">Extensible Markup Language (XML) lets you define and store data in a shareable manner. XML supports information exchange between computer systems such as websites, databases, and third-party applications.  For two disparate systems to exchange information, they need to agree upon a file format. ( XML standardizes this process )</p>
-                            </Col>
-                          </Row>
-                          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">Styles</p>
-                          <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
-                            <Col xs={12}
-                                md={6}
-                                lg={6} 
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
-                              <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
-                                <Col  xs={12}
-                                      md={4}
-                                      lg={4}
-                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
-                                      onMouseEnter={()=> {
-                                        const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                        _programminglanguageindicationtooltipcontainer[4].style.display = "block";
-                                      }}
-                                      onMouseLeave={()=> {
-                                          const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                          _programminglanguageindicationtooltipcontainer[4].style.display = "none";
-                                        }}>Jquery</p>
-                                </Col>
-                                <Col xs={12}
-                                    md={8}
-                                    lg={8}
-                                    className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">90%</p>
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-html"> 
-                                  </div>
-                                  </div>
-                                </Col>
-                              </Row>
-                            </Col>
-                            <Col xs={12}
-                                md={12}
-                                lg={12}
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
-                            <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">JQUERY</h1>
-                            <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">jQuery</h6>
-                            <br />
-                            <br />
-                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">Jquery is a lightweight, "write less, do more", JavaScript library or more of an extension for optimization. The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</p>
-                            </Col>
-                          </Row>
-                          <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
-                            <Col xs={12}
-                                md={6}
-                                lg={6} 
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
-                              <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
-                                <Col  xs={12}
-                                      md={4}
-                                      lg={4}
-                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
-                                      onMouseEnter={()=> {
-                                        const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                        _programminglanguageindicationtooltipcontainer[5].style.display = "block";
-                                      }}
-                                      onMouseLeave={()=> {
-                                          const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                          _programminglanguageindicationtooltipcontainer[5].style.display = "none";
-                                        }}>SCSS</p>
-                                </Col>
-                                <Col xs={12}
-                                    md={8}
-                                    lg={8}
-                                    className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
-                                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">40%</p>
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
-                                  <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-html"> 
-                                  </div>
-                                  </div>
-                                </Col>
-                              </Row>
-                            </Col>
-                            <Col xs={12}
-                                md={12}
-                                lg={12}
-                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
-                            <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">SCSS</h1>
-                            <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(S) assy (C) ascading (S) tyle (S) heet</h6>
-                            <br />
-                            <br />
-                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">The term SCSS is an acronym for Sassy Cascading Style Sheets. It is basically a more advanced and evolved variant of the CSS language. SCSS when used as on stylesheets it's like the same of the pure CSS yet it is more appropriate to use when desiring a large and big amount of data to used on smaller file storage.</p>
-                            </Col>
-                          </Row>
-                        </Col>
-                      </Row>
-                    </Col>
+                                lg={6}
+                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer">
+                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">Other programming language</p>
+                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">MARKUP PROGRAMMING LANGUAGE</p>
+                            <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
+                              <Col xs={12}
+                                  md={6}
+                                  lg={6} 
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
+                                <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
+                                  <Col  xs={12}
+                                        md={4}
+                                        lg={4}
+                                        className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
+                                        onMouseEnter={()=> {
+                                          const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                          _programminglanguageindicationtooltipcontainer[3].style.display = "block";
+                                        }}
+                                        onMouseLeave={()=> {
+                                            const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                            _programminglanguageindicationtooltipcontainer[3].style.display = "none";
+                                          }}>XML</p>
+                                  </Col>
+                                  <Col xs={12}
+                                      md={8}
+                                      lg={8}
+                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">60%</p>
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-html"> 
+                                    </div>
+                                    </div>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={12}
+                                  md={12}
+                                  lg={12}
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
+                              <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">XML</h1>
+                              <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(E) xtensible (M) ark up (L) anguage</h6>
+                              <br />
+                              <br />
+                              <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">Extensible Markup Language (XML) lets you define and store data in a shareable manner. XML supports information exchange between computer systems such as websites, databases, and third-party applications.  For two disparate systems to exchange information, they need to agree upon a file format. ( XML standardizes this process )</p>
+                              </Col>
+                            </Row>
+                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">Styles</p>
+                            <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
+                              <Col xs={12}
+                                  md={6}
+                                  lg={6} 
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
+                                <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
+                                  <Col  xs={12}
+                                        md={4}
+                                        lg={4}
+                                        className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
+                                        onMouseEnter={()=> {
+                                          const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                          _programminglanguageindicationtooltipcontainer[4].style.display = "block";
+                                        }}
+                                        onMouseLeave={()=> {
+                                            const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                            _programminglanguageindicationtooltipcontainer[4].style.display = "none";
+                                          }}>Jquery</p>
+                                  </Col>
+                                  <Col xs={12}
+                                      md={8}
+                                      lg={8}
+                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">90%</p>
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-html"> 
+                                    </div>
+                                    </div>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={12}
+                                  md={12}
+                                  lg={12}
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
+                              <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">JQUERY</h1>
+                              <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">jQuery</h6>
+                              <br />
+                              <br />
+                              <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">Jquery is a lightweight, "write less, do more", JavaScript library or more of an extension for optimization. The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</p>
+                              </Col>
+                            </Row>
+                            <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
+                              <Col xs={12}
+                                  md={6}
+                                  lg={6} 
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationscontainer">
+                                <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutgridcontainer">
+                                  <Col  xs={12}
+                                        md={4}
+                                        lg={4}
+                                        className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
+                                        onMouseEnter={()=> {
+                                          const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                          _programminglanguageindicationtooltipcontainer[5].style.display = "block";
+                                        }}
+                                        onMouseLeave={()=> {
+                                            const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                            _programminglanguageindicationtooltipcontainer[5].style.display = "none";
+                                          }}>SCSS</p>
+                                  </Col>
+                                  <Col xs={12}
+                                      md={8}
+                                      lg={8}
+                                      className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer">
+                                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphpercentageheaderindication">40%</p>
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer">
+                                    <div className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphbarindication-html"> 
+                                    </div>
+                                    </div>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={12}
+                                  md={12}
+                                  lg={12}
+                                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer">
+                              <h1 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">SCSS</h1>
+                              <h6 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-headerindication">(S) assy (C) ascading (S) tyle (S) heet</h6>
+                              <br />
+                              <br />
+                              <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer-subheaderindication">The term SCSS is an acronym for Sassy Cascading Style Sheets. It is basically a more advanced and evolved variant of the CSS language. SCSS when used as on stylesheets it's like the same of the pure CSS yet it is more appropriate to use when desiring a large and big amount of data to used on smaller file storage.</p>
+                              </Col>
+                            </Row>
+                          </Col>
+                        </Row>
+                      </Col>
                     </React.Fragment>
-
                   )
                   : 
                   (
-                   <Col>Skills</Col>
+                  <Col key={skillscompilationidx}
+                       className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer">
+
+                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitespecificationsandorders">
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Website specificatons and orders</p>
+                      </Col>
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer">
+                              
+                      </Col>
+                     </Col>
+
+                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentorders">
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Current orders</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">0 out of 3</p>
+                      </Col>
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer">
+                              
+                      </Col>
+                     </Col>
+
+                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-queue">
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">On queue, 0 reserved</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">By date sequence website ordered</p>
+                      </Col>
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer">
+                              
+                      </Col>
+                     </Col>
+
+                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdevelopers">
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Current developers</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Mark Beloy, Owner</p>
+                      </Col>
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer">
+                              
+                      </Col>
+                     </Col>
+
+                   </Col>
                   )
                 }
               </Col>      
