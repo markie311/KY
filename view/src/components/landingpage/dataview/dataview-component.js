@@ -65,7 +65,7 @@ function DataviewHomeComponent() {
            ].map((icon, iconidx)=> {
              return (
              <Col key={iconidx}
-                  xs={2}
+                  xs={12}
                   md={1}
                   lg={1}
                   className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer">
