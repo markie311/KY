@@ -50,6 +50,14 @@ display:flex;
 justify-content:center;
 align-items:center;
 }
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer {
+position:absolute;
+height:100%;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
 .keyheader-navigationbuttonscontainer-navigationheaderindication {
 position:relative;
 font: auto {
@@ -57,7 +65,29 @@ font: auto {
 }
 color:white;
 text-align:center;
+user-select:none;
 top:0.5vh;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer {
+position:absolute;
+background-color:white;
+border-radius:20px;
+height:250%;
+width:110%;
+transform: translate(0%, 80%);
+z-index:1;
+box-shadow:0 1px 8px gray;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer::after {
+content:'';
+position:absolute;
+width:40px;
+height:40px;
+left:50%;
+transform:translate(-50%,-50%) rotate(45deg);
+background-color:#EEEEEE;
+box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
 #kycorelandingpage-datasdisplaylayoutcontainer{
 position:relative;

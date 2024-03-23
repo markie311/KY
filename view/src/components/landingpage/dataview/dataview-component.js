@@ -547,39 +547,165 @@ function DataviewHomeComponent() {
 
                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitespecificationsandorders">
                       <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
-                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Website specificatons and orders</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
+                           onMouseEnter={()=> {
+                             const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                             _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                           }}>Website specificatons and orders</p>
                       </Col>
-                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer">
-                              
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer"
+                           onMouseLeave={()=> {
+                             const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                            _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                           }}>
+                         <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">Website specification</h3>
+                         <p></p>
+                         <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">" On website specification what you want will be achievable yet only on the listed price because there are some designs that is a want, so complicated to program and develop. It is a recommendation to go to consults before to communicate and payments will be done last after your own www. domain name is viewed on a browser on mobiles, tablets, laptops and computers. There is also some templates here included to be enjoyabled viewed. "</p>
                       </Col>
                      </Col>
 
                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentorders">
                       <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
-                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Current orders</p>
-                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">0 out of 3</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
+                           onMouseEnter={()=> {
+                            const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                            _websiteorderspecificationtooltipcontainer[1].style.display = "block";
+                          }}>Current orders</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
+                           onMouseEnter={()=> {
+                             const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                             _websiteorderspecificationtooltipcontainer[1].style.display = "block";
+                           }}>0 out of 3</p>
                       </Col>
-                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer">
-                              
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer"
+                           onMouseLeave={()=> {
+                             const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                            _websiteorderspecificationtooltipcontainer[1].style.display = "none";
+                           }}>
+                         <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">Why out of 3?</h3>
+                         <br />
+                         <br />
+                         <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">" To develop is not that easy and experience's will tell when it's fast done and layout perfectly for change, update and adding contents on a background. Included a reseved queuing a decision personally was followed to wait for some reasons e.g marketing, symphaty. "</p>
                       </Col>
                      </Col>
 
                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-queue">
                       <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
-                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">On queue, 0 reserved</p>
-                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">By date sequence website ordered</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
+                          onMouseEnter={()=> {
+                            const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                           _websiteorderspecificationtooltipcontainer[2].style.display = "block";
+                          }}>On queue, 0 reserved</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
+                           onMouseEnter={()=> {
+                             const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                             _websiteorderspecificationtooltipcontainer[2].style.display = "block";
+                           }}>By date sequence website ordered</p>
                       </Col>
-                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer">
-                              
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer"
+                             onMouseLeave={()=> {
+                              const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                             _websiteorderspecificationtooltipcontainer[2].style.display = "none";
+                            }}>
+                         <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">A decision followed</h3>
+                         <br />
+                         <br />
+                         <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">" As a personal decision followed to wait on queuing when there is still someone that their platforms are develop for some reasons e.g marketing, symphaty, there was a communication that can be used so experience's will meet all expectations. "</p>
                       </Col>
                      </Col>
 
                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdevelopers">
                       <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
                         <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Current developers</p>
-                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Mark Beloy, Owner</p>
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
+                           onMouseEnter={()=> {
+                            const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer");
+                            const _websiteorderspecificationkyprofilepicturetooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer");
+                            _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                            _websiteorderspecificationkyprofilepicturetooltipcontainer[0].style.display = "block";
+                          }}>Mark Beloy, <span className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-titleheaderindication">Owner</span></p>
                       </Col>
-                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer">
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer">
+                         <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer">
+                           <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer-headerindication">Position, owner</p>
+                           <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer-headerindication">KY development, 18/03/2024</p>
+                           <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer-headerindication"
+                              onMouseEnter={()=> {
+                                const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer");
+                                _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                              }}>KY profile picture</p>
+                         </Col> 
+                         <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer"
+                              onMouseLeave={()=> {
+                                 const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer");
+                                 _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                               }}>
+                            <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer-profilepicturecontainer">
+                                <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer-profilepicturecontainer-picturelayoutcontainer">
+                                </Col>
+                                <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer-profilepicturecontainer-picturemodalcontainer">
+                                </Col>
+                            </Col>
+                            <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer-descriptioncontainer">
+                            </Col>
+                         </Col>
+                      </Col>
+                     </Col>
+
+                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-posibilities">
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-possibilitiesheaderindicationcontainer">
+                        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Possibilitie's</p>
+                         <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-posibilitiesgridheaderindicationcontainer">
+                         {
+                         [
+                          "E-commerce",
+                          "Portfolio",
+                          "Blogs",
+                           "Vlogs",
+                           "Busines website",
+                           "Media website",
+                           "Personal website",
+                           "Nonprofit website",
+                           "News website",
+                           "Educational website",
+                           "Forum website",
+                           "Brochure website",
+                           "Crowfunding website",
+                           "Landing page website",
+                           "Portal website",
+                           "Membership website",
+                           "Photo sharing website",
+                           "Business website",
+                           "Community forum website",
+                           "Wiki website",
+                           "Event website"
+                         ].map((websitepossibilities, websitepossibilitiesidx)=> {
+                          return (
+                           <Col xs={12}
+                                md={12}
+                                lg={12}
+                                className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-posibilitiesgridheaderindicationcontainer-colcontainer">
+                             <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-posibilitiesgridheaderindicationcontainer-colcontainer-websitepossibilitiescontainer">
+                               <span key={websitepossibilitiesidx}
+                                     className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-websitepossibilitiesheaderindication"
+                                     onMouseEnter={()=> {
+                                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer");
+                                      _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                                    }}>
+                                      {websitepossibilities}
+                              </span>
+                             </Col>
+                            </Col>
+                          )
+                         })
+                         }
+                         </Row>
+                      </Col>
+                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer"
+                           onMouseLeave={()=> {
+                            const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer");
+                            _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                          }}>
                               
                       </Col>
                      </Col>
