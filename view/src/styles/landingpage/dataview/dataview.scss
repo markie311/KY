@@ -104,8 +104,8 @@ box-shadow:0 1px 8px rgba(0,0,0,0.5);
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-headerindication {
 position:absolute;
 font: auto {
-    family: $sub-font;
-    weight:900;
+ family: $sub-font;
+ weight:900;
 }
 text-align:center;
 top:50%;
@@ -328,8 +328,8 @@ animation: flipprogramminglanguagepercentageheader 2s infinite;
 color:gray;
 }
 @keyframes flipprogramminglanguagepercentageheader {
-    from {transform: rotate(-15deg);}
-    to {transform: rotate(15deg);}
+from {transform: rotate(-15deg);}
+to {transform: rotate(15deg);}
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-bargraphlayoutcontainer-bargraphcontainer {
 position:relative;
@@ -921,6 +921,18 @@ left:50%;
 transform:translate(-50%,-52%) rotate(45deg);
 background-color:#EEEEEE;
 box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-closebuttonheaderindication {
+position:absolute;
+font: auto {
+    family: $sub-font;
+    weight:900;
+}
+text-align:center;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+display:none;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-headerindication {
 position:absolute;

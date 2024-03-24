@@ -207,6 +207,7 @@ height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
+overflow:hidden;
 }
 #kycorelandingpage-core {
 position:absolute;
@@ -269,7 +270,7 @@ background-color:white;
 border-radius:20px;
 height:250%;
 width:110%;
-transform: translate(0%, 80%);
+transform: translate(-5%, 80%);
 z-index:1;
 box-shadow:0 1px 8px gray;
 display:none;
@@ -283,6 +284,29 @@ left:50%;
 transform:translate(-50%,-50%) rotate(45deg);
 background-color:#EEEEEE;
 box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication  {
+position:relative;
+font: auto {
+family: $sub-font;
+weight:900;
+}
+text-align:center;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication {
+position:absolute;
+font: auto {
+family: $sub-font;
+weight:900;
+}
+text-align:center;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
 }
 #kycorelandingpage-datasdisplaylayoutcontainer{
 position:relative;
@@ -323,7 +347,7 @@ height:100%;
 width:100%;
 top:-100%;
 box-shadow: 20px 20px 50px 50px gray inset;
-transition: 1s ease 2s;
+transition: 1s ease 1.2s;
 }
 #kycorelandingpage-coreloadingeffect-background2 {
 position:absolute;
@@ -332,7 +356,7 @@ height:100%;
 width:100%;
 left:-100%;
 box-shadow: 20px 20px 50px 40px gray inset;
-transition: 1s ease 3s;
+transition: 1s ease 2s;
 }
 #kycorelandingpage-coreloadingeffect-background3 {
 position:absolute;
@@ -341,7 +365,7 @@ height:100%;
 width:100%;
 bottom:-100%;
 box-shadow: 20px 20px 50px 70px gray inset;
-transition: 1s ease 4s;
+transition: 1s ease 3s;
 }
 #kycorelandingpage-coreloadingeffect-background4 {
 position:absolute;
@@ -350,7 +374,7 @@ height:100%;
 width:100%;
 right:-100%;
 box-shadow: 20px 20px 50px 100px gray inset;
-transition: 1s ease 5s;
+transition: 1s ease 4s;
 }
 //// data view
 #kycorelandingpage-dataview {
