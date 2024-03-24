@@ -306,12 +306,51 @@ width:100%;
 #kycorelandingpage-coreloadingeffect {
 position:absolute;
 background-color:white;
-border:1vh solid gray;
 height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
-display:none;
+z-index:1;
+top:100%;
+box-shadow: 20px 20px 50px 100px gray inset;
+overflow:hidden;
+transition: top 0.5s ease, opacity 1s ease 5s;
+}
+#kycorelandingpage-coreloadingeffect-background1 {
+position:absolute;
+background-color:white;
+height:100%;
+width:100%;
+top:-100%;
+box-shadow: 20px 20px 50px 50px gray inset;
+transition: 1s ease 2s;
+}
+#kycorelandingpage-coreloadingeffect-background2 {
+position:absolute;
+background-color:white;
+height:100%;
+width:100%;
+left:-100%;
+box-shadow: 20px 20px 50px 40px gray inset;
+transition: 1s ease 3s;
+}
+#kycorelandingpage-coreloadingeffect-background3 {
+position:absolute;
+background-color:white;
+height:100%;
+width:100%;
+bottom:-100%;
+box-shadow: 20px 20px 50px 70px gray inset;
+transition: 1s ease 4s;
+}
+#kycorelandingpage-coreloadingeffect-background4 {
+position:absolute;
+background-color:white;
+height:100%;
+width:100%;
+right:-100%;
+box-shadow: 20px 20px 50px 100px gray inset;
+transition: 1s ease 5s;
 }
 //// data view
 #kycorelandingpage-dataview {

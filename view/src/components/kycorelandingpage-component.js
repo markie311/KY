@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";                                                                                                                                                                                                                                                  
 
 import { Row, Col } from 'react-bootstrap';
 
@@ -10,6 +10,9 @@ import DataLoaderComponent from "./landingpage/loaders/data/dataloader-component
 import DataviewComponent from "./landingpage/dataview/dataview-component.js";
 
 export default function KYcoreLandingPage(props) {
+
+ const [kycoreloadingeffectbackgorund1topposition, kycoreloadingeffectbackgorund1toppositioncb] = useState("-100%");
+
  return (
   <Col id="kycorelandingpage">
 
@@ -55,6 +58,23 @@ export default function KYcoreLandingPage(props) {
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
           <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer">
              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+                onClick={()=> {
+
+
+                  const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
+                  const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
+                  const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
+                  const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
+                  const _kycoreloadingefectbackground4 = document.getElementById("kycorelandingpage-coreloadingeffect-background4");
+
+                  _kycoreloadingeffectmodal.style.top = "0%";
+                  _kycoreloadingefectbackground1.style.top = "0%";
+                  _kycoreloadingefectbackground2.style.left = "0%";
+                  _kycoreloadingefectbackground3.style.bottom = "0%";
+                  _kycoreloadingefectbackground4.style.right =  "0%";
+                  _kycoreloadingeffectmodal.style.opacity = "0%";
+
+                }}
                 onMouseEnter={()=> {
                   const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                   _navigationtooltipcontainer[1].style.display = "block";
@@ -187,7 +207,37 @@ export default function KYcoreLandingPage(props) {
     
     </Row>
 
-    <Row id="kycorelandingpage-coreloadingeffect">
+    <Row id="kycorelandingpage-coreloadingeffect"
+         onClick={()=> {
+
+
+          const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
+          const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
+          const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
+          const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
+          const _kycoreloadingefectbackground4 = document.getElementById("kycorelandingpage-coreloadingeffect-background4");
+
+          _kycoreloadingeffectmodal.style.display = "block";
+          _kycoreloadingefectbackground1.style.top = "0%";
+          _kycoreloadingefectbackground2.style.left = "0%";
+          _kycoreloadingefectbackground3.style.bottom = "0%";
+          _kycoreloadingefectbackground4.style.right =  "0%";
+
+          
+
+        }}>
+      <Col id="kycorelandingpage-coreloadingeffect-background1">
+        background 1
+      </Col>
+      <Col id="kycorelandingpage-coreloadingeffect-background2">
+        background 2
+      </Col>
+      <Col id="kycorelandingpage-coreloadingeffect-background3">
+        background 3
+      </Col>
+      <Col id="kycorelandingpage-coreloadingeffect-background4">
+        background 4
+      </Col>
     </Row>
 
     <Row id="kycorelandingpage-dataview"> 
