@@ -5,26 +5,45 @@ import { Row, Col, Spinner } from "react-bootstrap";
 import "../../../styles/landingpage/dataview/dataview.scss";
 
 import AstronautComponent from "../../navigationsnippets/home/astronaut-component.js";
+import FacebookprofileComponent from "../../navigationsnippets/facebook/facebookprofile-component.js";
 
-export default function DataviewComponent() {
- return (   
-  <Col id="dataview"> 
-    <DataviewHomeComponent />
-  </Col>
- )
+export default function DataviewComponent(props) {
+
+ if ( props.homedataview === "Home") {
+  return (   
+    <Col id="dataview"> 
+      <DataviewHomeComponent  homedataview={props.homedataview}
+                              homedataviewcb={props.homedataviewcb}/>
+    </Col>
+   )
+ }
+
+ if ( props.homedataview === "Facebook") {
+  return (   
+    <Col id="dataview"> 
+      <DataviewFacebookComponent homedataview={props.homedataview}
+                                 homedataviewcb={props.homedataviewcb}/>
+    </Col>
+   )
+ }
+
 }
 
-function DataviewHomeComponent() {
+function DataviewHomeComponent(props) {
 
   const [skillscompilationwebsitedevelopment, skillscompilationwebsitedevelopmentcb] = useState("skills");
 
  return (
-  <Row id="homesnippetcomponent">
+  <Row id="homesnippetcomponent"
+       onClick={()=> {
+        alert(props.homedataviewcb)
+       }}>
     <Col xs={12}
          md={3}
          lg={3}
          className="homesnippetcomponent-colcontainer">
        <AstronautComponent />
+       <FacebookprofileComponent />
     </Col>
     <Col xs={12}
         md={9}
@@ -35,6 +54,7 @@ function DataviewHomeComponent() {
            md={8}
            lg={8}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer">
+
         <Row id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer">
           {
            [
@@ -73,6 +93,21 @@ function DataviewHomeComponent() {
                   <img src={icon.icon} 
                        className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-icon"
                        alt="KY-IMAGE-ICON"
+                       onClick={()=> {
+  
+                        alert(props.homedataviewcb)
+                        switch(iconidx) {
+                          case 0:
+                            alert("Home data") 
+                          break;
+                          case 1:
+                           props.homedataviewcb((dataview)=> dataview === "Facebook")
+                          break;
+                          default:
+                         }
+
+                         }
+                       }
                        onMouseEnter={()=> {
                         const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
                         _navigationimagetooltip[iconidx].style.display = "block";
@@ -91,7 +126,7 @@ function DataviewHomeComponent() {
            })
           }
         </Row>
-
+        
         <Row id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer">
            <Row id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationlayoutcontainer">
               <Col xs={6}
@@ -804,6 +839,13 @@ function DataviewHomeComponent() {
      </Row>
     </Col>
   </Row>
+ )
+}
+
+function DataviewFacebookComponent() {
+ return (
+  <Col id="facebooksnippetcomponent">
+  </Col>
  )
 }
 

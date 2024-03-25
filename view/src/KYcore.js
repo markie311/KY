@@ -22,7 +22,10 @@ function KYcore() {
   const $lgviewport = window.matchMedia('(min-width: 1200px)');
 
   const [dataloaderscreenisloading, dataloaderscreenisloadingcb]= useState(false);
+
+  const [homedataview, homedataviewcb] = useState("Home");
   
+
   const $viewportscreenbreakpoints = {
     xsviewportscreenbreakpoint: async () => {
       $xsviewport.addListener($viewportscreenbreakpoints.xsviewportscreenbreakpoint);
@@ -57,10 +60,11 @@ function KYcore() {
                 fluid>
        <Routes>
          <Route path='/'
-               element={<KYcoreLandingPage viewport={viewport}
+                element={<KYcoreLandingPage viewport={viewport}
                                            dataloaderscreenisloading={dataloaderscreenisloading}
-                                           dataloaderscreenisloadingcb={dataloaderscreenisloadingcb}/>}
-          >
+                                           dataloaderscreenisloadingcb={dataloaderscreenisloadingcb}
+                                           homedataview={homedataview}
+                                           homedataviewcb={homedataviewcb} />}>
          </Route>
     </Routes>
      </Container>

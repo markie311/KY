@@ -8,10 +8,9 @@ $containersonidlebgcolor: #e2e4e1;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
- 
 //// social media and platforms account data container 
 #homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer {
-position:relative;
+position:relatifve;
 height:100%;
 width:100%;
 margin-left:auto;
@@ -133,11 +132,13 @@ width:100%;
 @media only screen and (min-width: 1200px) {
 //// social media and platforms account data container 
 #homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer {
-position:relative;
+position:absolute;
 height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
+top:100%;
+transition:1s ease;
 }
 .homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer {
 position:relative;

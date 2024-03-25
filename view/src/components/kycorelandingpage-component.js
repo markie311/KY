@@ -230,7 +230,8 @@ export default function KYcoreLandingPage(props) {
         ) 
         :
         (
-          <DataviewComponent />
+          <DataviewComponent homedataview={props.homedataview}
+                             homedataviewcb={props.homedataviewcb}/>
         )
       }
      </Col> 
