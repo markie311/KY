@@ -270,6 +270,7 @@ function DataviewHomeComponent() {
                                 md={6}
                                 lg={6}
                                 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer"> 
+                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-closebuttonheaderindication">x</p>
                             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindication">MARKUP PROGRAMMING LANGUAGE</p>
                             <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationgridcontainer">
                               <Col xs={12}
@@ -560,6 +561,7 @@ function DataviewHomeComponent() {
                              const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
                             _websiteorderspecificationtooltipcontainer[0].style.display = "none";
                            }}>
+                         <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                          <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">Website specification</h3>
                          <p></p>
                          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">" On website specification what you want will be achievable yet only on the listed price because there are some designs that is a want, so complicated to program and develop. It is a recommendation to go to consults before to communicate and payments will be done last after your own www. domain name is viewed on a browser on mobiles, tablets, laptops and computers. There is also some templates here included to be enjoyabled viewed. "</p>
@@ -584,6 +586,7 @@ function DataviewHomeComponent() {
                              const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
                             _websiteorderspecificationtooltipcontainer[1].style.display = "none";
                            }}>
+                          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                          <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">Why out of 3?</h3>
                          <br />
                          <br />
@@ -609,6 +612,7 @@ function DataviewHomeComponent() {
                               const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
                              _websiteorderspecificationtooltipcontainer[2].style.display = "none";
                             }}>
+                         <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                          <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">A decision followed</h3>
                          <br />
                          <br />
@@ -629,6 +633,7 @@ function DataviewHomeComponent() {
                       </Col>
                       <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer">
                          <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer">
+                           <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer-headerindication">Position, owner</p>
                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer-headerindication">KY development, 18/03/2024</p>
                            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer-headerindication"
@@ -708,7 +713,7 @@ function DataviewHomeComponent() {
                             const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer");
                             _websiteorderspecificationtooltipcontainer[0].style.display = "none";
                           }}>
-                              
+                       <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p> 
                       </Col>
                      </Col>
 
@@ -765,6 +770,7 @@ function DataviewHomeComponent() {
                          const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                         _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
                       }}> 
+                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-madclosebuttonheaderindication">x</p>
                   <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer">
                     <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer">
                      <img src="../images/logo/reactjs/reactjslogo.png"

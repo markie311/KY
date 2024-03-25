@@ -30,6 +30,7 @@ export default function AstronautComponent() {
               }}/>
       </Col>
       <Col id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer">
+         <p className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-closebuttonheaderindication">x</p>
          <h1 className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication">Astronaut as best example image</h1>     
          <br />
          <h4 className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication">Longing finding ways to earn, there a lot to consider in what to do, welding, planting, developing and investments</h4>

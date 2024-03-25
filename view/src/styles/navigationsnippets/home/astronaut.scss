@@ -6,6 +6,9 @@ $subbgcolor: #27272b;
 $supportbgcolor: rgb(19, 17, 17);
 $containersonidlebgcolor: #e2e4e1;
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
 //// social media and platforms account data container 
 #homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer {
 position:relative;
@@ -71,7 +74,7 @@ box-shadow:0 1px 8px rgba(0,0,0,0.5);
 .homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication {
 position:relative;
 font: auto {
-  family: $sub-font;
+family: $sub-font;
 }
 }
 #homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiper {
@@ -94,7 +97,7 @@ align-items:center;
 .homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-topicthumbnail-headerindication {
 position:relative;
 font: auto {
- family: $main-font;
+family: $main-font;
 }
 color:white;
 text-align:center;
@@ -109,10 +112,6 @@ position:relative;
 height:100%;
 width:100%;
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -193,6 +192,16 @@ top:50%;
 transform:translate(50%,-50%) rotate(-45deg);
 background-color:#EEEEEE;
 box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+.homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-closebuttonheaderindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+ weight:900;
+}
+user-select:none;
+left:100%;
+display:none;
 }
 .homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication {
 position:relative;
