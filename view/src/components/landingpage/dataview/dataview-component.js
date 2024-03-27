@@ -45,7 +45,7 @@ function DataviewHomeComponent(props) {
     <Col xs={12}
          md={3}
          lg={3}
-         className="homesnippetcomponent-colcontainer">
+         className="homesnippetcomponent-colcontainer-datamaininformationcontainer">
        <AstronautComponent />
        <FacebookprofileComponent />
     </Col>
