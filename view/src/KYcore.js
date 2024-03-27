@@ -23,9 +23,10 @@ function KYcore() {
 
   const [dataloaderscreenisloading, dataloaderscreenisloadingcb]= useState(false);
 
+  const [socialmediaandplatformsdataview, socialmediaandplatformsdataviewcb] = useState("home");
+ 
   const [homedataview, homedataviewcb] = useState("Home");
   
-
   const $viewportscreenbreakpoints = {
     xsviewportscreenbreakpoint: async () => {
       $xsviewport.addListener($viewportscreenbreakpoints.xsviewportscreenbreakpoint);
@@ -64,7 +65,10 @@ function KYcore() {
                                            dataloaderscreenisloading={dataloaderscreenisloading}
                                            dataloaderscreenisloadingcb={dataloaderscreenisloadingcb}
                                            homedataview={homedataview}
-                                           homedataviewcb={homedataviewcb} />}>
+                                           homedataviewcb={homedataviewcb} 
+                                           
+                                           socialmediaandplatformsdataview={socialmediaandplatformsdataview}
+                                           socialmediaandplatformsdataviewcb={socialmediaandplatformsdataviewcb}/>}>
          </Route>
     </Routes>
      </Container>

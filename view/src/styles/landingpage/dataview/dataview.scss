@@ -1107,7 +1107,11 @@ height:100%;
 //// skills compilation container 
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationsnippetcontainer {
 position:relative;
-border-bottom:none;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding-bottom:3%;
 }
 .socilamediaandplatformshomedataview {
 position:absolute;
@@ -1121,8 +1125,7 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 padding:25px 15px;
-transition:1s ease;
-top:100%;
+transition: all 1s ease 0.5s;
 }
 .socialmediaandplatformsfacebookdataview {
 position:absolute;
@@ -1136,25 +1139,18 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 padding:25px 15px;
-transition:1s ease;
+transition:1s ease 0.5s;
+top:100%;
 }
 .socilamediaandplatformsrapportdataview-home {
 position:absolute;
-background-color:$supportbgcolor;
-border:0.1vh solid white;
 border-radius:45px;
 height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:25px 15px;
-box-shadow: 0px 0px 5px 2px white;
-transition:1s ease;
-top:100%;
+padding:15px 0px;
+transition: all 1s ease;
 }
 .socilamediaandplatformsrapportdataview-facebook {
 position:absolute;
@@ -1171,6 +1167,8 @@ justify-content:center;
 align-items:center;
 padding:25px 15px;
 box-shadow: 0px 0px 5px 2px white;
+top:100%;
+transition: all 1s ease;
 }
 .socilamediaandplatformsdataview-headerindication {
 position:relative;
@@ -1237,9 +1235,16 @@ padding:5px 25px;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer {
 position:relative;
-height:25%;
-width:100%;
-transition:1s ease;
+border-radius:45px;
+height:23%;
+width:90%;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:1.8vh;
+transition: all 1s ease;
 }
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationsnippetcontainer::-webkit-scrollbar {
 width: 10px;
@@ -1256,17 +1261,16 @@ border-radius: 10px;
 background: #b30000; 
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer {
-position:absolute;
+position:relative;
 background-color: $supportbgcolor;
 border-radius:45px;
-height:90%;
-width:80%;
-box-shadow: 0px 0px 5px 2px white;
-transform:translate(12.5%, 7%);
+height:100%;
+width:100%;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+box-shadow: 0px 0px 5px 2px white;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer {
 position:absolute;
@@ -1605,13 +1609,14 @@ text-align:center;
 }
 //// skills compilation specification container
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer {
-position:relative;
+position:absolute;
 background-color: $supportbgcolor;
 border-radius:45px;
 height:100%;
 width:100%;
 box-shadow: 0px 0px 5px 2px white;
 padding:30px;
+transition: all 1s ease;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitespecificationsandorders {
 position:relative;

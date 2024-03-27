@@ -13,7 +13,10 @@ export default function DataviewComponent(props) {
   return (   
     <Col id="dataview"> 
       <DataviewHomeComponent  homedataview={props.homedataview}
-                              homedataviewcb={props.homedataviewcb}/>
+                              homedataviewcb={props.homedataviewcb}
+                              
+                              socialmediaandplatformsdataview={props.socialmediaandplatformsdataview}
+                              socialmediaandplatformsdataviewcb={props.socialmediaandplatformsdataviewcb}/>
     </Col>
    )
  }
@@ -22,7 +25,10 @@ export default function DataviewComponent(props) {
   return (   
     <Col id="dataview"> 
       <DataviewFacebookComponent homedataview={props.homedataview}
-                                 homedataviewcb={props.homedataviewcb}/>
+                                 homedataviewcb={props.homedataviewcb}
+                                 
+                                 socialmediaandplatformsdataview={props.socialmediaandplatformsdataview}
+                                 socialmediaandplatformsdataviewcb={props.socialmediaandplatformsdataviewcb}/>
     </Col>
    )
  }
@@ -38,10 +44,7 @@ function DataviewHomeComponent(props) {
   const [socialmediaandplatformsrapportdataview, socialmediaandplatformsrapportdataviewcb] = useState("facebook")
 
  return (
-  <Row id="homesnippetcomponent"
-       onClick={()=> {
-        alert(props.homedataviewcb)
-       }}>
+  <Row id="homesnippetcomponent">
     <Col xs={12}
          md={3}
          lg={3}
@@ -99,13 +102,31 @@ function DataviewHomeComponent(props) {
                        alt="KY-IMAGE-ICON"
                        onClick={()=> {
   
-                        alert(props.homedataviewcb)
+                        const _astronautcpmponentcontainer = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
+                        const _socialmediaandplatformshomedatamodal =   document.querySelector(".socilamediaandplatformshomedataview")
+                        const _socialmediaandplatformsrapporthomedatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-home")
+                        const _facebookprofilecomponentcontainer =  document.getElementById("facebookprofilecomponent");
+                        const _socialmediaandplatformsfacebookdatamodal =   document.querySelector(".socialmediaandplatformsfacebookdataview")
+                        const _socialmediaandplatformsrapportfacebookdatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-facebook")
+
                         switch(iconidx) {
                           case 0:
-                            alert("Home data") 
+                         //   props.socialmediaandplatformsdataviewcb((view)=> view = "home");
+                           _astronautcpmponentcontainer.style.top = "0%";
+                           _facebookprofilecomponentcontainer.style.left = "-105%";
+                           _socialmediaandplatformshomedatamodal.style.top = "0%";
+                           _socialmediaandplatformsfacebookdatamodal.style.top = "100%";
+                           _socialmediaandplatformsrapporthomedatamodal.style.top = "0%";
+                           _socialmediaandplatformsrapportfacebookdatamodal.style.top = "100%";
                           break;
                           case 1:
-                           props.homedataviewcb((dataview)=> dataview === "Facebook")
+                         //   props.socialmediaandplatformsdataviewcb((view)=> view = "facebook");
+                         _facebookprofilecomponentcontainer.style.left = "0%";
+                         _astronautcpmponentcontainer.style.top = "100%";
+                         _socialmediaandplatformshomedatamodal.style.top = "100%";
+                         _socialmediaandplatformsfacebookdatamodal.style.top = "0%";
+                         _socialmediaandplatformsrapporthomedatamodal.style.top = "100%";
+                         _socialmediaandplatformsrapportfacebookdatamodal.style.top = "0%";
                           break;
                           default:
                          }
@@ -136,8 +157,8 @@ function DataviewHomeComponent(props) {
            <SocialmediaAndPlatformsHomeDataView skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}
                                                 skillscompilationwebsitedevelopmentcb={skillscompilationwebsitedevelopmentcb} />
 
-          <SocialmediaAndPlatformsFacebookDataView skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}
-                                                   skillscompilationwebsitedevelopmentcb={skillscompilationwebsitedevelopmentcb} />
+           <SocialmediaAndPlatformsFacebookDataView skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}
+                                                    skillscompilationwebsitedevelopmentcb={skillscompilationwebsitedevelopmentcb} />
 
         </Row>
 
@@ -184,13 +205,16 @@ function SocialmediaAndPlatformsHomeDataView(props) {
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer"
                   onMouseEnter={()=> {
                     const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
-                    _skillscompilationcontainer[1].style.display = "none"; 
-                    _skillscompilationcontainer[0].style.height = "100%";
+                    const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
                     props.skillscompilationwebsitedevelopmentcb((view)=> view = "skills specification")
+                      _skillscompilationcontainer[0].style.height = "100%"; 
+                    //   _skillspecificationcontainer[0].style.height = "100%"; 
                   }}
                   onMouseLeave={()=> {
                     const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
-                    _skillscompilationcontainer[1].style.display = "block"; 
+                    const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
+                    //  _skillscompilationcontainer[0].style.height = "23%"; 
+                    
                     }}>
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Website development</p>
               </Col>
@@ -367,8 +391,6 @@ function SocialmediaAndPlatformsFacebookDataView() {
     </Col>
   )
 }
-
-
 
 function SocialmediaAndPlatformsRapportHomeDataView(props) {
   return (
@@ -899,6 +921,154 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
       } 
 
       if ( skillscompilationidx === 1 ) {
+        return (
+         <Col key={skillscompilationidx}
+            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer">
+        <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer">
+
+        <div class="circle-wrap"
+             onMouseEnter={()=> {
+               const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+               _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+             }}
+             onMouseLeave={()=> {
+                // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+               //  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+               }}>
+
+           <div class="circle">
+
+            <div class="mask full">
+             <div class="fill">
+
+             </div>
+             </div>
+
+           <div class="mask half">
+            <div class="fill">
+
+            </div>
+          </div>
+
+          <div class="inside-circle">
+           80%
+          </div>
+
+          </div>
+
+        </div>
+
+        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-headerindication">{skillscompilation.compilationheader}</p>
+
+        </Col>
+        <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer"
+             onMouseLeave={()=> {
+                 const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+              }}> 
+            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-madclosebuttonheaderindication">x</p>
+          <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer">
+            <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer">
+             <img src="../images/logo/reactjs/reactjslogo.png"
+                 id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-logo"
+                 alt="KY-IMAGE-REACTJSLOGO"/>
+            </Col>
+            <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer-tooltipcontainer">
+              <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer-tooltipcontainer-imagecontainer">
+              <img src="../images/logo/reactjs/reactnativelogo.png"
+                 id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-reactnativelogo"
+                 alt="KY-IMAGE-REACTJSLOGO"/>
+              </Col>
+              <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer-tooltipcontainer-descriptioncontainer">
+              <p  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer-headerindication">A based mobile application framework using ReactJS</p>
+               <p  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer-headerindication">React utilizes HTML, CSS, and JavaScript to create interactive user interfaces, whereas React Native utilizes APIs and native UI components to build mobile applications. What is React Native used for? React Native (also known as RN) is a popular JavaScript-based mobile app framework that allows you to build natively-rendered mobile apps for iOS and Android. The framework lets you create an application for various platforms by using the same codebase.</p>
+              </Col>
+            </Col>
+           </Col>
+          <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer">
+            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer-headerindication">A JS library used in React Native that HTML tags are converted into view and text</p>
+            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer-headerindication">React is a library for building composable user interfaces. It encourages the creation of reusable UI components that present data that changes over time. React is a powerful JavaScript UI library for creating modern applications.</p>
+          </Col>
+        </Col>
+        </Col>
+        )
+      }
+
+      if ( skillscompilationidx === 2 ) {
+        return (
+         <Col key={skillscompilationidx}
+            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer">
+        <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer">
+
+        <div class="circle-wrap"
+             onMouseEnter={()=> {
+               const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+               _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+             }}
+             onMouseLeave={()=> {
+                // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+               //  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+               }}>
+
+           <div class="circle">
+
+            <div class="mask full">
+             <div class="fill">
+
+             </div>
+             </div>
+
+           <div class="mask half">
+            <div class="fill">
+
+            </div>
+          </div>
+
+          <div class="inside-circle">
+           80%
+          </div>
+
+          </div>
+
+        </div>
+
+        <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-headerindication">{skillscompilation.compilationheader}</p>
+
+        </Col>
+        <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer"
+             onMouseLeave={()=> {
+                 const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+              }}> 
+            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-madclosebuttonheaderindication">x</p>
+          <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer">
+            <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer">
+             <img src="../images/logo/reactjs/reactjslogo.png"
+                 id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-logo"
+                 alt="KY-IMAGE-REACTJSLOGO"/>
+            </Col>
+            <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer-tooltipcontainer">
+              <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer-tooltipcontainer-imagecontainer">
+              <img src="../images/logo/reactjs/reactnativelogo.png"
+                 id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-reactnativelogo"
+                 alt="KY-IMAGE-REACTJSLOGO"/>
+              </Col>
+              <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer-imagecontainer-tooltipcontainer-descriptioncontainer">
+              <p  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer-headerindication">A based mobile application framework using ReactJS</p>
+               <p  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer-headerindication">React utilizes HTML, CSS, and JavaScript to create interactive user interfaces, whereas React Native utilizes APIs and native UI components to build mobile applications. What is React Native used for? React Native (also known as RN) is a popular JavaScript-based mobile app framework that allows you to build natively-rendered mobile apps for iOS and Android. The framework lets you create an application for various platforms by using the same codebase.</p>
+              </Col>
+            </Col>
+           </Col>
+          <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer">
+            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer-headerindication">A JS library used in React Native that HTML tags are converted into view and text</p>
+            <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogoskillsdescriptioncontainer-headerindication">React is a library for building composable user interfaces. It encourages the creation of reusable UI components that present data that changes over time. React is a powerful JavaScript UI library for creating modern applications.</p>
+          </Col>
+        </Col>
+        </Col>
+        )
+      }
+
+      if ( skillscompilationidx === 3 ) {
         return (
          <Col key={skillscompilationidx}
             className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer">
