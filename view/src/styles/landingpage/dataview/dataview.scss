@@ -879,6 +879,7 @@ height:100%;
 margin-left:auto;
 margin-right:auto;
 padding:0;
+overflow:hidden;
 }
 #homesnippetcomponent-colcontainer-gridcontainer {
 position:relative;
@@ -980,12 +981,20 @@ justify-content:center;
 align-items:center;
 margin-left:auto;
 margin-right:auto;
+overflow:hidden;
+}
+.socialmediaandplatformsdataview {
+position:relative;
+height:100%;
+width:100%;
 }
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationlayoutcontainer {
 position:relative;
 border-radius:20px;
 height:15%;
-width:99%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
 overflow:hidden;
 padding:10px 30px;
 }
@@ -1006,7 +1015,9 @@ top:0.5vh;
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer {
 position:relative;
 height:85%;
-width:99%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer {
 position:relative;
@@ -1038,16 +1049,40 @@ align-items:center;
 padding:10px;
 box-shadow: 0px 0px 5px 2px white;
 }
+/// new
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-facebooksocialmediaandplatformsdatacontainer {
+position:relative;
+background-color: $supportbgcolor;
+border-radius:20px;
+height:100%;
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:10px;
+box-shadow: 0px 0px 5px 2px white;
+}
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication {
 position:relative;
 font: auto  {
-    family: $sub-font;
-    size:18px;
-    weight:900;
+ family: $sub-font;
+ weight:700;
 }
 text-align:center;
 padding:5px;
 user-select:none;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-facebooksocialmediaandplatformsheaderindication {
+position:relative;
+font: auto  {
+ family: $sub-font;
+ weight:700;
+}
+color:white;
+text-align:center;
+padding:5px;
+user-select:none;  
 }
 //// faqs snippet component 
 #faqssnippetcomponent {
@@ -1066,6 +1101,133 @@ height:100%;
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationsnippetcontainer {
 position:relative;
 border-bottom:none;
+border:1vh solid red;
+}
+.socilamediaandplatformshomedataview {
+position:absolute;
+border-radius:45px;
+height:100%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px 15px;
+transition:1s ease;
+top:100%;
+}
+.socialmediaandplatformsfacebookdataview {
+position:absolute;
+border-radius:45px;
+height:100%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px 15px;
+transition:1s ease;
+}
+.socilamediaandplatformsrapportdataview-home {
+position:absolute;
+background-color:$supportbgcolor;
+border:0.1vh solid white;
+border-radius:45px;
+height:100%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px 15px;
+box-shadow: 0px 0px 5px 2px white;
+transition:1s ease;
+top:100%;
+}
+.socilamediaandplatformsrapportdataview-facebook {
+position:absolute;
+background-color:$supportbgcolor;
+border:0.1vh solid white;
+border-radius:45px;
+height:100%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px 15px;
+box-shadow: 0px 0px 5px 2px white;
+}
+.socilamediaandplatformsdataview-headerindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+}
+color:white;
+text-align:center;
+}
+.socilamediaandplatformsdataview-facebookcommunitylinkheaderindication {
+position:relative;
+background-color: #1d2951;
+background-image: linear-gradient(315deg, #1d2951 0%, #dbe7fc 74%);
+border: 1px solid #2b4170;
+border-radius:5px;
+font: auto {
+  family: $sub-font;
+  weight:900;
+}
+color:black;
+text-align:center;
+text-decoration:none;
+padding:5px 25px;
+&:hover {
+color:black;
+}
+}
+.socilamediaandplatformsdataview-facebookmarketplacelinkheaderindication {
+position:relative;
+background-color: #f8002f;
+background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+border: 1px solid #2b4170;
+border-radius:5px;
+font: auto {
+ family: $sub-font;
+}
+color:orange;
+text-align:center;
+text-decoration:none;
+padding:5px 25px;
+&:hover {
+color:orange;
+} 
+}
+.socilamediaandplatformsdataview-facebooklinkheaderindication {
+position:relative;
+background-color: #2b4170;
+background: -moz-linear-gradient(top, #3b5998, #2b4170);
+background: -ms-linear-gradient(top, #3b5998, #2b4170);
+background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+border: 1px solid #2b4170;
+border-radius:5px;
+font: auto {
+ family: $sub-font;
+ weight:900;
+}
+color:black;
+text-align:center;
+text-decoration:none;
+padding:5px 25px;
+&:hover {
+ color:black;
+}
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer {
 position:relative;

@@ -17,5 +17,85 @@ margin-left:auto;
 margin-right:auto;
 padding:20px 25px;
 box-shadow: 0px 0px 5px 4px gray;
-left:0.5vh
+left:0.5vh;
+overflow:hidden;
+}
+.facebookprofilecomponent-contentcontainer {
+position:relative;
+height:55%;
+overflow-x:hidden;
+overflow-y:scroll;
+padding:10px;
+}
+/* width */
+.facebookprofilecomponent-contentcontainer::-webkit-scrollbar {
+width: 5px;
+}
+/* Track */
+.facebookprofilecomponent-contentcontainer::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+/* Handle */
+.facebookprofilecomponent-contentcontainer::-webkit-scrollbar-thumb {
+background:dodgerblue; 
+border-radius: 10px;
+}
+/* Handle on hover */
+.facebookprofilecomponent-contentcontainer::-webkit-scrollbar-thumb:hover {
+background: #b30000; 
+}
+.facebookprofilecomponent-contentcontainer-facebookprofilepicturecontainer-colcontainer {
+position:relative;
+height:45%;
+padding:0;
+}
+.facebookprofilecomponent-contentcontainer-facebookdetailscontainer {
+position:relative;
+height:45%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:10px 15px;   
+}
+.facebookprofilecomponent-contentcontainer-facebookprofilepicturelayoutcontainer {
+position:relative;
+height:100%;
+width:100%;
+}
+#facebookprofilecomponent-contentcontainer-facebookprofilepicturelayoutcontainer-imagecontainer {
+position:absolute;
+height:100%;
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+#facebookprofilecomponent-contentcontainer-facebookprofilepicture {
+position:relative;
+border-radius:50%;
+height:70%;
+width:100%;
+box-shadow:0 1px 8px gray; 
+}
+#facebookprofilecomponent-contentcontainer-facebookprofilepicturelayoutcontainer-imagemodalcontainer {
+position:absolute;
+background-color:white;
+border-radius:45px;
+height:90vh;
+width:90vw;
+top:50%;
+left:50%;
+transform: translate(-2%, -30%);
+box-shadow:0 1px 8px gray; 
+z-index:1;
+display:none;
+}
+.facebookprofilecomponent-contentcontainer-headerindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+}
+color:white;
 }
