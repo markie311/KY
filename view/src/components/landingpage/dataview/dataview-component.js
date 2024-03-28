@@ -58,7 +58,7 @@ function DataviewHomeComponent(props) {
         className="homesnippetcomponent-colcontainer">
      <Row id="homesnippetcomponent-colcontainer-gridcontainer">
 
-      <Col xs={12}
+      <Col xs={6}
            md={8}
            lg={8}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer">
@@ -170,7 +170,7 @@ function DataviewHomeComponent(props) {
 
       </Col>
 
-      <Col xs={12}
+      <Col xs={6}
            md={4}
            lg={4}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer"
