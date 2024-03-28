@@ -10,7 +10,7 @@ $containersonidlebgcolor: #e2e4e1;
 @media only screen and (max-width: 600px) {
 #kycorelandingpage {
 position:relative;
-height:100%;
+height:inherit;
 width:100%;
 margin-left:auto;
 margin-right:auto;
@@ -30,7 +30,6 @@ padding:0;
 //// navigation buttons container
 #keyheader-navigationbuttonscontainer {
 position:relative;
-border:1vh solid green;
 height:100%;
 display:flex;
 justify-content:center;
@@ -40,7 +39,6 @@ align-items:center;
 position:relative;
 background-color:$supportbgcolor;
 border:0.1vh solid white;
-border:1vh solid red;
 border-radius:20px;
 height:100%;
 width:100%;
@@ -49,15 +47,19 @@ margin-right:auto;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer {
 position:relative;
-height:auto;
+height:16%;
 display:flex;
 justify-content:center;
 align-items:center;
+padding:10px;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer {
 position:absolute;
-height:100%;
-width:100%;
+background-color: #1e1d1b;
+background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);
+border-radius:20px;
+height:auto;
+width:80%;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -70,7 +72,7 @@ family: $main-font;
 color:white;
 text-align:center;
 user-select:none;
-top:0.5vh;
+top:1vh;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer {
 position:absolute;
