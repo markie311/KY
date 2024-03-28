@@ -269,6 +269,10 @@ export default function KYcoreLandingPage(props) {
       </Col>
     </Row>
 
+    <Row id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect">
+
+    </Row>
+
     <Row id="kycorelandingpage-dataview"> 
      <Col xs={12}
           md={12}
@@ -280,7 +284,7 @@ export default function KYcoreLandingPage(props) {
       <HomeDataView />
      </Col>
     </Row>
-   
+    
   </Col>
  )
 }
