@@ -53,12 +53,12 @@ function DataviewHomeComponent(props) {
        <FacebookprofileComponent />
     </Col>
     <Col xs={12}
-        md={9}
-        lg={9}
+         md={9}
+         lg={9}
         className="homesnippetcomponent-colcontainer">
      <Row id="homesnippetcomponent-colcontainer-gridcontainer">
 
-      <Col xs={6}
+      <Col xs={12}
            md={8}
            lg={8}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer">
@@ -170,7 +170,7 @@ function DataviewHomeComponent(props) {
 
       </Col>
 
-      <Col xs={6}
+      <Col xs={12}
            md={4}
            lg={4}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer"
