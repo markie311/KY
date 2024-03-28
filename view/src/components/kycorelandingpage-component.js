@@ -97,6 +97,7 @@ export default function KYcoreLandingPage(props) {
                   _kycoreloadingefectbackground3.style.bottom = "0%";
                   _kycoreloadingefectbackground4.style.right =  "0%";
 
+
                   _kycoreloadingeffectmodal.style.opacity = "0%";
 
                   await _coreloadingeffectdefaultmodalproportioncbfunction();
