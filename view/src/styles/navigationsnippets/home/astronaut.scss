@@ -10,7 +10,8 @@ $containersonidlebgcolor: #e2e4e1;
 @media only screen and (max-width: 600px) {
 //// social media and platforms account data container 
 #homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer {
-position:relatifve;
+position:relative;
+border:1vh solid red;
 height:100%;
 width:100%;
 margin-left:auto;

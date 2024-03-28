@@ -57,7 +57,8 @@ function DataviewHomeComponent(props) {
         lg={9}
         className="homesnippetcomponent-colcontainer">
      <Row id="homesnippetcomponent-colcontainer-gridcontainer">
-      <Col xs={12}
+
+      <Col xs={6}
            md={8}
            lg={8}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer">
@@ -92,7 +93,7 @@ function DataviewHomeComponent(props) {
            ].map((icon, iconidx)=> {
              return (
              <Col key={iconidx}
-                  xs={12}
+                  xs={4}
                   md={1}
                   lg={1}
                   className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer">
@@ -146,8 +147,8 @@ function DataviewHomeComponent(props) {
                           const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
                           _navigationimagetooltip[iconidx].style.display = "none";
                         }}/>
-                    </Col>
-                    <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer">
+                 </Col>
+                  <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer">
                   <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                   <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-headerindication">{icon.tooltipheaderindication}</p>
                 </Col>
@@ -168,7 +169,8 @@ function DataviewHomeComponent(props) {
         </Row>
 
       </Col>
-      <Col xs={12}
+
+      <Col xs={6}
            md={4}
            lg={4}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer"
@@ -180,6 +182,7 @@ function DataviewHomeComponent(props) {
       
 
       </Col>
+
      </Row>
     </Col>
   </Row>
