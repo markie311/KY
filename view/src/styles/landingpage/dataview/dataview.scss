@@ -1276,9 +1276,9 @@ box-shadow: 0px 0px 5px 2px white;
 position:absolute;
 background-color:white;
 border-radius:20px;
-height:235%;
+height:280%;
 width:150%;
-transform: translate(-100%, -30%);
+transform: translate(-90%, 30%);
 z-index:1;
 display:none;
 }
@@ -1287,9 +1287,9 @@ content:'';
 position:absolute;
 width:40px;
 height:40px;
-left:0;
+right:0;
 top:50%;
-transform:translate(35.8vw, 0%) rotate(-45deg);
+transform:translate(50%, -10%) rotate(-45deg);
 background-color:#EEEEEE;
 box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }

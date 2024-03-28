@@ -6,27 +6,11 @@ $subbgcolor: #27272b;
 $blurblack:  #111111;
 $containersonidlebgcolor: #e2e4e1;
 
-#kycore {
-position:relative;
-background-color:black;
-height:100vh;
-width:100vw;
-overflow-x:hidden;
-overflow-y:scroll;
-}
-#kycore::-webkit-scrollbar {
-display: none;
-}
-#kycore {
--ms-overflow-style: none; 
-scrollbar-width: none;  
-}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 #kycore {
 position:relative;
 background-color:black;
-border:1vh solid red;
 height:100vh;
 width:100vw;
 overflow-x:hidden;

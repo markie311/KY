@@ -109,6 +109,9 @@ function DataviewHomeComponent(props) {
                         const _socialmediaandplatformsfacebookdatamodal =   document.querySelector(".socialmediaandplatformsfacebookdataview")
                         const _socialmediaandplatformsrapportfacebookdatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-facebook")
 
+                        const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
+                        const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
+
                         switch(iconidx) {
                           case 0:
                          //   props.socialmediaandplatformsdataviewcb((view)=> view = "home");
@@ -116,8 +119,10 @@ function DataviewHomeComponent(props) {
                            _facebookprofilecomponentcontainer.style.left = "-105%";
                            _socialmediaandplatformshomedatamodal.style.top = "0%";
                            _socialmediaandplatformsfacebookdatamodal.style.top = "100%";
-                           _socialmediaandplatformsrapporthomedatamodal.style.top = "0%";
+                           _socialmediaandplatformsrapporthomedatamodal.style.top = "-3%";
                            _socialmediaandplatformsrapportfacebookdatamodal.style.top = "100%";
+                           _skillscompilationcontainer[0].style.height = "23%"; 
+                           skillscompilationwebsitedevelopmentcb((view)=> view = "skills")
                           break;
                           case 1:
                          //   props.socialmediaandplatformsdataviewcb((view)=> view = "facebook");
@@ -206,6 +211,7 @@ function SocialmediaAndPlatformsHomeDataView(props) {
                   onMouseEnter={()=> {
                     const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
                     const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
+                 
                     props.skillscompilationwebsitedevelopmentcb((view)=> view = "skills specification")
                       _skillscompilationcontainer[0].style.height = "100%"; 
                     //   _skillspecificationcontainer[0].style.height = "100%"; 

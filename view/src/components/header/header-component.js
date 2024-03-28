@@ -12,7 +12,7 @@ export default function KYmainnavigationbar(props) {
          lg={3}
          id='kyheader-headercontainer'>
      <h1 className='kyheader-headerinication'>KY</h1>
-     <p className='kyheader-headerinication'>King Macky</p> 
+     <p className='kyheader-subheaderinication'>King Macky</p> 
     </Col>
   </Row>
  )
