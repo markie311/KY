@@ -39,11 +39,13 @@ align-items:center;
 }
 #keyheader-navigationbuttonscontainer-navigationgridcontainer {
 position:relative;
+border:1vh solid red;
 border-radius:20px;
 height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
+overflow:hidden;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer {
 position:relative;
@@ -63,6 +65,43 @@ width:80%;
 display:flex;
 justify-content:center;
 align-items:center;
+transition:1s ease;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1 {
+position:relative;
+transition:all 1.2s ease;
+left:-105%;
+opacity:0;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2 {
+position:relative;
+transition:all 1.2s ease;
+top:-105%;
+opacity:0;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3 {
+position:relative;
+transition:all 1.2s ease;
+bottom:-105%;
+opacity:0;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4 {
+position:relative;
+transition:all 1.2s ease;
+right:-105%;
+opacity:0;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5 {
+position:relative;
+transition:all 1.2s ease;
+top:-105%;
+opacity:0;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6 {
+position:relative;
+transition:all 1.2s ease;
+top:-105%;
+opacity:0;
 }
 .keyheader-navigationbuttonscontainer-navigationheaderindication {
 position:relative;

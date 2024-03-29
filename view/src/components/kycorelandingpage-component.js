@@ -39,7 +39,38 @@ export default function KYcoreLandingPage(props) {
  return (
   <Col id="kycorelandingpage">
 
-    <Row id="kycorelandingpage-core">
+    <Row id="kycorelandingpage-core"
+         onScroll={(evt)=> {
+
+          const _mainanavigationbutton1 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1");
+          const _mainanavigationbutton2 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2");
+          const _mainanavigationbutton3 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3");
+          const _mainanavigationbutton4 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4");
+          const _mainanavigationbutton5 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5");
+          const _mainanavigationbutton6 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6");
+   
+          const { scrollTop, scrollHeight, clientHeight } = evt.target;
+
+          const kycorelandingpagescrolledposition = Math.ceil(
+            (scrollTop / (scrollHeight - clientHeight)) * 100
+          );
+
+          if ( kycorelandingpagescrolledposition === 10 ) {
+            _mainanavigationbutton1.style.left = "0%";
+            _mainanavigationbutton1.style.opacity = "1";
+            _mainanavigationbutton2.style.top = "0%";
+            _mainanavigationbutton2.style.opacity = "1";
+            _mainanavigationbutton3.style.bottom =  "0%";
+            _mainanavigationbutton3.style.opacity = "1";
+            _mainanavigationbutton4.style.right = "0%";
+            _mainanavigationbutton4.style.opacity = "1";
+            _mainanavigationbutton5.style.top =  "0%";
+            _mainanavigationbutton5.style.opacity = "1";
+            _mainanavigationbutton6.style.top = "0%";
+            _mainanavigationbutton6.style.opacity = "1";
+          }
+
+         }}>
 
      <Col xs={12}
           md={3}
@@ -57,7 +88,7 @@ export default function KYcoreLandingPage(props) {
              md={2}
              lg={2}
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer">
+          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1">
            <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
               onMouseEnter={()=> {
                  const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
@@ -81,7 +112,7 @@ export default function KYcoreLandingPage(props) {
              md={2}
              lg={2}
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer">
+          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2">
              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
                 onClick={async ()=> {
 
@@ -125,7 +156,7 @@ export default function KYcoreLandingPage(props) {
              md={2}
              lg={2}
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer"
+          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3"
                onMouseEnter={()=> {
                  const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                  _navigationtooltipcontainer[2].style.display = "block";
@@ -149,7 +180,7 @@ export default function KYcoreLandingPage(props) {
              md={2}
              lg={2}
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-           <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer">
+           <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4">
             <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
                onMouseEnter={()=> {
                   const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
@@ -173,7 +204,7 @@ export default function KYcoreLandingPage(props) {
              md={2}
              lg={2}
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-            <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer">  
+            <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5">  
               <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
                  onMouseEnter={()=> {
                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
@@ -197,7 +228,7 @@ export default function KYcoreLandingPage(props) {
              md={2}
              lg={2}
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer">  
+          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6">  
              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
                 onMouseEnter={()=> {
                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
