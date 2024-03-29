@@ -173,7 +173,6 @@ z-index:10;
 box-shadow: 1px 2px 20px 10px gray inset;
 overflow:hidden;
 transition: top 0.5s ease, opacity 1s ease 5s;
-top:100%;
 }
 #kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorcontainer {
 position:absolute;
@@ -251,7 +250,7 @@ padding:0;
 position:absolute;
 height:100%;
 width:100%;
-padding:80px 35px;
+padding:80px 20px 80px 35px;
 }
 #kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1 {
 position:relative;
