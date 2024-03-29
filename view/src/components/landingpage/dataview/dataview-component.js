@@ -58,7 +58,7 @@ function DataviewHomeComponent(props) {
         className="homesnippetcomponent-colcontainer">
      <Row id="homesnippetcomponent-colcontainer-gridcontainer">
 
-      <Col xs={6}
+      <Col xs={12}
            md={8}
            lg={8}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer">
@@ -97,7 +97,7 @@ function DataviewHomeComponent(props) {
                   md={1}
                   lg={1}
                   className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer">
-                <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-imagecontainer">
+                  <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-imagecontainer">
                   <img src={icon.icon} 
                        className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-icon"
                        alt="KY-IMAGE-ICON"
@@ -147,7 +147,7 @@ function DataviewHomeComponent(props) {
                           const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
                           _navigationimagetooltip[iconidx].style.display = "none";
                         }}/>
-                 </Col>
+                  </Col>
                   <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer">
                   <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                   <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-headerindication">{icon.tooltipheaderindication}</p>
@@ -170,7 +170,7 @@ function DataviewHomeComponent(props) {
 
       </Col>
 
-      <Col xs={6}
+      <Col xs={12}
            md={4}
            lg={4}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer"
@@ -193,10 +193,10 @@ function SocialmediaAndPlatformsHomeDataView(props) {
   return (
     <Col className="socilamediaandplatformshomedataview"> 
      <Row id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationlayoutcontainer">
-      <Col xs={6}
-            md={6}
-            lg={6}
-            id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationcontainer">
+      <Col xs={12}
+           md={6}
+           lg={6}
+           id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationcontainer">
         <p id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationcontainer-headerindication">Progress</p>
       </Col>
      </Row>
