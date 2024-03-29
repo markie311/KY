@@ -25,13 +25,25 @@ export default function KYcoreLandingPage(props) {
     const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
     const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
     const _kycoreloadingefectbackground4 = document.getElementById("kycorelandingpage-coreloadingeffect-background4");
-    
-      _kycoreloadingefectbackground1.style.top = "-100%";
-      _kycoreloadingefectbackground2.style.left = "-100%";
-      _kycoreloadingefectbackground3.style.bottom = "-100%";
-      _kycoreloadingefectbackground4.style.right = "-100%";
-      _kycoreloadingeffectmodal.style.top = "100%"; 
-      _kycoreloadingeffectmodal.style.opacity = "1";
+
+    const _kycorelanunchingoffoffbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5-transitioncontainer");
+    const _kycorelanunchingoffnormalbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4-transitioncontainer");
+    const _kycorelanunchingoffheatingbargraphtransitioncontainer  = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3-transitioncontainer");
+    const _kycorelanunchingoffminimizingbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer");
+    const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
+
+    _kycoreloadingefectbackground1.style.top = "-100%";
+    _kycoreloadingefectbackground2.style.left = "-100%";
+    _kycoreloadingefectbackground3.style.bottom = "-100%";
+    _kycoreloadingefectbackground4.style.right = "-100%";
+    _kycoreloadingeffectmodal.style.top = "100%"; 
+    _kycoreloadingeffectmodal.style.opacity = "1";
+
+    _kycorelanunchingoffoffbargraphtransitioncontainer.style.opacity = "1";
+    _kycorelanunchingoffnormalbargraphtransitioncontainer.style.opacity = "1";
+    _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "1";
+    _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "1";
+    _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "1";
 
   }, 5500)
  }
@@ -40,60 +52,61 @@ export default function KYcoreLandingPage(props) {
   <Col id="kycorelandingpage">
 
     <Row id="kycorelandingpage-core"
-         onScroll={(evt)=> {
+            onScroll={(evt)=> {
 
           if ( props.viewport === "xs") {
-
+      
             const _mainnavigationbutton1 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1");
             const _mainnavigationbutton2 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2");
             const _mainnavigationbutton3 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3");
             const _mainnavigationbutton4 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4");
             const _mainnavigationbutton5 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5");
             const _mainnavigationbutton6 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6");
-
+      
+          
             const { scrollTop, scrollHeight, clientHeight } = evt.target;
-            const kycorelangingpagescrolledcurrebtposition = Math.ceil(
+            const kycorelangingpagescrolledcurrentposition = Math.ceil(
                 (scrollTop / (scrollHeight - clientHeight)) * 100
             );
-             console.log(kycorelangingpagescrolledcurrebtposition)
-
-             switch(kycorelangingpagescrolledcurrebtposition) {
-              case 11:
-              _mainnavigationbutton1.style.left = "-100%";
+             console.log(kycorelangingpagescrolledcurrentposition)
+      
+             switch(kycorelangingpagescrolledcurrentposition) {
+              case 10:
+              _mainnavigationbutton1.style.left = "-105%";
               _mainnavigationbutton1.style.opacity = "0";
               break;
               case 12: 
               _mainnavigationbutton1.style.left = "0%";
               _mainnavigationbutton1.style.opacity = "1";
-              _mainnavigationbutton2.style.top = "-100%";
+              _mainnavigationbutton2.style.top = "-105%";
               _mainnavigationbutton2.style.opacity = "0";
               break;
-              case 13: 
+              case 14: 
               _mainnavigationbutton2.style.top = "0%";
               _mainnavigationbutton2.style.opacity = "1";
-              _mainnavigationbutton3.style.bottom = "-100%";
+              _mainnavigationbutton3.style.bottom = "-105%";
               _mainnavigationbutton3.style.opacity = "0";
               break;
-              case 17: 
+              case 16: 
               _mainnavigationbutton3.style.bottom = "0%";
               _mainnavigationbutton3.style.opacity = "1";
-              _mainnavigationbutton4.style.right = "-100%";
+              _mainnavigationbutton4.style.right = "-105%";
               _mainnavigationbutton4.style.opacity = "0";
               break;
-              case 20: 
+              case 18: 
               _mainnavigationbutton4.style.right = "0%";
               _mainnavigationbutton4.style.opacity = "1";
-              _mainnavigationbutton5.style.top = "-100%";
+              _mainnavigationbutton5.style.top = "-105%";
               _mainnavigationbutton5.style.opacity = "0";
               break;
-              case 22: 
+              case 20: 
               _mainnavigationbutton5.style.top = "0%";
               _mainnavigationbutton5.style.opacity = "1";
-              _mainnavigationbutton6.style.top = "-100%";
+              _mainnavigationbutton6.style.bottom = "-105%";
               _mainnavigationbutton6.style.opacity = "0";
               break;
-              case 24: 
-              _mainnavigationbutton6.style.top = "0%";
+              case 22: 
+              _mainnavigationbutton6.style.bottom = "0%";
               _mainnavigationbutton6.style.opacity = "1";
               break;
               default:
@@ -101,7 +114,7 @@ export default function KYcoreLandingPage(props) {
           } else {
             alert("Invoked")
           }
-
+      
          }}>
 
      <Col xs={12}
@@ -172,8 +185,7 @@ export default function KYcoreLandingPage(props) {
                    _kycoreloadingefectbackground2 .style.left = "0%";
                    _kycoreloadingefectbackground3.style.bottom = "0%";
                    _kycoreloadingefectbackground4.style.right = "0%";
- 
-                  
+
                   _kycorelanunchingoffoffbargraphtransitioncontainer.style.opacity = "0";
                   _kycorelanunchingoffnormalbargraphtransitioncontainer.style.opacity = "0";
                   _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "0";
