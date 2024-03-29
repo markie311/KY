@@ -39,7 +39,6 @@ align-items:center;
 }
 #keyheader-navigationbuttonscontainer-navigationgridcontainer {
 position:relative;
-border:1vh solid red;
 border-radius:20px;
 height:100%;
 width:100%;
@@ -54,6 +53,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 padding:10px;
+overflow: hidden;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer {
 position:absolute;
@@ -71,36 +71,6 @@ transition:1s ease;
 position:relative;
 transition:all 1.2s ease;
 left:-105%;
-opacity:0;
-}
-.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2 {
-position:relative;
-transition:all 1.2s ease;
-top:-105%;
-opacity:0;
-}
-.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3 {
-position:relative;
-transition:all 1.2s ease;
-bottom:-105%;
-opacity:0;
-}
-.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4 {
-position:relative;
-transition:all 1.2s ease;
-right:-105%;
-opacity:0;
-}
-.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5 {
-position:relative;
-transition:all 1.2s ease;
-top:-105%;
-opacity:0;
-}
-.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6 {
-position:relative;
-transition:all 1.2s ease;
-top:-105%;
 opacity:0;
 }
 .keyheader-navigationbuttonscontainer-navigationheaderindication {
@@ -134,6 +104,14 @@ transform:translate(-50%,-50%) rotate(45deg);
 background-color:#EEEEEE;
 box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
+////// xs launching scrolling effect
+#kycorelandingpage-xslaunchingeffectscrollingcontainer {
+position:relative;
+border:1vh solid white;
+background-color:black;
+height:32000%;
+width:100%;
+}
 //// data display layout container
 #kycorelandingpage-datasdisplaylayoutcontainer{
 position:relative;
@@ -162,12 +140,19 @@ height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
-z-index:1;
+z-index:10;
 box-shadow: 1px 2px 20px 10px gray inset;
 overflow:hidden;
 transition: top 0.5s ease, opacity 1s ease 5s;
 top:100%;
 }
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicator {
+position:absolute;
+background-color:black;
+height:100%;
+width:10%;
+z-index:10;
+    }
 #kycorelandingpage-coreloadingeffect-background1 {
 position:absolute;
 background-color:white;
@@ -176,6 +161,11 @@ width:100%;
 top:-100%;
 box-shadow: 20px 20px 50px 50px gray inset;
 transition: 1s ease 1.2s;
+z-index:10;
+}
+#samp {
+position:absolute;
+z-index:11;
 }
 #kycorelandingpage-coreloadingeffect-background2 {
 position:absolute;
@@ -185,6 +175,7 @@ width:100%;
 left:-100%;
 box-shadow: 20px 20px 50px 40px gray inset;
 transition: 1s ease 2s;
+z-index:10;
 }
 #kycorelandingpage-coreloadingeffect-background3 {
 position:absolute;
@@ -194,6 +185,7 @@ width:100%;
 bottom:-100%;
 box-shadow: 20px 20px 50px 70px gray inset;
 transition: 1s ease 3s;
+z-index:10;
 }
 #kycorelandingpage-coreloadingeffect-background4 {
 position:absolute;
@@ -203,6 +195,7 @@ width:100%;
 right:-100%;
 box-shadow: 20px 20px 50px 100px gray inset;
 transition: 1s ease 4s;
+z-index:10;
 }
 //// data view
 #kycorelandingpage-dataview {
@@ -413,10 +406,190 @@ width:100%;
 margin-left:auto;
 margin-right:auto;
 z-index:1;
-top:100%;
 box-shadow: 20px 20px 50px 100px gray inset;
 overflow:hidden;
 transition: top 0.5s ease, opacity 1s ease 5s;
+top:100%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorcontainer {
+position:absolute;
+height:100%;
+width:20%;
+z-index:10;
+left:80%;
+padding:0;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphstatusindicatorcontainer {
+position:relative;
+height:100%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer1 {
+position:relative;
+height:30%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer2 {
+position:relative;
+height:25%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer3 {
+position:relative;
+height:20%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer4 {
+position:relative;
+height:15%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer5 {
+position:relative;
+height:10%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+.kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+ weight:900;
+}
+top:-1.3vh;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer {
+position:relative;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:0;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphcontainer {
+position:absolute;
+height:100%;
+width:100%;
+padding:15px 30px;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1 {
+position:relative;
+border:0.2vh solid black;
+border-top-left-radius:45px;
+border-top-right-radius:45px;
+height:30%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-colorcontainer {
+position:absolute;
+background-color:tomato;
+border-top-left-radius:45px;
+border-top-right-radius:45px;
+height:100%;
+width:100%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer {
+position:absolute;
+background-color: rgba(1, 1, 1, 0.6);
+border-top-left-radius:45px;
+border-top-right-radius:45px;
+height:100%;
+width:100%;
+transition: all 1s ease 4.7s;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2 {
+position:relative;
+border:0.2vh solid black;
+height:25%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-colorcontainer {
+position:absolute;
+background-color:yellowgreen;
+height:100%;
+width:100%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer {
+position:absolute;
+background-color: rgba(1, 1, 1, 0.6);
+height:100%;
+width:100%;
+transition: all 1s ease 3.5s;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3 {
+position:relative;
+background-color:greenyellow;
+border:0.2vh solid black;
+height:20%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3-colorcontainer {
+position:absolute;
+background-color:greenyellow;
+height:100%;
+width:100%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3-transitioncontainer {
+position:absolute;
+background-color: rgba(1, 1, 1, 0.6);
+height:100%;
+width:100%;
+transition: all 1s ease 2.5s;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4 {
+position:relative;
+background-color: aqua;
+border:0.2vh solid black;
+height:15%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4-colorcontainer {
+position:absolute;
+background-color: aqua;
+height:100%;
+width:100%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4-transitioncontainer {
+position:absolute;
+background-color: rgba(1, 1, 1, 0.6);
+height:100%;
+width:100%;
+transition: all 1s ease 1.5s;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5 {
+position:relative;
+background-color:aquamarine;
+border-bottom-left-radius:45px;
+border-bottom-right-radius:45px;
+border:0.2vh solid black;
+height:10%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5-colorcontainer {
+position:absolute;
+background-color: aqua;
+border-bottom-left-radius:45px;
+border-bottom-right-radius:45px;
+height:100%;
+width:100%;
+}
+#kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5-transitioncontainer {
+position:absolute;
+background-color: rgba(1, 1, 1, 0.6);
+border-bottom-left-radius:45px;
+border-bottom-right-radius:45px;
+height:100%;
+width:100%;
+transition: all 1s ease 0.5s;
 }
 #kycorelandingpage-coreloadingeffect-background1 {
 position:absolute;
@@ -425,7 +598,7 @@ height:100%;
 width:100%;
 top:-100%;
 box-shadow: 20px 20px 50px 50px gray inset;
-transition: 1s ease 1.2s;
+transition: 1s ease 1s;
 }
 #kycorelandingpage-coreloadingeffect-background2 {
 position:absolute;

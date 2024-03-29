@@ -42,32 +42,64 @@ export default function KYcoreLandingPage(props) {
     <Row id="kycorelandingpage-core"
          onScroll={(evt)=> {
 
-          const _mainanavigationbutton1 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1");
-          const _mainanavigationbutton2 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2");
-          const _mainanavigationbutton3 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3");
-          const _mainanavigationbutton4 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4");
-          const _mainanavigationbutton5 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5");
-          const _mainanavigationbutton6 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6");
-   
-          const { scrollTop, scrollHeight, clientHeight } = evt.target;
+          if ( props.viewport === "xs") {
 
-          const kycorelandingpagescrolledposition = Math.ceil(
-            (scrollTop / (scrollHeight - clientHeight)) * 100
-          );
+            const _mainnavigationbutton1 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1");
+            const _mainnavigationbutton2 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2");
+            const _mainnavigationbutton3 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3");
+            const _mainnavigationbutton4 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4");
+            const _mainnavigationbutton5 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5");
+            const _mainnavigationbutton6 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6");
 
-          if ( kycorelandingpagescrolledposition === 10 ) {
-            _mainanavigationbutton1.style.left = "0%";
-            _mainanavigationbutton1.style.opacity = "1";
-            _mainanavigationbutton2.style.top = "0%";
-            _mainanavigationbutton2.style.opacity = "1";
-            _mainanavigationbutton3.style.bottom =  "0%";
-            _mainanavigationbutton3.style.opacity = "1";
-            _mainanavigationbutton4.style.right = "0%";
-            _mainanavigationbutton4.style.opacity = "1";
-            _mainanavigationbutton5.style.top =  "0%";
-            _mainanavigationbutton5.style.opacity = "1";
-            _mainanavigationbutton6.style.top = "0%";
-            _mainanavigationbutton6.style.opacity = "1";
+            const { scrollTop, scrollHeight, clientHeight } = evt.target;
+            const kycorelangingpagescrolledcurrebtposition = Math.ceil(
+                (scrollTop / (scrollHeight - clientHeight)) * 100
+            );
+             console.log(kycorelangingpagescrolledcurrebtposition)
+
+             switch(kycorelangingpagescrolledcurrebtposition) {
+              case 11:
+              _mainnavigationbutton1.style.left = "-100%";
+              _mainnavigationbutton1.style.opacity = "0";
+              break;
+              case 12: 
+              _mainnavigationbutton1.style.left = "0%";
+              _mainnavigationbutton1.style.opacity = "1";
+              _mainnavigationbutton2.style.top = "-100%";
+              _mainnavigationbutton2.style.opacity = "0";
+              break;
+              case 13: 
+              _mainnavigationbutton2.style.top = "0%";
+              _mainnavigationbutton2.style.opacity = "1";
+              _mainnavigationbutton3.style.bottom = "-100%";
+              _mainnavigationbutton3.style.opacity = "0";
+              break;
+              case 17: 
+              _mainnavigationbutton3.style.bottom = "0%";
+              _mainnavigationbutton3.style.opacity = "1";
+              _mainnavigationbutton4.style.right = "-100%";
+              _mainnavigationbutton4.style.opacity = "0";
+              break;
+              case 20: 
+              _mainnavigationbutton4.style.right = "0%";
+              _mainnavigationbutton4.style.opacity = "1";
+              _mainnavigationbutton5.style.top = "-100%";
+              _mainnavigationbutton5.style.opacity = "0";
+              break;
+              case 22: 
+              _mainnavigationbutton5.style.top = "0%";
+              _mainnavigationbutton5.style.opacity = "1";
+              _mainnavigationbutton6.style.top = "-100%";
+              _mainnavigationbutton6.style.opacity = "0";
+              break;
+              case 24: 
+              _mainnavigationbutton6.style.top = "0%";
+              _mainnavigationbutton6.style.opacity = "1";
+              break;
+              default:
+             }
+          } else {
+            alert("Invoked")
           }
 
          }}>
@@ -116,22 +148,42 @@ export default function KYcoreLandingPage(props) {
              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
                 onClick={async ()=> {
 
+                  const _kycorelandingpage = document.getElementById("kycorelandingpage-core");
+                  _kycorelandingpage.scrollTo({
+                    top: 202210,
+                    left: 0,
+                    behavior: 'smooth'
+                  });
+
                   const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
                   const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
                   const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
                   const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
                   const _kycoreloadingefectbackground4 = document.getElementById("kycorelandingpage-coreloadingeffect-background4");
 
-                  _kycoreloadingeffectmodal.style.top = "0%";
-                  _kycoreloadingefectbackground1.style.top = "0%";
-                  _kycoreloadingefectbackground2.style.left = "0%";
-                  _kycoreloadingefectbackground3.style.bottom = "0%";
-                  _kycoreloadingefectbackground4.style.right =  "0%";
+                  const _kycorelanunchingoffoffbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5-transitioncontainer");
+                  const _kycorelanunchingoffnormalbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4-transitioncontainer");
+                  const _kycorelanunchingoffheatingbargraphtransitioncontainer  = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3-transitioncontainer");
+                  const _kycorelanunchingoffminimizingbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer");
+                  const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
 
+                   _kycoreloadingeffectmodal.style.top = "0%";
+                   _kycoreloadingefectbackground1.style.top = "0%";
+                   _kycoreloadingefectbackground2 .style.left = "0%";
+                   _kycoreloadingefectbackground3.style.bottom = "0%";
+                   _kycoreloadingefectbackground4.style.right = "0%";
+ 
+                  
+                  _kycorelanunchingoffoffbargraphtransitioncontainer.style.opacity = "0";
+                  _kycorelanunchingoffnormalbargraphtransitioncontainer.style.opacity = "0";
+                  _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "0";
+                  _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "0";
+                  _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "0";
+                 
 
                   _kycoreloadingeffectmodal.style.opacity = "0%";
 
-                  await _coreloadingeffectdefaultmodalproportioncbfunction();
+                 await _coreloadingeffectdefaultmodalproportioncbfunction();
 
                 }}
                 onMouseEnter={()=> {
@@ -251,6 +303,13 @@ export default function KYcoreLandingPage(props) {
       </Row>
      </Col>
 
+     <Col xs={12}  
+          md={12}
+          lg={12}
+          id="kycorelandingpage-xslaunchingeffectscrollingcontainer">
+            
+     </Col>
+
      <Col xs={12}
          md={12}
          lg={12}
@@ -280,28 +339,8 @@ export default function KYcoreLandingPage(props) {
     
     </Row>
 
-    <Row id="kycorelandingpage-coreloadingeffect"
-         onClick={()=> {
-
-          const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
-          const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
-          const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
-          const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
-          const _kycoreloadingefectbackground4 = document.getElementById("kycorelandingpage-coreloadingeffect-background4");
-
-        }}>
-      <Col id="kycorelandingpage-coreloadingeffect-background1">
-      </Col>
-      <Col id="kycorelandingpage-coreloadingeffect-background2">
-      </Col>
-      <Col id="kycorelandingpage-coreloadingeffect-background3">
-      </Col>
-      <Col id="kycorelandingpage-coreloadingeffect-background4">
-      </Col>
-    </Row>
-
     <Row id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect">
-
+      
     </Row>
 
     <Row id="kycorelandingpage-dataview"> 
@@ -315,6 +354,96 @@ export default function KYcoreLandingPage(props) {
       <HomeDataView />
      </Col>
     </Row>
+
+    <Row id="kycorelandingpage-coreloadingeffect"
+         onClick={()=> {
+
+          const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
+          const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
+          const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
+          const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
+          const _kycoreloadingefectbackground4 = document.getElementById("kycorelandingpage-coreloadingeffect-background4");
+
+        }}>
+
+      <Row id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorcontainer">
+        <Col xs={7}
+             md={7}
+             lg={7}
+             id="kycorelandingpage-coreloadingeffect-launchingoffbargraphstatusindicatorcontainer">
+          <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer1">
+            <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Category 1</p>
+            <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Danger</p>
+          </Col>
+          <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer2">
+           <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Category 1</p>
+           <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Minimizing</p>
+          </Col>
+          <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer3">
+           <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Category 1</p>
+           <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Heating</p>
+          </Col>
+          <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer4">
+           <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Category 1</p>
+           <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Normal</p>
+          </Col>
+          <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer5">
+           <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">Category 1</p>
+           <p className="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-statusindicationcontainer-headerindication">OFF</p>
+          </Col>
+        </Col>
+        <Col xs={5}
+             md={5}
+             lg={5}
+             id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer">
+
+          <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphcontainer">
+            <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1">
+              <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-colorcontainer">
+              </Col>
+               <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer">
+              </Col>
+            </Col>
+            <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2">
+             <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-colorcontainer">
+              </Col>
+               <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer">
+              </Col>
+            </Col>
+            <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3">
+             <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3-colorcontainer">
+              </Col>
+               <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3-transitioncontainer">
+              </Col>
+            </Col>
+            <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4">
+             <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4-colorcontainer">
+              </Col>
+               <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4-transitioncontainer">
+              </Col>
+            </Col>
+            <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5">
+             <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5-colorcontainer">
+              </Col>
+               <Col id="kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5-transitioncontainer">
+              </Col>
+            </Col>
+          </Col>
+        </Col>
+      </Row>
+        
+      <Col id="kycorelandingpage-coreloadingeffect-background1">
+      </Col>
+      <Col id="kycorelandingpage-coreloadingeffect-background2">
+      </Col>
+      <Col id="kycorelandingpage-coreloadingeffect-background3">
+      </Col>
+      <Col id="kycorelandingpage-coreloadingeffect-background4">
+      </Col>
+      
+      
+    </Row>
+
     
   </Col>
  )
