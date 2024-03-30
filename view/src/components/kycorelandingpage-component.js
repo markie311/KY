@@ -71,41 +71,41 @@ export default function KYcoreLandingPage(props) {
              console.log(kycorelangingpagescrolledcurrentposition)
       
              switch(kycorelangingpagescrolledcurrentposition) {
-              case 10:
+              case 4:
               _mainnavigationbutton1.style.left = "-105%";
               _mainnavigationbutton1.style.opacity = "0";
               break;
-              case 12: 
+              case 5: 
               _mainnavigationbutton1.style.left = "0%";
               _mainnavigationbutton1.style.opacity = "1";
               _mainnavigationbutton2.style.top = "-105%";
               _mainnavigationbutton2.style.opacity = "0";
               break;
-              case 14: 
+              case 8: 
               _mainnavigationbutton2.style.top = "0%";
               _mainnavigationbutton2.style.opacity = "1";
               _mainnavigationbutton3.style.bottom = "-105%";
               _mainnavigationbutton3.style.opacity = "0";
               break;
-              case 16: 
+              case 9: 
               _mainnavigationbutton3.style.bottom = "0%";
               _mainnavigationbutton3.style.opacity = "1";
               _mainnavigationbutton4.style.right = "-105%";
               _mainnavigationbutton4.style.opacity = "0";
               break;
-              case 18: 
+              case 10: 
               _mainnavigationbutton4.style.right = "0%";
               _mainnavigationbutton4.style.opacity = "1";
               _mainnavigationbutton5.style.top = "-105%";
               _mainnavigationbutton5.style.opacity = "0";
               break;
-              case 20: 
+              case 11: 
               _mainnavigationbutton5.style.top = "0%";
               _mainnavigationbutton5.style.opacity = "1";
               _mainnavigationbutton6.style.bottom = "-105%";
               _mainnavigationbutton6.style.opacity = "0";
               break;
-              case 22: 
+              case 12: 
               _mainnavigationbutton6.style.bottom = "0%";
               _mainnavigationbutton6.style.opacity = "1";
               break;
