@@ -351,9 +351,30 @@ export default function KYcoreLandingPage(props) {
     
     </Row>
 
-    <Row id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect">
+    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect1">
+      <img src="../images/landingpage/launchingoffs/fire.jpg"
+           className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
+           alt="KY-IMAGE-FIREBG"/>
       
-    </Row>
+    </Col>
+
+    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect2">
+      <img src="../images/landingpage/launchingoffs/fire.jpg"
+           className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
+           alt="KY-IMAGE-FIREBG"/>
+    </Col>
+
+    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect3">
+      <img src="../images/landingpage/launchingoffs/fire.jpg"
+           className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
+           alt="KY-IMAGE-FIREBG"/>
+    </Col>
+
+    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect4">
+      <img src="../images/landingpage/launchingoffs/fire.jpg"
+           className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
+           alt="KY-IMAGE-FIREBG"/>
+    </Col>
 
     <Row id="kycorelandingpage-dataview"> 
      <Col xs={12}
@@ -455,6 +476,7 @@ export default function KYcoreLandingPage(props) {
       
       
     </Row>
+
 
     
   </Col>
