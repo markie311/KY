@@ -14,8 +14,7 @@ background-color:black;
 height:100vh;
 width:100vw;
 padding:0;
-overflow-x:hidden;
-overflow-y:scroll;
+overflow:hidden;
 }
 #kycore::-webkit-scrollbar {
 display: none;

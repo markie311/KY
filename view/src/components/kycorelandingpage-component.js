@@ -17,9 +17,9 @@ export default function KYcoreLandingPage(props) {
    setdefaultcoreloadingeffectmodalproportion()
  }
 
- function setdefaultcoreloadingeffectmodalproportion() {
+ async function setdefaultcoreloadingeffectmodalproportion() {
 
-  setTimeout( ()=> {
+  await setTimeout( ()=> {
 
     const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
     const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
@@ -33,16 +33,11 @@ export default function KYcoreLandingPage(props) {
     const _kycorelanunchingoffminimizingbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer");
     const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
 
-    const _launchinhofffirebg1 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect1");
-    const _launchinhofffirebg2 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect2");
-    const _launchinhofffirebg3 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect3");
-    const _launchinhofffirebg4 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect4");
+    const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
 
-  //  _launchinhofffirebg1.style.opacity = "0";
-  //  _launchinhofffirebg2.style.opacity = "0";
-  //  _launchinhofffirebg3.style.opacity = "0";
-  //  _launchinhofffirebg4.style.opacity = "0";
+    _launchinhofffirebg.style.zIndex = "1";
 
+    _kycoreloadingeffectmodal.style.top = "100%";     
     _kycoreloadingefectbackground1.style.top = "-100%";
     _kycoreloadingefectbackground2.style.left = "-100%";
     _kycoreloadingefectbackground3.style.bottom = "-100%";
@@ -55,29 +50,34 @@ export default function KYcoreLandingPage(props) {
     _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "1";
     _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "1";
     _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "1";
+    
+    _launchinhofffirebg.style.opacity = "0";
 
   }, 5500)
 
-  setdefaultcoreloadingeffectfirebgsproportion();
+  await scrolltodataview();
 
  }
 
 
- function setdefaultcoreloadingeffectfirebgsproportion () {
+ function scrolltodataview() {
+
   setTimeout(()=> {
 
-    const _launchinhofffirebg1 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect1");
-    const _launchinhofffirebg2 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect2");
-    const _launchinhofffirebg3 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect3");
-    const _launchinhofffirebg4 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect4");
+   const _kycorelandingpage = document.getElementById("kycorelandingpage-core");
+   const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
 
-    _launchinhofffirebg1.style.opacity = "0";
-    _launchinhofffirebg2.style.opacity = "0";
-    _launchinhofffirebg3.style.opacity = "0";
-    _launchinhofffirebg4.style.opacity = "0";
+   _kycorelandingpage.scrollTo({
+       top: 2800,
+       left: 0,
+       behavior: 'smooth'
+    });
+  
+   _launchinhofffirebg.style.top = "-100%";
 
+  }, 6000)
+  
 
-  }, 20000)
  }
 
  return ( 
@@ -193,13 +193,6 @@ export default function KYcoreLandingPage(props) {
              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
                 onClick={async ()=> {
 
-                 // const _kycorelandingpage = document.getElementById("kycorelandingpage-core");
-               //   _kycorelandingpage.scrollTo({
-              //      top: 202210,
-             //       left: 0,
-             //       behavior: 'smooth'
-            //      });
-
                   const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
                   const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
                   const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
@@ -212,15 +205,10 @@ export default function KYcoreLandingPage(props) {
                   const _kycorelanunchingoffminimizingbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer");
                   const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
 
-                  const _launchinhofffirebg1 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect1");
-                  const _launchinhofffirebg2 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect2");
-                  const _launchinhofffirebg3 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect3");
-                  const _launchinhofffirebg4 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect4");
-
-                  _launchinhofffirebg1.style.opacity = "1";
-                  _launchinhofffirebg2.style.opacity = "1";
-                  _launchinhofffirebg3.style.opacity = "1";
-                  _launchinhofffirebg4.style.opacity = "1";
+                  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+                  
+                   _launchinhofffirebg.style.top = "0%";
+                   _launchinhofffirebg.style.opacity = "1";
 
                    _kycoreloadingeffectmodal.style.top = "0%";
                    _kycoreloadingefectbackground1.style.top = "0%";
@@ -228,16 +216,15 @@ export default function KYcoreLandingPage(props) {
                    _kycoreloadingefectbackground3.style.bottom = "0%";
                    _kycoreloadingefectbackground4.style.right = "0%";
 
-                  _kycorelanunchingoffoffbargraphtransitioncontainer.style.opacity = "0";
-                  _kycorelanunchingoffnormalbargraphtransitioncontainer.style.opacity = "0";
-                  _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "0";
-                  _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "0";
-                  _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "0";
-                 
+                   _kycorelanunchingoffoffbargraphtransitioncontainer.style.opacity = "0";
+                   _kycorelanunchingoffnormalbargraphtransitioncontainer.style.opacity = "0";
+                   _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "0";
+                   _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "0";
+                   _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "0";
+                
+                   _kycoreloadingeffectmodal.style.opacity = "0%";
 
-                  _kycoreloadingeffectmodal.style.opacity = "0%";
-
-                  await _coreloadingeffectdefaultmodalproportioncbfunction();
+                   await _coreloadingeffectdefaultmodalproportioncbfunction();
 
                 }}
                 onMouseEnter={()=> {
@@ -393,29 +380,11 @@ export default function KYcoreLandingPage(props) {
     
     </Row>
 
-    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect1">
+    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect">
       <img src="../images/landingpage/launchingoffs/fire.jpg"
            className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
            alt="KY-IMAGE-FIREBG"/>
       
-    </Col>
-
-    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect2">
-      <img src="../images/landingpage/launchingoffs/fire.jpg"
-           className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
-           alt="KY-IMAGE-FIREBG"/>
-    </Col>
-
-    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect3">
-      <img src="../images/landingpage/launchingoffs/fire.jpg"
-           className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
-           alt="KY-IMAGE-FIREBG"/>
-    </Col>
-
-    <Col id="kycorelandingpage-coreloadingeffect-launchoffloadingeffect4">
-      <img src="../images/landingpage/launchingoffs/fire.jpg"
-           className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
-           alt="KY-IMAGE-FIREBG"/>
     </Col>
 
     <Row id="kycorelandingpage-dataview"> 

@@ -21,6 +21,7 @@ height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
+overflow-x:hidden;
 overflow-y:scroll;
 }
 #kycorelandingpage-headercontainer{
@@ -142,6 +143,15 @@ border:1vh solid white;
 background-color:black;
 height:200%;
 width:100%;
+}
+#kycorelandingpage-coreloadingeffect-launchoffloadingeffect {
+position:absolute;
+height:100%;
+width:100%;
+transition: opacity 5s ease, top 0s;
+z-index:15;
+top:-100%;
+opacity:0;
 }
 #kycorelandingpage-coreloadingeffect-launchoffloadingeffect1 {
 position:absolute;
