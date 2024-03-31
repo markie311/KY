@@ -19,9 +19,7 @@ export default function KYcoreLandingPage(props) {
 
  async function setdefaultcoreloadingeffectmodalproportion() {
 
-  await setTimeout( ()=> {
-
-    const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
+  const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
     const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
     const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
     const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
@@ -34,9 +32,11 @@ export default function KYcoreLandingPage(props) {
     const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
 
     const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+  
 
-    _launchinhofffirebg.style.zIndex = "1";
+  await setTimeout( ()=> {
 
+  
     _kycoreloadingeffectmodal.style.top = "100%";     
     _kycoreloadingefectbackground1.style.top = "-100%";
     _kycoreloadingefectbackground2.style.left = "-100%";
@@ -50,34 +50,55 @@ export default function KYcoreLandingPage(props) {
     _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "1";
     _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "1";
     _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "1";
-    
-    _launchinhofffirebg.style.opacity = "0";
+
+  
 
   }, 5500)
 
-  await scrolltodataview();
-
+   scrolltodataview();
+   samp();
+   samp1();
  }
 
 
- function scrolltodataview() {
+ async function scrolltodataview() {
 
-  setTimeout(()=> {
+  const _kycorelandingpage = document.getElementById("kycorelandingpage-core");
+  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
 
-   const _kycorelandingpage = document.getElementById("kycorelandingpage-core");
-   const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+ await setTimeout( ()=> {
 
    _kycorelandingpage.scrollTo({
-       top: 2800,
+       top: 2900,
        left: 0,
        behavior: 'smooth'
-    });
-  
-   _launchinhofffirebg.style.top = "-100%";
+   })
 
   }, 6000)
-  
 
+ }
+
+ async function samp() {
+
+  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+
+  await setTimeout( ()=> {
+
+  _launchinhofffirebg.style.opacity = "0";
+ 
+   }, 6000)
+ }
+
+ async function samp1() {
+ 
+  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+
+  await setTimeout( ()=> {
+
+ 
+    _launchinhofffirebg.style.top = "-100%";
+ 
+   }, 9000)
  }
 
  return ( 
