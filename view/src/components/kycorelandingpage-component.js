@@ -193,12 +193,12 @@ export default function KYcoreLandingPage(props) {
              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
                 onClick={async ()=> {
 
-                  const _kycorelandingpage = document.getElementById("kycorelandingpage-core");
-                  _kycorelandingpage.scrollTo({
-                    top: 202210,
-                    left: 0,
-                    behavior: 'smooth'
-                  });
+                 // const _kycorelandingpage = document.getElementById("kycorelandingpage-core");
+               //   _kycorelandingpage.scrollTo({
+              //      top: 202210,
+             //       left: 0,
+             //       behavior: 'smooth'
+            //      });
 
                   const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
                   const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
