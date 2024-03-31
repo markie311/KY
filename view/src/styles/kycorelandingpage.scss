@@ -70,6 +70,7 @@ transition:1s ease;
 position:relative;
 transition:all 1.2s ease;
 left:-105%;
+transition: opacity 0s ease 0.5s;
 opacity:0;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2 {
@@ -95,6 +96,7 @@ position:relative;
 transition:all 1.2s ease;
 bottom:-105%;
 opacity:0;
+
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6 {
 position:relative;
@@ -150,6 +152,9 @@ top:1%;
 left:50%;
 transform: translate(-50%, -50%);
 padding:0;
+z-index:15;
+transition: opacity 20s ease;
+opacity:0;
 }
 #kycorelandingpage-coreloadingeffect-launchoffloadingeffect2 {
 position:absolute;
@@ -157,6 +162,9 @@ background-color: white;
 height:100%;
 width:5%;
 padding:0;
+z-index:15;
+transition: opacity 20s ease;
+opacity:0;
 }
 #kycorelandingpage-coreloadingeffect-launchoffloadingeffect3 {
 position:absolute;
@@ -165,6 +173,9 @@ height:100%;
 width:5%;
 right:0;
 padding:0;
+z-index:15;
+transition: opacity 20s ease;
+opacity:0;
 }
 #kycorelandingpage-coreloadingeffect-launchoffloadingeffect4 {
 position:relative;
@@ -174,7 +185,10 @@ width:90%;
 top:97%;
 left:50%;
 padding:0;
+z-index:15;
 transform: translate(-50%, 0%);
+transition: opacity 20s ease;
+opacity:0;
 }
 .kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage {
 position: relative;

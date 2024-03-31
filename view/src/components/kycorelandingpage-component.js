@@ -18,7 +18,8 @@ export default function KYcoreLandingPage(props) {
  }
 
  function setdefaultcoreloadingeffectmodalproportion() {
-  setTimeout(()=> {
+
+  setTimeout( ()=> {
 
     const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
     const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
@@ -31,6 +32,16 @@ export default function KYcoreLandingPage(props) {
     const _kycorelanunchingoffheatingbargraphtransitioncontainer  = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3-transitioncontainer");
     const _kycorelanunchingoffminimizingbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer");
     const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
+
+    const _launchinhofffirebg1 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect1");
+    const _launchinhofffirebg2 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect2");
+    const _launchinhofffirebg3 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect3");
+    const _launchinhofffirebg4 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect4");
+
+  //  _launchinhofffirebg1.style.opacity = "0";
+  //  _launchinhofffirebg2.style.opacity = "0";
+  //  _launchinhofffirebg3.style.opacity = "0";
+  //  _launchinhofffirebg4.style.opacity = "0";
 
     _kycoreloadingefectbackground1.style.top = "-100%";
     _kycoreloadingefectbackground2.style.left = "-100%";
@@ -46,9 +57,30 @@ export default function KYcoreLandingPage(props) {
     _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "1";
 
   }, 5500)
+
+  setdefaultcoreloadingeffectfirebgsproportion();
+
  }
 
- return (
+
+ function setdefaultcoreloadingeffectfirebgsproportion () {
+  setTimeout(()=> {
+
+    const _launchinhofffirebg1 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect1");
+    const _launchinhofffirebg2 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect2");
+    const _launchinhofffirebg3 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect3");
+    const _launchinhofffirebg4 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect4");
+
+    _launchinhofffirebg1.style.opacity = "0";
+    _launchinhofffirebg2.style.opacity = "0";
+    _launchinhofffirebg3.style.opacity = "0";
+    _launchinhofffirebg4.style.opacity = "0";
+
+
+  }, 20000)
+ }
+
+ return ( 
   <Col id="kycorelandingpage">
 
     <Row id="kycorelandingpage-core"
@@ -180,6 +212,16 @@ export default function KYcoreLandingPage(props) {
                   const _kycorelanunchingoffminimizingbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer");
                   const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
 
+                  const _launchinhofffirebg1 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect1");
+                  const _launchinhofffirebg2 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect2");
+                  const _launchinhofffirebg3 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect3");
+                  const _launchinhofffirebg4 = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect4");
+
+                  _launchinhofffirebg1.style.opacity = "1";
+                  _launchinhofffirebg2.style.opacity = "1";
+                  _launchinhofffirebg3.style.opacity = "1";
+                  _launchinhofffirebg4.style.opacity = "1";
+
                    _kycoreloadingeffectmodal.style.top = "0%";
                    _kycoreloadingefectbackground1.style.top = "0%";
                    _kycoreloadingefectbackground2 .style.left = "0%";
@@ -195,7 +237,7 @@ export default function KYcoreLandingPage(props) {
 
                   _kycoreloadingeffectmodal.style.opacity = "0%";
 
-                 await _coreloadingeffectdefaultmodalproportioncbfunction();
+                  await _coreloadingeffectdefaultmodalproportioncbfunction();
 
                 }}
                 onMouseEnter={()=> {
