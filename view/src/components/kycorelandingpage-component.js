@@ -19,7 +19,7 @@ export default function KYcoreLandingPage(props) {
 
  async function setdefaultcoreloadingeffectmodalproportion() {
 
-  const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
+    const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
     const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
     const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
     const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
@@ -56,8 +56,11 @@ export default function KYcoreLandingPage(props) {
   }, 5500)
 
    scrolltodataview();
-   samp();
-   samp1();
+
+   scrolltodataviewfireeffect();
+   scrolltodataviewremoveopacityfireeffect();
+   scrolltodataviewtotallyremovesplashfireeffect();
+
  }
 
 
@@ -78,27 +81,35 @@ export default function KYcoreLandingPage(props) {
 
  }
 
- async function samp() {
+ async function scrolltodataviewfireeffect() {
 
   const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
 
   await setTimeout( ()=> {
+    _launchinhofffirebg.style.top = "0%";
+    _launchinhofffirebg.style.opacity = "1";
+   }, 6500)
 
-  _launchinhofffirebg.style.opacity = "0";
- 
-   }, 6000)
  }
 
- async function samp1() {
+ async function scrolltodataviewremoveopacityfireeffect() {
  
   const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
 
   await setTimeout( ()=> {
+     _launchinhofffirebg.style.opacity = "0%";
+   }, 11100)
 
+ }
+
+ async function scrolltodataviewtotallyremovesplashfireeffect() {
  
-    _launchinhofffirebg.style.top = "-100%";
- 
-   }, 9000)
+  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+
+  await setTimeout( ()=> {
+     _launchinhofffirebg.style.top = "-100%";
+   }, 14200)
+   
  }
 
  return ( 
@@ -116,7 +127,12 @@ export default function KYcoreLandingPage(props) {
             const _mainnavigationbutton5 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5");
             const _mainnavigationbutton6 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6");
       
+            const _astronautcomponent = document.querySelector("#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
+
+            const _socilamediaandplatformsgridcontainer = document.querySelector("#homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer");
           
+            const _socialmediaandplatoformsdatamodal = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-facebooksocialmediaandplatformsdatacontainer");
+
             const { scrollTop, scrollHeight, clientHeight } = evt.target;
             const kycorelangingpagescrolledcurrentposition = Math.ceil(
                 (scrollTop / (scrollHeight - clientHeight)) * 100
@@ -125,42 +141,74 @@ export default function KYcoreLandingPage(props) {
       
              switch(kycorelangingpagescrolledcurrentposition) {
               case 4:
-              _mainnavigationbutton1.style.left = "-105%";
-              _mainnavigationbutton1.style.opacity = "0";
+               _mainnavigationbutton1.style.left = "-105%";
+               _mainnavigationbutton1.style.opacity = "0";
               break;
               case 5: 
-              _mainnavigationbutton1.style.left = "0%";
-              _mainnavigationbutton1.style.opacity = "1";
-              _mainnavigationbutton2.style.top = "-105%";
-              _mainnavigationbutton2.style.opacity = "0";
+               _mainnavigationbutton1.style.left = "0%";
+               _mainnavigationbutton1.style.opacity = "1";
+               _mainnavigationbutton2.style.top = "-105%";
+               _mainnavigationbutton2.style.opacity = "0";
               break;
               case 8: 
-              _mainnavigationbutton2.style.top = "0%";
-              _mainnavigationbutton2.style.opacity = "1";
-              _mainnavigationbutton3.style.bottom = "-105%";
-              _mainnavigationbutton3.style.opacity = "0";
+               _mainnavigationbutton2.style.top = "0%";
+               _mainnavigationbutton2.style.opacity = "1";
+               _mainnavigationbutton3.style.bottom = "-105%";
+               _mainnavigationbutton3.style.opacity = "0";
               break;
               case 9: 
-              _mainnavigationbutton3.style.bottom = "0%";
-              _mainnavigationbutton3.style.opacity = "1";
-              _mainnavigationbutton4.style.right = "-105%";
-              _mainnavigationbutton4.style.opacity = "0";
+               _mainnavigationbutton3.style.bottom = "0%";
+               _mainnavigationbutton3.style.opacity = "1";
+               _mainnavigationbutton4.style.right = "-105%";
+               _mainnavigationbutton4.style.opacity = "0";
               break;
               case 10: 
-              _mainnavigationbutton4.style.right = "0%";
-              _mainnavigationbutton4.style.opacity = "1";
-              _mainnavigationbutton5.style.top = "-105%";
-              _mainnavigationbutton5.style.opacity = "0";
+               _mainnavigationbutton4.style.right = "0%";
+               _mainnavigationbutton4.style.opacity = "1";
+               _mainnavigationbutton5.style.top = "-105%";
+               _mainnavigationbutton5.style.opacity = "0";
               break;
               case 11: 
-              _mainnavigationbutton5.style.top = "0%";
-              _mainnavigationbutton5.style.opacity = "1";
-              _mainnavigationbutton6.style.bottom = "-105%";
-              _mainnavigationbutton6.style.opacity = "0";
+               _mainnavigationbutton5.style.top = "0%";
+               _mainnavigationbutton5.style.opacity = "1";
+               _mainnavigationbutton6.style.bottom = "-105%";
+               _mainnavigationbutton6.style.opacity = "0";
               break;
               case 12: 
-              _mainnavigationbutton6.style.bottom = "0%";
-              _mainnavigationbutton6.style.opacity = "1";
+               _mainnavigationbutton6.style.bottom = "0%";
+               _mainnavigationbutton6.style.opacity = "1";
+              break;
+              case 35: 
+               _astronautcomponent.style.top= "80%";
+              break;
+              case 37: 
+               _astronautcomponent.style.top= "0%";
+              break;
+               case 46: 
+                _socilamediaandplatformsgridcontainer.style.top = "20%";
+                _socilamediaandplatformsgridcontainer.style.opacity = "0";
+                break;
+               case 47: 
+                _socilamediaandplatformsgridcontainer.style.top = "0%";
+                _socilamediaandplatformsgridcontainer.style.opacity = "1";
+               break;
+               case 54: 
+               _socialmediaandplatoformsdatamodal[0].style.top = "800px";
+               break;
+              case 55: 
+               _socialmediaandplatoformsdatamodal[0].style.top = "0px";
+               break;
+              case 57: 
+              _socialmediaandplatoformsdatamodal[1].style.top = "800px";
+              break;
+              case 58: 
+               _socialmediaandplatoformsdatamodal[1].style.top = "0px";
+              break;
+              case 62: 
+              _socialmediaandplatoformsdatamodal[2].style.top = "800px";
+              break;
+              case 63: 
+              _socialmediaandplatoformsdatamodal[2].style.top = "0px";
               break;
               default:
              }
@@ -227,25 +275,22 @@ export default function KYcoreLandingPage(props) {
                   const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
 
                   const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
-                  
-                   _launchinhofffirebg.style.top = "0%";
-                   _launchinhofffirebg.style.opacity = "1";
 
-                   _kycoreloadingeffectmodal.style.top = "0%";
-                   _kycoreloadingefectbackground1.style.top = "0%";
-                   _kycoreloadingefectbackground2 .style.left = "0%";
-                   _kycoreloadingefectbackground3.style.bottom = "0%";
-                   _kycoreloadingefectbackground4.style.right = "0%";
+                  _kycoreloadingeffectmodal.style.top = "0%";
+                  _kycoreloadingefectbackground1.style.top = "0%";
+                  _kycoreloadingefectbackground2 .style.left = "0%";
+                  _kycoreloadingefectbackground3.style.bottom = "0%";
+                  _kycoreloadingefectbackground4.style.right = "0%";
 
-                   _kycorelanunchingoffoffbargraphtransitioncontainer.style.opacity = "0";
-                   _kycorelanunchingoffnormalbargraphtransitioncontainer.style.opacity = "0";
-                   _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "0";
-                   _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "0";
-                   _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "0";
-                
-                   _kycoreloadingeffectmodal.style.opacity = "0%";
+                  _kycorelanunchingoffoffbargraphtransitioncontainer.style.opacity = "0";
+                  _kycorelanunchingoffnormalbargraphtransitioncontainer.style.opacity = "0";
+                  _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "0";
+                  _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "0";
+                  _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "0";
+              
+                  _kycoreloadingeffectmodal.style.opacity = "0%";
 
-                   await _coreloadingeffectdefaultmodalproportioncbfunction();
+                  await _coreloadingeffectdefaultmodalproportioncbfunction();
 
                 }}
                 onMouseEnter={()=> {
