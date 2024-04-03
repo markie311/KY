@@ -420,7 +420,7 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
    }
   ].map((skillscompilation, skillscompilationidx)=> {
 
-      if ( skillscompilationidx === 0 ) {
+    if ( skillscompilationidx === 0 ) {
       return (
        <Col key={skillscompilationidx}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer">
@@ -927,12 +927,12 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
         }
        </Col>     
        )
-      } 
+    } 
 
       if ( skillscompilationidx === 1 ) {
         return (
          <Col key={skillscompilationidx}
-            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer">
+              className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer">
         <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer">
 
         <div class="circle-wrap"

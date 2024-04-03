@@ -137,6 +137,7 @@ export default function KYcoreLandingPage(props) {
             const kycorelangingpagescrolledcurrentposition = Math.ceil(
                 (scrollTop / (scrollHeight - clientHeight)) * 100
             );
+            
              console.log(kycorelangingpagescrolledcurrentposition)
       
              switch(kycorelangingpagescrolledcurrentposition) {
@@ -199,16 +200,46 @@ export default function KYcoreLandingPage(props) {
                _socialmediaandplatoformsdatamodal[0].style.top = "0px";
                break;
               case 57: 
-              _socialmediaandplatoformsdatamodal[1].style.top = "800px";
+               _socialmediaandplatoformsdatamodal[1].style.top = "800px";
               break;
               case 58: 
                _socialmediaandplatoformsdatamodal[1].style.top = "0px";
               break;
               case 62: 
-              _socialmediaandplatoformsdatamodal[2].style.top = "800px";
+               _socialmediaandplatoformsdatamodal[2].style.top = "800px";
               break;
               case 63: 
-              _socialmediaandplatoformsdatamodal[2].style.top = "0px";
+               _socialmediaandplatoformsdatamodal[2].style.top = "0px";
+              break;
+              case 68: 
+               _socialmediaandplatoformsdatamodal[3].style.top = "800px";
+              break;
+              case 69: 
+               _socialmediaandplatoformsdatamodal[3].style.top = "0px";
+              break;
+              case 71: 
+              _socialmediaandplatoformsdatamodal[4].style.top = "800px";
+              break;
+              case 73: 
+               _socialmediaandplatoformsdatamodal[4].style.top = "0px";
+              break;
+              case 74: 
+               _socialmediaandplatoformsdatamodal[5].style.top = "800px";
+              break;
+              case 75: 
+               _socialmediaandplatoformsdatamodal[5].style.top = "0px";
+              break;
+              case 77: 
+              _socialmediaandplatoformsdatamodal[6].style.top = "800px";
+              break;
+              case 79: 
+              _socialmediaandplatoformsdatamodal[6].style.top = "0px";
+              break;
+              case 81: 
+              _socialmediaandplatoformsdatamodal[7].style.top = "800px";
+              break;
+              case 83: 
+              _socialmediaandplatoformsdatamodal[7].style.top = "0px";
               break;
               default:
              }
@@ -554,8 +585,6 @@ export default function KYcoreLandingPage(props) {
       
     </Row>
 
-
-    
   </Col>
  )
 }
