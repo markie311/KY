@@ -67,10 +67,6 @@ function DataviewHomeComponent(props) {
 
         <Row id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer">
           
-          <img src="../images/landingpage/launchingoffs/planethomebackgroundimagearrival.jpg"
-               id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-backgroundimage"
-               alt="KY-IMAGE-PLANETHOMEBACKGROUNDATARRIVAL"/>
-         
           {
            [
             {
