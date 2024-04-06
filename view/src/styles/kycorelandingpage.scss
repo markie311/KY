@@ -211,10 +211,11 @@ position:absolute;
 background-color:rgba(255,255,255,0.2);
 border:0.1vh solid orange;
 border-left:none;
-height:100%;
+height:95%;
 width:10%;
-margin-left:auto;
-margin-right:auto;
+top:50%;
+left:10%;
+transform:translate(-50%,-50%);
 }
 #kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicatorcontainer {
 position:absolute;
@@ -585,7 +586,7 @@ color:white;
 outline-style:none;
 }
 #kycorelandingpage-dataview-dataviewcontainer {
-position:realtive;
+position:relative;
 border:1vh solid red;
 height:90%;
 width:100%;
