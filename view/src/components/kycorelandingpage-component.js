@@ -68,13 +68,16 @@ export default function KYcoreLandingPage(props) {
 
   const _kycorelandingpage = document.getElementById("kycorelandingpage-core");
   const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+  const _astronautcomponent = document.querySelector("#homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
+  
+  _astronautcomponent.style.top= "0%";
 
  await setTimeout( ()=> {
 
    _kycorelandingpage.scrollTo({
-       top: 2900,
-       left: 0,
-       behavior: 'smooth'
+     top: 3870,
+     left: 0,
+     behavior: 'smooth'
    })
 
   }, 6000)
@@ -88,7 +91,7 @@ export default function KYcoreLandingPage(props) {
   await setTimeout( ()=> {
     _launchinhofffirebg.style.top = "0%";
     _launchinhofffirebg.style.opacity = "1";
-   }, 6500)
+   }, 6000)
 
  }
 
@@ -179,17 +182,17 @@ export default function KYcoreLandingPage(props) {
                _mainnavigationbutton6.style.bottom = "0%";
                _mainnavigationbutton6.style.opacity = "1";
               break;
-              case 35: 
+              case 30: 
                _astronautcomponent.style.top= "80%";
               break;
-              case 37: 
+              case 34: 
                _astronautcomponent.style.top= "0%";
               break;
-               case 46: 
+               case 43: 
                 _socilamediaandplatformsgridcontainer.style.top = "20%";
                 _socilamediaandplatformsgridcontainer.style.opacity = "0";
                 break;
-               case 47: 
+               case 45: 
                 _socilamediaandplatformsgridcontainer.style.top = "0%";
                 _socilamediaandplatformsgridcontainer.style.opacity = "1";
                break;
@@ -583,6 +586,38 @@ export default function KYcoreLandingPage(props) {
       </Col>
       
       
+    </Row>
+
+    <Row id="kycorelandingpage-socialmediaandplatformsnavigationindicator"> 
+
+     <Col id="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicatorcontainer">
+      <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
+        </Col>
+        <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
+        </Col>
+        <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
+        </Col>
+        <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
+        </Col>
+        <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
+        </Col>
+        <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
+        </Col>
+     </Col>
+
+     <Col id="kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator">
+      
+        <img src="../images/landingpage/icons/spaceship.png"
+             id="kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-spaceship"
+             alt="KY-IMAGE-SPACESHIP"/>
+
+        <Col id="kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-tooltipnavigationlocationindicationcontainer">
+          <p className="kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-tooltipnavigationlocationindicationcontainer-closebuttonheaderindication">x</p>
+          <p className="kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-tooltipnavigationlocationindicationcontainer-headerindication">Location indication</p>
+        </Col>
+
+     </Col>
+
     </Row>
 
   </Col>

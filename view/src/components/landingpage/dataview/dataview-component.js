@@ -6,6 +6,7 @@ import "../../../styles/landingpage/dataview/dataview.scss";
 
 import AstronautComponent from "../../navigationsnippets/home/astronaut-component.js";
 import FacebookprofileComponent from "../../navigationsnippets/facebook/facebookprofile-component.js";
+import NavigationSnippetComponent from "../../landingpage/snippets/navigationsnippet-component.js";
 
 export default function DataviewComponent(props) {
 
@@ -63,9 +64,19 @@ function DataviewHomeComponent(props) {
            lg={8}
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer">
 
+
         <Row id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer">
+          
+          <img src="../images/landingpage/launchingoffs/planethomebackgroundimagearrival.jpg"
+               id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-backgroundimage"
+               alt="KY-IMAGE-PLANETHOMEBACKGROUNDATARRIVAL"/>
+         
           {
            [
+            {
+              icon: "",
+              tooltipheaderindication: "go back to astronaut data display"
+            },
             {
               icon: "../images/icons/socialmediaandplatforms/astronaut.png",
               tooltipheaderindication: "go back to astronaut data display"
@@ -91,69 +102,85 @@ function DataviewHomeComponent(props) {
               tooltipheaderindication: "go back to Gambebook data display"
             },
            ].map((icon, iconidx)=> {
-             return (
-             <Col key={iconidx}
-                  xs={4}
-                  md={1}
-                  lg={1}
-                  className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer">
-                  <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-imagecontainer">
-                  <img src={icon.icon} 
-                       className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-icon"
-                       alt="KY-IMAGE-ICON"
-                       onClick={()=> {
-  
-                        const _astronautcpmponentcontainer = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
-                        const _socialmediaandplatformshomedatamodal =   document.querySelector(".socilamediaandplatformshomedataview")
-                        const _socialmediaandplatformsrapporthomedatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-home")
-                        const _facebookprofilecomponentcontainer =  document.getElementById("facebookprofilecomponent");
-                        const _socialmediaandplatformsfacebookdatamodal =   document.querySelector(".socialmediaandplatformsfacebookdataview")
-                        const _socialmediaandplatformsrapportfacebookdatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-facebook")
-
-                        const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
-                        const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
-
-                        switch(iconidx) {
-                          case 0:
-                         //   props.socialmediaandplatformsdataviewcb((view)=> view = "home");
-                           _astronautcpmponentcontainer.style.top = "0%";
-                           _facebookprofilecomponentcontainer.style.left = "-105%";
-                           _socialmediaandplatformshomedatamodal.style.top = "0%";
-                           _socialmediaandplatformsfacebookdatamodal.style.top = "100%";
-                           _socialmediaandplatformsrapporthomedatamodal.style.top = "-3%";
-                           _socialmediaandplatformsrapportfacebookdatamodal.style.top = "100%";
-                           _skillscompilationcontainer[0].style.height = "23%"; 
-                           skillscompilationwebsitedevelopmentcb((view)=> view = "skills")
-                          break;
-                          case 1:
-                         //   props.socialmediaandplatformsdataviewcb((view)=> view = "facebook");
-                         _facebookprofilecomponentcontainer.style.left = "0%";
-                         _astronautcpmponentcontainer.style.top = "100%";
-                         _socialmediaandplatformshomedatamodal.style.top = "100%";
-                         _socialmediaandplatformsfacebookdatamodal.style.top = "0%";
-                         _socialmediaandplatformsrapporthomedatamodal.style.top = "100%";
-                         _socialmediaandplatformsrapportfacebookdatamodal.style.top = "0%";
-                          break;
-                          default:
-                         }
-
-                         }
-                       }
-                       onMouseEnter={()=> {
-                        const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
-                        _navigationimagetooltip[iconidx].style.display = "block";
-                      }}
-                      onMouseLeave={()=> {
-                          const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
-                          _navigationimagetooltip[iconidx].style.display = "none";
-                        }}/>
-                  </Col>
-                  <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer">
-                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
-                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-headerindication">{icon.tooltipheaderindication}</p>
+            if ( iconidx ===  0 ) {
+              return (
+                <Col xs={12}
+                     md={12}
+                     lg={12}
+                     id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer">
+                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication"></p>
+                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Arrival at Planet Home</p>
+                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Scroll to gather data here.</p>
+                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Current location: Base landing</p>
                 </Col>
-             </Col>
-             )
+              )
+            } else {
+              return (
+                <Col key={iconidx}
+                     xs={4}
+                     md={1}
+                     lg={1}
+                     className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer">
+                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-imagecontainer">
+                     <img src={icon.icon} 
+                          className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-icon"
+                          alt="KY-IMAGE-ICON"
+                          onClick={()=> {
+     
+                           const _astronautcpmponentcontainer = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
+                           const _socialmediaandplatformshomedatamodal =   document.querySelector(".socilamediaandplatformshomedataview")
+                           const _socialmediaandplatformsrapporthomedatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-home")
+                           const _facebookprofilecomponentcontainer =  document.getElementById("facebookprofilecomponent");
+                           const _socialmediaandplatformsfacebookdatamodal =   document.querySelector(".socialmediaandplatformsfacebookdataview")
+                           const _socialmediaandplatformsrapportfacebookdatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-facebook")
+   
+                           const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
+                           const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
+   
+                           switch(iconidx) {
+                             case 1:
+                              alert("Invoked")
+                            //   props.socialmediaandplatformsdataviewcb((view)=> view = "home");
+                           //   _astronautcpmponentcontainer.style.top = "0%";
+                           //   _facebookprofilecomponentcontainer.style.left = "-105%";
+                           //   _socialmediaandplatformshomedatamodal.style.top = "0%";
+                           //   _socialmediaandplatformsfacebookdatamodal.style.top = "100%";
+                           //   _socialmediaandplatformsrapporthomedatamodal.style.top = "-3%";
+                           //   _socialmediaandplatformsrapportfacebookdatamodal.style.top = "100%";
+                           //   _skillscompilationcontainer[0].style.height = "23%"; 
+                           //   skillscompilationwebsitedevelopmentcb((view)=> view = "skills")
+                             break;
+                             case 2:
+                              alert("Synced")
+                            //   props.socialmediaandplatformsdataviewcb((view)=> view = "facebook");
+                          //  _facebookprofilecomponentcontainer.style.left = "0%";
+                          //  _astronautcpmponentcontainer.style.top = "100%";
+                          //  _socialmediaandplatformshomedatamodal.style.top = "100%";
+                          //  _socialmediaandplatformsfacebookdatamodal.style.top = "0%";
+                          //  _socialmediaandplatformsrapporthomedatamodal.style.top = "100%";
+                          //  _socialmediaandplatformsrapportfacebookdatamodal.style.top = "0%";
+                             break;
+                             default:
+                            }
+   
+                            }
+                          }
+                          onMouseEnter={()=> {
+                           const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
+                           _navigationimagetooltip[iconidx].style.display = "block";
+                         }}
+                         onMouseLeave={()=> {
+                             const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
+                             _navigationimagetooltip[iconidx].style.display = "none";
+                           }}/>
+                     </Col>
+                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer">
+                     <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
+                     <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-headerindication">{icon.tooltipheaderindication}</p>
+                   </Col>
+                </Col>
+              )
+            }
            })
           }
         </Row>
@@ -1153,7 +1180,7 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
 
   })
  }
- </Col>
+  </Col>
   )
 }
 
@@ -1231,6 +1258,7 @@ function DataviewFaqsComponent() {
    </Row>
   ) 
  }
+
  function DataviewMarketingComponent() {
   return (
    <Row>

@@ -205,6 +205,89 @@ position: relative;
 height:100%;
 width:100%;
 }
+/// social media and plaftorms navigation indicator
+#kycorelandingpage-socialmediaandplatformsnavigationindicator {
+position:absolute;
+background-color:rgba(255,255,255,0.2);
+border:0.1vh solid orange;
+border-left:none;
+height:100%;
+width:10%;
+margin-left:auto;
+margin-right:auto;
+}
+#kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicatorcontainer {
+position:absolute;
+height:100%;
+width:100%;
+padding:0;
+}
+.kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator {
+position:relative;
+border:0.1vh solid magenta;
+height:16.7%;
+width:100%;
+}
+#kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator {
+position:absolute;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+height:8%;
+width:90%;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+top:95.5%;
+padding:0;
+}
+#kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-spaceship {
+position:absolute;
+height:100%;
+width:100%;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+}
+#kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-tooltipnavigationlocationindicationcontainer {
+position:absolute;
+background-color:white;
+height:10vh;
+width:80vw;
+top:-25%;
+left:170%;
+box-shadow:0 1px 8px rgba(0,0,0,0.5);
+padding:5px;
+transition: opacity 3s ease;
+opacity:1;
+}
+#kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-tooltipnavigationlocationindicationcontainer::after {
+content:'';
+position:absolute;
+width:25px;
+height:25px;
+top:50%;
+left:0%;
+transform:translate(-50%,-50%) rotate(45deg);
+background-color:#EEEEEE;
+box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+.kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-tooltipnavigationlocationindicationcontainer-closebuttonheaderindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+ weight:0;
+}
+left:95%;
+}
+.kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator-tooltipnavigationlocationindicationcontainer-headerindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+ weight:900;
+}
+text-align:center;
+top:-5%;
+}
 //// data display layout container
 #kycorelandingpage-datasdisplaylayoutcontainer{
 position:relative;

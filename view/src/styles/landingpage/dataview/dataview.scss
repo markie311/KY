@@ -31,6 +31,7 @@ padding:0;
 }
 .homesnippetcomponent-colcontainer-datamaininformationcontainer {
 position:relative;
+border:1vh solid red;
 height:160vh;
 margin-left:auto;
 margin-right:auto;
@@ -56,19 +57,41 @@ padding:0;
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer  {
 position:relative;
 background-color:$subbgcolor;
+border:1vh solid red;
 border-radius:20px;
 height:auto;
 width:90%;
 justify-content:space-evenly;
 margin-left:auto;
 margin-right:auto;
-padding:100px 30px;
+padding:0;
 transition:all 2s ease;
 top:20%;
 opacity:0;
 }
+#homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-backgroundimage {
+position:absolute;
+height:100%;
+width:100%;
+}
+#homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer {
+position:relative;
+border:0.1vh solid white;
+height:auto; 
+width:100%;
+padding:15px 0px;
+}
+.homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+}
+color:white;
+text-align:center;
+}
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer {
 position:relative; 
+border:1vh solid red;
 height:15vh;
 display:flex;
 justify-content:center;
@@ -300,7 +323,6 @@ justify-content:center;
 align-items:center;
 padding:25px 15px;
 transition: all 1s ease 0.5s;
-top:100%;
 }
 .socialmediaandplatformsfacebookdataview {
 position:absolute;
@@ -315,6 +337,7 @@ justify-content:center;
 align-items:center;
 padding:25px 15px;
 transition:1s ease 0.5s;
+top:100%;
 }
 .socilamediaandplatformsrapportdataview-home {
 position:absolute;
