@@ -8,6 +8,40 @@ import AstronautComponent from "../../navigationsnippets/home/astronaut-componen
 import FacebookprofileComponent from "../../navigationsnippets/facebook/facebookprofile-component.js";
 import NavigationSnippetComponent from "../../landingpage/snippets/navigationsnippet-component.js";
 
+function simplelaunchofffiredisplay() {
+
+  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+
+  _launchinhofffirebg.style.top = "0%";
+  _launchinhofffirebg.style.opacity = "1";
+
+}
+
+function donesimplelaunchofffiredisplay() {
+
+  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+
+   setTimeout( ()=> {
+    _launchinhofffirebg.style.opacity = "0";
+    compromisedonesimplelaunchofffiredisplay();
+   }, 5000)
+
+}
+
+function compromisedonesimplelaunchofffiredisplay() {
+
+  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+
+   setTimeout( ()=> {
+    _launchinhofffirebg.style.top = "-100%";
+   }, 6000)
+
+}
+
+
+
+
+
 export default function DataviewComponent(props) {
 
  if ( props.homedataview === "Home") {
@@ -122,7 +156,7 @@ function DataviewHomeComponent(props) {
                           className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-icon"
                           alt="KY-IMAGE-ICON"
                           onClick={()=> {
-     
+
                            const _astronautcpmponentcontainer = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
                            const _socialmediaandplatformshomedatamodal =   document.querySelector(".socilamediaandplatformshomedataview")
                            const _socialmediaandplatformsrapporthomedatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-home")
@@ -135,7 +169,10 @@ function DataviewHomeComponent(props) {
    
                            switch(iconidx) {
                              case 1:
-                              alert("Invoked")
+
+                              simplelaunchofffiredisplay();
+                              donesimplelaunchofffiredisplay();
+
                             //   props.socialmediaandplatformsdataviewcb((view)=> view = "home");
                            //   _astronautcpmponentcontainer.style.top = "0%";
                            //   _facebookprofilecomponentcontainer.style.left = "-105%";
