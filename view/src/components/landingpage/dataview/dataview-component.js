@@ -38,16 +38,14 @@ function compromisedonesimplelaunchofffiredisplay() {
 
 }
 
-
-
-
-
 export default function DataviewComponent(props) {
+
 
  if ( props.homedataview === "Home") {
   return (   
     <Col id="dataview"> 
-      <DataviewHomeComponent  homedataview={props.homedataview}
+      <DataviewHomeComponent  viewport={props.viewport}
+                              homedataview={props.homedataview}
                               homedataviewcb={props.homedataviewcb}
                               
                               socialmediaandplatformsdataview={props.socialmediaandplatformsdataview}
@@ -84,8 +82,8 @@ function DataviewHomeComponent(props) {
          md={3}
          lg={3}
          className="homesnippetcomponent-colcontainer-datamaininformationcontainer">
-       <AstronautComponent />
-       <FacebookprofileComponent />
+       <AstronautComponent viewport={props.viewport}/>
+       <FacebookprofileComponent viewport={props.viewport}/>
     </Col>
     <Col xs={12}
          md={9}
@@ -199,12 +197,17 @@ function DataviewHomeComponent(props) {
                             }
                           }
                           onMouseEnter={()=> {
-                           const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
-                           _navigationimagetooltip[iconidx].style.display = "block";
+                             if (props.viewport !== "xs") {
+                              const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
+                              _navigationimagetooltip[iconidx].style.display = "block";
+                             }
                          }}
                          onMouseLeave={()=> {
-                             const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
-                             _navigationimagetooltip[iconidx].style.display = "none";
+                          if (props.viewport !== "xs") {
+                            const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
+                            _navigationimagetooltip[iconidx].style.display = "none";
+                           }
+                        
                            }}/>
                      </Col>
                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer">
@@ -220,11 +223,13 @@ function DataviewHomeComponent(props) {
         
         <Row id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer">
 
-           <SocialmediaAndPlatformsHomeDataView skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}
+           <SocialmediaAndPlatformsHomeDataView viewport={props.viewport}
+                                                skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}
                                                 skillscompilationwebsitedevelopmentcb={skillscompilationwebsitedevelopmentcb} />
 
-           <SocialmediaAndPlatformsFacebookDataView skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}
-                                                    skillscompilationwebsitedevelopmentcb={skillscompilationwebsitedevelopmentcb} />
+           <SocialmediaAndPlatformsFacebookDataView  viewport={props.viewport}
+                                                     skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}
+                                                     skillscompilationwebsitedevelopmentcb={skillscompilationwebsitedevelopmentcb} />
 
         </Row>
 
@@ -236,9 +241,10 @@ function DataviewHomeComponent(props) {
            className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer"
            id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationsnippetcontainer">
  
-       <SocialmediaAndPlatformsRapportHomeDataView skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}/> 
+       <SocialmediaAndPlatformsRapportHomeDataView  viewport={props.viewport}
+                                                    skillscompilationwebsitedevelopment={skillscompilationwebsitedevelopment}/> 
 
-       <SocialmediaAndPlatformsRapportFacebookDataView />
+       <SocialmediaAndPlatformsRapportFacebookDataView  viewport={props.viewport}/>
       
 
       </Col>
@@ -272,17 +278,24 @@ function SocialmediaAndPlatformsHomeDataView(props) {
               className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer">
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer"
                   onMouseEnter={()=> {
-                    const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
-                    const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
+                    
+                    if (props.viewport !== "xs") {
+                      const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
+                      const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
+                   
+                      props.skillscompilationwebsitedevelopmentcb((view)=> view = "skills specification")
+                        _skillscompilationcontainer[0].style.height = "100%"; 
+                      //   _skillspecificationcontainer[0].style.height = "100%"; 
+                    }
                  
-                    props.skillscompilationwebsitedevelopmentcb((view)=> view = "skills specification")
-                      _skillscompilationcontainer[0].style.height = "100%"; 
-                    //   _skillspecificationcontainer[0].style.height = "100%"; 
                   }}
                   onMouseLeave={()=> {
-                    const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
-                    const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
-                    //  _skillscompilationcontainer[0].style.height = "23%"; 
+
+                    if (props.viewport !== "xs") { 
+                      const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
+                      const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
+                      //  _skillscompilationcontainer[0].style.height = "23%"; 
+                    }
                     
                     }}>
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Website development</p>
@@ -492,12 +505,17 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
 
               <div class="circle-wrap" 
                   onMouseEnter={()=> {
+                    if ( props.viewport !== "xs" ) {
+
                     const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                     _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
-                  }}
+                   }
+                   }}
                   onMouseLeave={()=> {
-                      // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                    if ( props.viewport !== "xs" ) { 
+                    // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                     //  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+                    }
                     }}>
 
                 <div class="circle">
@@ -527,8 +545,10 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
               </Col>
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer"
                   onMouseLeave={()=> {
+                     if (props.viewport !== "xs") {
                       const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                       _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+                     }
                     }}> 
                 <Row className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer">
                   <Col xs={12}
@@ -549,12 +569,16 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                                 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
                             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
                                 onMouseEnter={()=> {
-                                  const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                  _programminglanguageindicationtooltipcontainer[0].style.display = "block";
+                                  if (props.viewport !== "xs") { 
+                                    const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                    _programminglanguageindicationtooltipcontainer[0].style.display = "block";
+                                  }
                                 }}
                                 onMouseLeave={()=> {
+                                  if (props.viewport !== "xs") {  
                                     const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
                                     _programminglanguageindicationtooltipcontainer[0].style.display = "none";
+                                  }
                                   }}>HTML</p>
                           </Col>
                           <Col xs={12}
@@ -593,12 +617,16 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                                 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
                             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
                                 onMouseEnter={()=> {
-                                  const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                  _programminglanguageindicationtooltipcontainer[1].style.display = "block";
+                                  if (props.viewport !== "xs") {
+                                    const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                    _programminglanguageindicationtooltipcontainer[1].style.display = "block";
+                                  }
                                 }}
                                 onMouseLeave={()=> {
-                                  const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                  _programminglanguageindicationtooltipcontainer[1].style.display = "none";
+                                  if (props.viewport !== "xs") {
+                                    const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                    _programminglanguageindicationtooltipcontainer[1].style.display = "none";
+                                  }
                                 }}>CSS</p>
                           </Col>
                           <Col xs={12}
@@ -636,12 +664,17 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                                 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
                             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
                                 onMouseEnter={()=> {
-                                  const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                  _programminglanguageindicationtooltipcontainer[2].style.display = "block";
+                                  if (props.viewport !== "xs") {
+                                    const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                    _programminglanguageindicationtooltipcontainer[2].style.display = "block";
+                                  }
+                               
                                 }}
                                 onMouseLeave={()=> {
+                                  if (props.viewport !== "xs") { 
                                     const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
                                     _programminglanguageindicationtooltipcontainer[2].style.display = "none";
+                                  }
                                   }}>JAVASCRIPT</p>
                           </Col>
                           <Col xs={12}
@@ -685,12 +718,17 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                                 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
                             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
                                 onMouseEnter={()=> {
+                                 if ( props.viewport !== "xs") {
                                   const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
                                   _programminglanguageindicationtooltipcontainer[3].style.display = "block";
+                                 }
+                               
                                 }}
                                 onMouseLeave={()=> {
+                                  if (props.viewport !== "xs") {
                                     const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
                                     _programminglanguageindicationtooltipcontainer[3].style.display = "none";
+                                  }
                                   }}>XML</p>
                           </Col>
                           <Col xs={12}
@@ -729,12 +767,16 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                                 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
                             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
                                 onMouseEnter={()=> {
+                                 if (props.viewport !== "xs") {
                                   const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
                                   _programminglanguageindicationtooltipcontainer[4].style.display = "block";
+                                 }
                                 }}
                                 onMouseLeave={()=> {
+                                  if (props.viewport !== "xs") { 
                                     const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
                                     _programminglanguageindicationtooltipcontainer[4].style.display = "none";
+                                  }
                                   }}>Jquery</p>
                           </Col>
                           <Col xs={12}
@@ -772,12 +814,18 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                                 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationlayoutcontainer-headerindicationcontainer">
                             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-subheaderindication"
                                 onMouseEnter={()=> {
-                                  const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                  _programminglanguageindicationtooltipcontainer[5].style.display = "block";
+                                  if ( props.viewport !== "xs") {
+                                    const _programminglanguageindicationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
+                                    _programminglanguageindicationtooltipcontainer[5].style.display = "block";
+                                  }
+                               
                                 }}
                                 onMouseLeave={()=> {
+                                  if ( props.viewport !== "xs") {
                                     const _programminglanguageindicationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-headerindicationcontainer-tooltipcontainer");
-                                    _programminglanguageindicationtooltipcontainer[5].style.display = "none";
+                                    _programminglanguageindicationtooltipcontainer[5].style.display = "none"
+                                  }
+                                  
                                   }}>SCSS</p>
                           </Col>
                           <Col xs={12}
@@ -817,14 +865,18 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
                    onMouseEnter={()=> {
-                     const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
-                     _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                    if ( props.viewport !== "xs" ) {
+                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                      _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                    }
                    }}>Website specificatons and orders</p>
               </Col>
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer"
                    onMouseLeave={()=> {
-                     const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
-                    _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                    if ( props.viewport !== "xs" ) {
+                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                      _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                    }
                    }}>
                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                  <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">Website specification</h3>
@@ -837,19 +889,26 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
                    onMouseEnter={()=> {
-                    const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
-                    _websiteorderspecificationtooltipcontainer[1].style.display = "block";
+                    if ( props.viewport !== "xs" ) { 
+                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                      _websiteorderspecificationtooltipcontainer[1].style.display = "block";
+                    }
+                    
                   }}>Current orders</p>
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
                    onMouseEnter={()=> {
-                     const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
-                     _websiteorderspecificationtooltipcontainer[1].style.display = "block";
+                    if ( props.viewport !== "xs" ) { 
+                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                      _websiteorderspecificationtooltipcontainer[1].style.display = "block";
+                    }
                    }}>0 out of 3</p>
               </Col>
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer"
                    onMouseLeave={()=> {
-                     const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
-                    _websiteorderspecificationtooltipcontainer[1].style.display = "none";
+                    if ( props.viewport !== "xs" ) {  
+                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                      _websiteorderspecificationtooltipcontainer[1].style.display = "none";
+                    }
                    }}>
                   <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                  <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">Why out of 3?</h3>
@@ -863,19 +922,25 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-headerindicationcontainer">
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
                   onMouseEnter={()=> {
-                    const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
-                   _websiteorderspecificationtooltipcontainer[2].style.display = "block";
+                    if ( props.viewport !== "xs" ) {   
+                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                      _websiteorderspecificationtooltipcontainer[2].style.display = "block";
+                    }
                   }}>On queue, 0 reserved</p>
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
                    onMouseEnter={()=> {
-                     const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
-                     _websiteorderspecificationtooltipcontainer[2].style.display = "block";
+                    if ( props.viewport !== "xs" ) {   
+                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                      _websiteorderspecificationtooltipcontainer[2].style.display = "block";
+                    }
                    }}>By date sequence website ordered</p>
               </Col>
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer"
                      onMouseLeave={()=> {
-                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
-                     _websiteorderspecificationtooltipcontainer[2].style.display = "none";
+                      if ( props.viewport !== "xs" ) {   
+                        const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer");
+                        _websiteorderspecificationtooltipcontainer[2].style.display = "none";
+                      }
                     }}>
                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
                  <h3 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-headerindication">A decision followed</h3>
@@ -890,10 +955,12 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication">Current developers</p>
                 <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication"
                    onMouseEnter={()=> {
-                    const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer");
-                    const _websiteorderspecificationkyprofilepicturetooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer");
-                    _websiteorderspecificationtooltipcontainer[0].style.display = "block";
-                    _websiteorderspecificationkyprofilepicturetooltipcontainer[0].style.display = "block";
+                    if ( props.viewport !== "xs" ) {    
+                      const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer");
+                      const _websiteorderspecificationkyprofilepicturetooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer");
+                      _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                      _websiteorderspecificationkyprofilepicturetooltipcontainer[0].style.display = "block";
+                    }
                   }}>Mark Beloy, <span className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-titleheaderindication">Owner</span></p>
               </Col>
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer">
@@ -903,14 +970,18 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer-headerindication">KY development, 18/03/2024</p>
                    <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-detailscontainer-headerindication"
                       onMouseEnter={()=> {
-                        const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer");
-                        _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                        if ( props.viewport !== "xs" ) {    
+                          const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer");
+                          _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                        }
                       }}>KY profile picture</p>
                  </Col> 
                  <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer"
                       onMouseLeave={()=> {
-                         const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer");
-                         _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                        if ( props.viewport !== "xs" ) {   
+                          const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer");
+                          _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                        }
                        }}>
                     <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer-profilepicturecontainer">
                         <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-currentdeveloperstooltipcontainer-kyprofilepictureandmottotooltipcontainer-profilepicturecontainer-picturelayoutcontainer">
@@ -961,8 +1032,10 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
                        <span key={websitepossibilitiesidx}
                              className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-websitepossibilitiesheaderindication"
                              onMouseEnter={()=> {
-                              const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer");
-                              _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                              if ( props.viewport !== "xs" ) {
+                                const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer");
+                                _websiteorderspecificationtooltipcontainer[0].style.display = "block";
+                              }
                             }}>
                               {websitepossibilities}
                       </span>
@@ -975,8 +1048,10 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
               </Col>
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer"
                    onMouseLeave={()=> {
-                    const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer");
-                    _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                    if ( props.viewport !== "xs" ) { 
+                       const _websiteorderspecificationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer");
+                       _websiteorderspecificationtooltipcontainer[0].style.display = "none";
+                    }
                   }}>
                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-tooltipcontainer-closebuttonheaderindication">x</p> 
               </Col>
@@ -997,12 +1072,18 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
 
         <div class="circle-wrap"
              onMouseEnter={()=> {
-               const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
-               _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+                if ( props.viewport !== "xs") {
+                  const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                  _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+                }
+             
              }}
              onMouseLeave={()=> {
-                // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+              if ( props.viewport !== "xs") { 
+               // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                //  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+              }
+              
                }}>
 
            <div class="circle">
@@ -1032,8 +1113,10 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
         </Col>
         <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer"
              onMouseLeave={()=> {
-                 const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+               if (props.viewport !== "xs") {
+                const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                 _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+               }
               }}> 
             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-madclosebuttonheaderindication">x</p>
           <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer">
@@ -1071,12 +1154,17 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
 
         <div class="circle-wrap"
              onMouseEnter={()=> {
-               const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
-               _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+               if ( props.viewport !== "xs") {  
+                const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+               }
              }}
              onMouseLeave={()=> {
+              if ( props.viewport !== "xs") {  
                 // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                //  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+              }
+              
                }}>
 
            <div class="circle">
@@ -1106,8 +1194,10 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
         </Col>
         <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer"
              onMouseLeave={()=> {
-                 const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+              if (props.viewport !== "xs") {
+                const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                 _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+              }
               }}> 
             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-madclosebuttonheaderindication">x</p>
           <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer">
@@ -1145,12 +1235,17 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
 
         <div class="circle-wrap"
              onMouseEnter={()=> {
-               const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
-               _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+                if (props.viewport !== "xs") { 
+                const _skillscompilationtooltipcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                _skillscompilationtooltipcontainer [skillscompilationidx].style.display = "block";
+                }
              }}
              onMouseLeave={()=> {
-                // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+              if (props.viewport !== "xs") {  
+               // const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
                //  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+              }
+           
                }}>
 
            <div class="circle">
@@ -1180,8 +1275,10 @@ function SocialmediaAndPlatformsRapportHomeDataView(props) {
         </Col>
         <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer"
              onMouseLeave={()=> {
-                 const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
-                _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+                if (props.viewport !== "xs") {   
+                  const  _skillscompilationtooltipcontainer= document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer");
+                  _skillscompilationtooltipcontainer[skillscompilationidx].style.display = "none";
+                }
               }}> 
             <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-gridcontainer-colcontainer-madclosebuttonheaderindication">x</p>
           <Col id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer">

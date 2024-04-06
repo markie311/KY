@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 
-export default function AstronautComponent() {
+export default function AstronautComponent(props) {
  return (
    <Row id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer">
     <Col xs={12}
@@ -21,12 +21,17 @@ export default function AstronautComponent() {
             id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-astronautimage"
             alt="KY-IMAGE-ASTRONAUT"
             onMouseEnter={()=> {
-              const _astronautimagetooltip = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer");
-              _astronautimagetooltip.style.display = "block";
+              if (props.viewport !== "xs")  {
+                const _astronautimagetooltip = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer");
+                _astronautimagetooltip.style.display = "block";
+              }
             }}
             onMouseLeave={()=> {
+              if (props.viewport !== "xs")  {
                 const _astronautimagetooltip = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer");
                 _astronautimagetooltip.style.display = "none";
+              }
+               
               }}/>
       </Col>
       <Col id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer">

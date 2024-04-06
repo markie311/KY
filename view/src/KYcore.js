@@ -62,13 +62,13 @@ function KYcore() {
        <Routes>
          <Route path='/'
                 element={<KYcoreLandingPage viewport={viewport}
-                                           dataloaderscreenisloading={dataloaderscreenisloading}
-                                           dataloaderscreenisloadingcb={dataloaderscreenisloadingcb}
-                                           homedataview={homedataview}
-                                           homedataviewcb={homedataviewcb} 
-                                           
-                                           socialmediaandplatformsdataview={socialmediaandplatformsdataview}
-                                           socialmediaandplatformsdataviewcb={socialmediaandplatformsdataviewcb}/>}>
+                                            dataloaderscreenisloading={dataloaderscreenisloading}
+                                            dataloaderscreenisloadingcb={dataloaderscreenisloadingcb}
+                                            homedataview={homedataview}
+                                            homedataviewcb={homedataviewcb} 
+                                            
+                                            socialmediaandplatformsdataview={socialmediaandplatformsdataview}
+                                            socialmediaandplatformsdataviewcb={socialmediaandplatformsdataviewcb}/>}>
          </Route>
     </Routes>
      </Container>

@@ -462,7 +462,8 @@ export default function KYcoreLandingPage(props) {
         ) 
         :
         (
-          <DataviewComponent homedataview={props.homedataview}
+          <DataviewComponent viewport={props.viewport}
+                             homedataview={props.homedataview}
                              homedataviewcb={props.homedataviewcb}
 
                              socialmediaandplatformsdataview={props.socialmediaandplatformsdataview}
