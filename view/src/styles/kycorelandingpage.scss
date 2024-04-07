@@ -15,13 +15,21 @@ width:100%;
 margin-left:auto;
 margin-right:auto;
 }
-#kycorelandingpage-backgroundimagecontainer {
+.kycorelandingpage-backgroundimagecontainer {
 position:absolute;
 border:1vh solid red;
 height:100%;
 width:100%;
+transition: opacity 5s ease;
 }
-#kycorelandingpage-backgroundimage {
+.kycorelandingpage-backgroundimagecontainer1 {
+position:absolute;
+}
+.kycorelandingpage-backgroundimagecontainer2 {
+position:absolute;
+opacity:0;
+}
+.kycorelandingpage-backgroundimage {
 position:relative;
 height:100%;
 width:100%;
@@ -95,7 +103,7 @@ transform: translate(-50%, -50%);
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet2 {
 position:absolute;
-height:50vh;
+height:30vh;
 width:120%;
 top:50%;
 left:50%;
@@ -103,30 +111,29 @@ transform: translate(-50%, -50%);
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1 {
 position:absolute;
-height:20vh;
-width:20vh;
+height:13vh;
+width:30vh;
 top:10%;
-left:-10%;
+left:-5%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2 {
 position:absolute;
 height:20vh;
-width:20vh;
-top:15%;
-left:66%;
+width:30vh;
+top:20%;
+left:40%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3 {
 position:absolute;
 height:20vh;
 width:30vh;
-top:100%;
-left:40%;
+left:47%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud4 {
 position:absolute;
 height:20vh;
 width:20vh;
-top:10%;
+top:-15%;
 left:10%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud5 {

@@ -118,9 +118,15 @@ export default function KYcoreLandingPage(props) {
  return ( 
   <Col id="kycorelandingpage">
  
-    <Col id="kycorelandingpage-backgroundimagecontainer">
+    <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer1">
+      <img src="../images/landingpage/backgroundimages/3dwhitebackgroundimage.jpg"
+           className="kycorelandingpage-backgroundimage"
+           alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
+    </Col>
+
+    <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer2">
       <img src="../images/landingpage/backgroundimages/insidespaceship.jpg"
-           id="kycorelandingpage-backgroundimage"
+           className="kycorelandingpage-backgroundimage"
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
 
@@ -128,7 +134,8 @@ export default function KYcoreLandingPage(props) {
             onScroll={(evt)=> {
 
           if ( props.viewport === "xs") {
-      
+
+            const _kycoremainbackgroundimage = document.getElementById("kycorelandingpage-backgroundimage");
             const _mainnavigationbutton1 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1");
             const _mainnavigationbutton2 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2");
             const _mainnavigationbutton3 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3");
@@ -152,6 +159,10 @@ export default function KYcoreLandingPage(props) {
              console.log(kycorelangingpagescrolledcurrentposition)
       
              switch(kycorelangingpagescrolledcurrentposition) {
+              case 6: 
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
+              break;
               case 4:
                _mainnavigationbutton1.style.left = "-105%";
                _mainnavigationbutton1.style.opacity = "0";
