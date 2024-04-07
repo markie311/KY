@@ -118,8 +118,8 @@ export default function KYcoreLandingPage(props) {
  return ( 
   <Col id="kycorelandingpage">
  
- <Col id="kycorelandingpage-backgroundimagecontainer">
-      <img src="../images/landingpage/backgroundimages/3dwhitebackgroundimage.jpg"
+    <Col id="kycorelandingpage-backgroundimagecontainer">
+      <img src="../images/landingpage/backgroundimages/insidespaceship.jpg"
            id="kycorelandingpage-backgroundimage"
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
