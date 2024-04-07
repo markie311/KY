@@ -118,10 +118,6 @@ export default function KYcoreLandingPage(props) {
  return ( 
   <Col id="kycorelandingpage">
 
-   <img src="../images/landingpage/planets/planet1rmvdbg.png"
-        className="planet1"
-        alt="KY-IMAGE-PLANET"/>
-
     <Row id="kycorelandingpage-core"
             onScroll={(evt)=> {
 
@@ -300,6 +296,23 @@ export default function KYcoreLandingPage(props) {
              lg={2}
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
           <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1">
+              
+            <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
+                 className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
+                 alt="KY-IMAGE-PLANET"/>
+
+            <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                 className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                 alt="KY-IMAGE-PLANET"/>
+
+            <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                 className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                 alt="KY-IMAGE-PLANET"/>
+
+            <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                 className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                 alt="KY-IMAGE-PLANET"/>
+                          
            <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
               onClick={()=> {
                 if ( props.viewport === "xs" ) {

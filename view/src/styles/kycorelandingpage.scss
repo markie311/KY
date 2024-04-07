@@ -53,36 +53,63 @@ height:auto;
 width:100%;
 margin-left:auto;
 margin-right:auto;
-overflow:hidden;
 transition:all 1s ease;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer {
 position:relative;
-border:1vh solid red;
-height:auto;
+border:1vh solid yellow;
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 transition:all 1s ease;
-padding:10px 10px 50px 10px;
+padding:0;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer {
 position:absolute;
-background-color: #1e1d1b;
-background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);
+//background-color: #1e1d1b;
+//background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);
 border-radius:20px;
-height:7vh;
-width:80%;
-display:flex;
-justify-content:center;
-align-items:center;
+height:40vh;
+width:100%;
 transition:1s ease;
+padding:0;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet {
+position:absolute;
+border:1vh solid red;
+height:50vh;
+width:190%;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1 {
+position:absolute;
+height:20vh;
+width:20vh;
+top:10%;
+left:-10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2 {
+position:absolute;
+height:20vh;
+width:20vh;
+top:15%;
+left:66%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3 {
+position:absolute;
+height:20vh;
+width:30vh;
+top:60%;
+left:40%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1 {
 position:relative;
 border:1vh solid green;
-height:7vh;
+height:40vh;
 width:100%;
 transition:all 1.2s ease;
 left: -105%;
