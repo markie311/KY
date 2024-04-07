@@ -118,6 +118,7 @@ export default function KYcoreLandingPage(props) {
  return ( 
   <Col id="kycorelandingpage">
  
+
     <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer1">
       <img src="../images/landingpage/backgroundimages/3dwhitebackgroundimage.jpg"
            className="kycorelandingpage-backgroundimage"
@@ -125,7 +126,7 @@ export default function KYcoreLandingPage(props) {
     </Col>
 
     <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer2">
-      <img src="../images/landingpage/backgroundimages/goldenmaze.jpg"
+      <img src="../images/landingpage/backgroundimages/11.jpg"
            className="kycorelandingpage-backgroundimage"
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
@@ -160,8 +161,8 @@ export default function KYcoreLandingPage(props) {
       
              switch(kycorelangingpagescrolledcurrentposition) {
               case 6: 
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
+       //        document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+       //        document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
               break;
               case 4:
                _mainnavigationbutton1.style.left = "-105%";
