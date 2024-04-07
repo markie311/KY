@@ -117,6 +117,12 @@ export default function KYcoreLandingPage(props) {
 
  return ( 
   <Col id="kycorelandingpage">
+ 
+ <Col id="kycorelandingpage-backgroundimagecontainer">
+      <img src="../images/landingpage/backgroundimages/3dwhitebackgroundimage.jpg"
+           id="kycorelandingpage-backgroundimage"
+           alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
+    </Col>
 
     <Row id="kycorelandingpage-core"
             onScroll={(evt)=> {
@@ -279,6 +285,8 @@ export default function KYcoreLandingPage(props) {
       
          }}>
 
+
+
      <Col xs={12}
           md={3}
           lg={3}
@@ -291,226 +299,371 @@ export default function KYcoreLandingPage(props) {
           lg={9}
           id="keyheader-navigationbuttonscontainer">
       <Row id="keyheader-navigationbuttonscontainer-navigationgridcontainer">
-        <Col xs={12}
-             md={2}
-             lg={2}
-             className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1">
-              
-            <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
-                 className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
-                 alt="KY-IMAGE-PLANET"/>
+  
+          <Col xs={12}
+            md={2}
+            lg={2}
+            className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1">
+                  
+                <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
+                      alt="KY-IMAGE-PLANET"/>
 
-            <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                 className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
-                 alt="KY-IMAGE-PLANET"/>
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      alt="KY-IMAGE-PLANET"/>
 
-            <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                 className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
-                 alt="KY-IMAGE-PLANET"/>
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      alt="KY-IMAGE-PLANET"/>
 
-            <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                 className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
-                 alt="KY-IMAGE-PLANET"/>
-                          
-           <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
-              onClick={()=> {
-                if ( props.viewport === "xs" ) {
-                const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
-                _planetnavigationtooltipcontainer[0].style.display = "block";
-                }
-              }}
-              onMouseEnter={()=> {
-                if ( props.viewport !== "xs" ) {
-                 const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                 _navigationtooltipcontainer[0].style.display = "block";
-                }
-              }}
-              onMouseLeave={()=> {
-                if ( props.viewport !== "xs" ) {
-                const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                _navigationtooltipcontainer[0].style.display = "none";
-                }
-               }}>Planet Home</p>
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      alt="KY-IMAGE-PLANET"/>
+                              
+                <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+                  onClick={()=> {
+                    if ( props.viewport === "xs" ) {
+                    const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                    _planetnavigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseEnter={()=> {
+                    if ( props.viewport !== "xs" ) {
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      _navigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                    }}>Planet Home</p>
+              </Col>
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                  }}>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              </Col>
           </Col>
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
-              onMouseLeave={()=> {
-                if ( props.viewport !== "xs" ) {
-               const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-               _navigationtooltipcontainer[0].style.display = "none";
-                }
-              }}>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-          </Col>
-        </Col>
-        <Col xs={12}
-             md={2}
-             lg={2}
-             className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2">
-             <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
-                onClick={async ()=> {
 
-                  const _kycoreloadingeffectmodal = document.getElementById("kycorelandingpage-coreloadingeffect");
-                  const _kycoreloadingefectbackground1 = document.getElementById("kycorelandingpage-coreloadingeffect-background1");
-                  const _kycoreloadingefectbackground2 = document.getElementById("kycorelandingpage-coreloadingeffect-background2");
-                  const _kycoreloadingefectbackground3 = document.getElementById("kycorelandingpage-coreloadingeffect-background3");
-                  const _kycoreloadingefectbackground4 = document.getElementById("kycorelandingpage-coreloadingeffect-background4");
+          <Col xs={12}
+               md={2}
+               lg={2}
+              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
+            <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2">
+                
+              <img src="../images/landingpage/planetsandclouds/planet2rmvdbg.png"
+                   className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet2"
+                  alt="KY-IMAGE-PLANET"/>
 
-                  const _kycorelanunchingoffoffbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer5-transitioncontainer");
-                  const _kycorelanunchingoffnormalbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer4-transitioncontainer");
-                  const _kycorelanunchingoffheatingbargraphtransitioncontainer  = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer3-transitioncontainer");
-                  const _kycorelanunchingoffminimizingbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer2-transitioncontainer");
-                  const _kycorelanunchingoffdangerbargraphtransitioncontainer = document.getElementById("kycorelandingpage-coreloadingeffect-launchingoffbargraphindicatorlayoutcontainer-bargraphindicatorlayoutcontainer1-transitioncontainer");
+              <img src="../images/landingpage/planetsandclouds/cloud5.png"
+                    className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud4"
+                    alt="KY-IMAGE-PLANET"/>
 
-                  const _launchinhofffirebg = document.getElementById("kycorelandingpage-coreloadingeffect-launchoffloadingeffect");
+              <img src="../images/landingpage/planetsandclouds/cloud4.png"
+                    className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud5"
+                    alt="KY-IMAGE-PLANET"/>
 
-                  _kycoreloadingeffectmodal.style.top = "0%";
-                  _kycoreloadingefectbackground1.style.top = "0%";
-                  _kycoreloadingefectbackground2 .style.left = "0%";
-                  _kycoreloadingefectbackground3.style.bottom = "0%";
-                  _kycoreloadingefectbackground4.style.right = "0%";
-
-                  _kycorelanunchingoffoffbargraphtransitioncontainer.style.opacity = "0";
-                  _kycorelanunchingoffnormalbargraphtransitioncontainer.style.opacity = "0";
-                  _kycorelanunchingoffheatingbargraphtransitioncontainer.style.opacity = "0";
-                  _kycorelanunchingoffminimizingbargraphtransitioncontainer.style.opacity = "0";
-                  _kycorelanunchingoffdangerbargraphtransitioncontainer.style.opacity = "0";
-              
-                  _kycoreloadingeffectmodal.style.opacity = "0%";
-
-                  await _coreloadingeffectdefaultmodalproportioncbfunction();
-
+              <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                    className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud6"
+                    alt="KY-IMAGE-PLANET"/>
+                            
+              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+                onClick={()=> {
+                  if ( props.viewport === "xs" ) {
+                  const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                  _planetnavigationtooltipcontainer[0].style.display = "block";
+                  }
                 }}
                 onMouseEnter={()=> {
-                  const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                  _navigationtooltipcontainer[1].style.display = "block";
-               }}
-                onMouseLeave={()=> {
-                 const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                 _navigationtooltipcontainer[1].style.display = "none";
-                }}>Planet Faq's</p>
-          </Col>
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
-               onMouseLeave={()=> {
-                 const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                 _navigationtooltipcontainer[1].style.display = "none";
-               }}>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Faq's planet</p>
-          </Col>
-        </Col>
-        <Col xs={12}
-             md={2}
-             lg={2}
-             className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3"
-               onMouseEnter={()=> {
-                 const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                 _navigationtooltipcontainer[2].style.display = "block";
-               }}
-               onMouseLeave={()=> {
-                const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                _navigationtooltipcontainer[2].style.display = "none";
-               }}>
-            <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'>Planet Video</p>
-          </Col>
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
-               onMouseLeave={()=> {
-                  const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                  _navigationtooltipcontainer[2].style.display = "none";
-               }}>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Video planet</p>
-          </Col>
-        </Col>
-        <Col xs={12}
-             md={2}
-             lg={2}
-             className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-           <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4">
-            <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
-               onMouseEnter={()=> {
-                  const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                  _navigationtooltipcontainer[3].style.display = "block";
-               }}
-               onMouseLeave={()=> {
-                const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                _navigationtooltipcontainer[3].style.display = "none";
-               }}>Planet Marketing</p>
-           </Col>
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"   
-               onMouseLeave={()=> {
-                const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                _navigationtooltipcontainer[3].style.display = "none";
-               }}>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Marketing planet</p>
-          </Col>
-        </Col>
-        <Col xs={12}
-             md={2}
-             lg={2}
-             className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-            <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5">  
-              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
-                 onMouseEnter={()=> {
+                  if ( props.viewport !== "xs" ) {
                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[4].style.display = "block";
-                 }}
-                 onMouseLeave={()=> {
+                    _navigationtooltipcontainer[0].style.display = "block";
+                  }
+                }}
+                onMouseLeave={()=> {
+                  if ( props.viewport !== "xs" ) {
                   const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                  _navigationtooltipcontainer[4].style.display = "none";
-                 }}>Plannet community</p>
+                  _navigationtooltipcontainer[0].style.display = "none";
+                  }
+                  }}>Planet Home</p>
             </Col>
             <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
-                 onMouseLeave={()=> {
-                   const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                   _navigationtooltipcontainer[4].style.display = "none";
-                 }}>
-              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Community planet</p>
-            </Col>
-        </Col>
-        <Col xs={12}
-             md={2}
-             lg={2}
-             className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-          <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6">  
-             <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
-                onMouseEnter={()=> {
-                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[5].style.display = "block";
-                }}
                 onMouseLeave={()=> {
+                  if ( props.viewport !== "xs" ) {
                   const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                  _navigationtooltipcontainer[5].style.display = "none";
-               }}>Planet Project's</p>
-           </Col>
-           <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
-                onMouseLeave={()=> {
-                   const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                   _navigationtooltipcontainer[5].style.display = "none";
+                  _navigationtooltipcontainer[0].style.display = "none";
+                  }
                 }}>
-               <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-               <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Project's planet</p>
-           </Col>
-        </Col>
+              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+            </Col>
+          </Col>
+
+          <Col xs={12}
+            md={2}
+            lg={2}
+            className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3">
+                  
+                <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      alt="KY-IMAGE-PLANET"/>
+                              
+                <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+                  onClick={()=> {
+                    if ( props.viewport === "xs" ) {
+                    const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                    _planetnavigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseEnter={()=> {
+                    if ( props.viewport !== "xs" ) {
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      _navigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                    }}>Planet Home</p>
+              </Col>
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                  }}>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              </Col>
+          </Col>
+
+          <Col xs={12}
+            md={2}
+            lg={2}
+            className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4">
+                  
+                <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      alt="KY-IMAGE-PLANET"/>
+                              
+                <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+                  onClick={()=> {
+                    if ( props.viewport === "xs" ) {
+                    const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                    _planetnavigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseEnter={()=> {
+                    if ( props.viewport !== "xs" ) {
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      _navigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                    }}>Planet Home</p>
+              </Col>
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                  }}>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              </Col>
+          </Col>
+
+          <Col xs={12}
+            md={2}
+            lg={2}
+            className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer5">
+                  
+                <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      alt="KY-IMAGE-PLANET"/>
+                              
+                <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+                  onClick={()=> {
+                    if ( props.viewport === "xs" ) {
+                    const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                    _planetnavigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseEnter={()=> {
+                    if ( props.viewport !== "xs" ) {
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      _navigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                    }}>Planet Home</p>
+              </Col>
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                  }}>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              </Col>
+          </Col>
+
+          <Col xs={12}
+               md={2}
+               lg={2}
+               className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6">
+                  
+                <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      alt="KY-IMAGE-PLANET"/>
+
+                <img src="../images/landingpage/planetsandclouds/cloud1.png"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      alt="KY-IMAGE-PLANET"/>
+                              
+                <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+                  onClick={()=> {
+                    if ( props.viewport === "xs" ) {
+                    const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                    _planetnavigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseEnter={()=> {
+                    if ( props.viewport !== "xs" ) {
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      _navigationtooltipcontainer[0].style.display = "block";
+                    }
+                  }}
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                    }}>Planet Home</p>
+              </Col>
+              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
+                  onMouseLeave={()=> {
+                    if ( props.viewport !== "xs" ) {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[0].style.display = "none";
+                    }
+                  }}>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              </Col>
+          </Col>
+       
       </Row>
      </Col>
 
-     <Col xs={12}  
+{/* <Col xs={12}  
           md={12}
           lg={12}
           id="kycorelandingpage-xslaunchingeffectscrollingcontainer">
-            
-     </Col>
+              
+
+     </Col> */}
 
      <Col xs={12}
          md={12}
@@ -681,6 +834,8 @@ export default function KYcoreLandingPage(props) {
      </Col>
 
     </Row>
+
+    
 
   </Col>
  )
