@@ -126,7 +126,7 @@ export default function KYcoreLandingPage(props) {
     </Col>
 
     <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer2">
-      <img src="../images/landingpage/backgroundimages/11.jpg"
+      <img src="../images/landingpage/backgroundimages/strawberries-7249448_1280.jpg"
            className="kycorelandingpage-backgroundimage"
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
