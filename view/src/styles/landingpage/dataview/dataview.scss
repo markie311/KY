@@ -56,7 +56,7 @@ padding:0;
 //// social media and platforms container 
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer  {
 position:relative;
-background-color:$subbgcolor;
+background-color:white;
 border-radius:20px;
 height:65vh;
 width:90%;
@@ -64,6 +64,7 @@ justify-content:space-evenly;
 margin-left:auto;
 margin-right:auto;
 padding:0;
+box-shadow:0 1px 8px gray;
 transition:all 2s ease;
 top:20%;
 opacity:0;
@@ -89,7 +90,7 @@ position:relative;
 font: auto {
  family: $sub-font;
 }
-color:white;
+color:black;
 text-align:center;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer {
@@ -102,7 +103,7 @@ padding:0;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-imagecontainer {
 position:absolute;
-background-color:rgba(1,1,1,0.4);
+background-color:rgba(1,1,1,0.6);
 border:0.1vh solid white;
 border-radius:50%;
 height:58%;
@@ -315,6 +316,7 @@ justify-content:center;
 align-items:center;
 padding:10px 0px;
 transition:1s ease;
+overflow:hidden;
 }
 .socilamediaandplatformshomedataview {
 position:absolute;
@@ -461,6 +463,8 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+transition: top 1s ease;
+top:180%;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer {
 position:absolute;

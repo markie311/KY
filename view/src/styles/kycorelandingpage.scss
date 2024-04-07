@@ -15,6 +15,12 @@ width:100%;
 margin-left:auto;
 margin-right:auto;
 }
+.planet1 {
+position:relative;
+border:1vh solid red;
+height:40vh;
+width:100%;
+}
 #kycorelandingpage-core {
 position:absolute;
 height:100%;
@@ -32,35 +38,41 @@ padding:0;
 //// navigation buttons container
 #keyheader-navigationbuttonscontainer {
 position:relative;
-height:100%;
+border:1vh solid red;
+height:auto;
 display:flex;
 justify-content:center;
 align-items:center;
+transition:all 1s ease;
 }
 #keyheader-navigationbuttonscontainer-navigationgridcontainer {
 position:relative;
+border:1vh solid green;
 border-radius:20px;
-height:100%;
+height:auto;
 width:100%;
 margin-left:auto;
 margin-right:auto;
 overflow:hidden;
+transition:all 1s ease;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer {
 position:relative;
-height:16%;
+border:1vh solid red;
+height:auto;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
-padding:10px;
-overflow: hidden;
+transition:all 1s ease;
+padding:10px 10px 50px 10px;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer {
 position:absolute;
 background-color: #1e1d1b;
 background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);
 border-radius:20px;
-height:auto;
+height:7vh;
 width:80%;
 display:flex;
 justify-content:center;
@@ -69,9 +81,11 @@ transition:1s ease;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1 {
 position:relative;
+border:1vh solid green;
+height:7vh;
+width:100%;
 transition:all 1.2s ease;
-left:-105%;
-transition: opacity 0s ease 0.5s;
+left: -105%;
 opacity:0;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2 {
@@ -115,14 +129,22 @@ user-select:none;
 top:1vh;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer {
-position:absolute;
+position:relative;
 background-color:white;
 border-radius:20px;
-height:250%;
-width:110%;
-transform: translate(0%, 80%);
-z-index:1;
+height:auto;
+width:100%;
+margin-top:10%;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:5;
 box-shadow:0 1px 8px gray;
+padding:35px 10px;
+transition: margin 5s ease 3s;
 display:none;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer::after {
@@ -133,7 +155,23 @@ height:40px;
 left:50%;
 transform:translate(-50%,-50%) rotate(45deg);
 background-color:#EEEEEE;
-box-shadow:0 1px 8px rgba(0,0,0,0.5);
+box-shadow:0 1px 8px gray;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication  {
+position:relative;
+font: auto {
+family: $sub-font;
+weight:900;
+}
+text-align:center;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication {
+position:relative;
+font: auto {
+family: $sub-font;
+weight:900;
+}
+text-align:center;
 }
 ////// xs launching scrolling effect
 #kycorelandingpage-xslaunchingeffectscrollingcontainer {

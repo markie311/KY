@@ -118,6 +118,10 @@ export default function KYcoreLandingPage(props) {
  return ( 
   <Col id="kycorelandingpage">
 
+   <img src="../images/landingpage/planets/planet1rmvdbg.png"
+        className="planet1"
+        alt="KY-IMAGE-PLANET"/>
+
     <Row id="kycorelandingpage-core"
             onScroll={(evt)=> {
 
@@ -135,6 +139,8 @@ export default function KYcoreLandingPage(props) {
             const _socilamediaandplatformsgridcontainer = document.querySelector("#homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer");
           
             const _socialmediaandplatoformsdatamodal = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-facebooksocialmediaandplatformsdatacontainer");
+
+            const _skillscompilicationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer");
 
             const { scrollTop, scrollHeight, clientHeight } = evt.target;
             const kycorelangingpagescrolledcurrentposition = Math.ceil(
@@ -244,6 +250,31 @@ export default function KYcoreLandingPage(props) {
               case 83: 
               _socialmediaandplatoformsdatamodal[7].style.top = "0px";
               break;
+              case 85:
+                _skillscompilicationcontainer[0].style.top = "180%";
+              break;
+              case 86:
+                _skillscompilicationcontainer[0].style.top = "0%";
+              break;
+              case 88:
+                _skillscompilicationcontainer[1].style.top = "180%";
+              break;
+              case 90:
+                _skillscompilicationcontainer[1].style.top = "0%";
+              break;
+              case 92:
+                _skillscompilicationcontainer[2].style.top = "180%";
+              break;
+              case 94:
+                _skillscompilicationcontainer[2].style.top = "0%";
+              break;
+              break;
+              case 96:
+                _skillscompilicationcontainer[3].style.top = "180%";
+              break;
+              case 98:
+                _skillscompilicationcontainer[3].style.top = "0%";
+              break;
               default:
              }
           } else {
@@ -270,22 +301,39 @@ export default function KYcoreLandingPage(props) {
              className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
           <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1">
            <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+              onClick={()=> {
+                if ( props.viewport === "xs" ) {
+                const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                _planetnavigationtooltipcontainer[0].style.display = "block";
+                }
+              }}
               onMouseEnter={()=> {
+                if ( props.viewport !== "xs" ) {
                  const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                  _navigationtooltipcontainer[0].style.display = "block";
+                }
               }}
               onMouseLeave={()=> {
+                if ( props.viewport !== "xs" ) {
                 const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                 _navigationtooltipcontainer[0].style.display = "none";
+                }
                }}>Planet Home</p>
           </Col>
           <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
               onMouseLeave={()=> {
+                if ( props.viewport !== "xs" ) {
                const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                _navigationtooltipcontainer[0].style.display = "none";
+                }
               }}>
             <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
             <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+            <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
           </Col>
         </Col>
         <Col xs={12}
