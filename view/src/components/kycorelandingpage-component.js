@@ -143,6 +143,12 @@ export default function KYcoreLandingPage(props) {
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
 
+      <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer4">
+      <img src="../images/landingpage/backgroundimages/planetmarketingbackgroundimage.jpg"
+           className="kycorelandingpage-backgroundimage"
+           alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
+    </Col>
+
     <Row id="kycorelandingpage-core"
             onScroll={(evt)=> {
 
@@ -176,22 +182,38 @@ export default function KYcoreLandingPage(props) {
                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "1";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
               break;
               case 6: 
                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
               break;
               case 15: 
                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "1";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
               break;
               case 17: 
                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "1";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
               break;
+              case 2:
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "1";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
+             break;
+              case 24: 
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "1";
+             break;
               case 4:
                _mainnavigationbutton1.style.left = "-105%";
                _mainnavigationbutton1.style.opacity = "0";
@@ -469,15 +491,15 @@ export default function KYcoreLandingPage(props) {
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud7"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud8"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud9"
                       alt="KY-IMAGE-PLANET"/>
                               
                 <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
@@ -518,25 +540,25 @@ export default function KYcoreLandingPage(props) {
           </Col>
 
           <Col xs={12}
-            md={2}
-            lg={2}
+               md={2}
+               lg={2}
             className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer4">
                   
-                <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
+                <img src="../images/landingpage/planetsandclouds/planet4rmvdbg.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud10"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud11"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud12"
                       alt="KY-IMAGE-PLANET"/>
                               
                 <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
@@ -587,15 +609,15 @@ export default function KYcoreLandingPage(props) {
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud14"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud15"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud16"
                       alt="KY-IMAGE-PLANET"/>
                               
                 <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
@@ -646,15 +668,15 @@ export default function KYcoreLandingPage(props) {
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud19"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud20"
                       alt="KY-IMAGE-PLANET"/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3"
+                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud21"
                       alt="KY-IMAGE-PLANET"/>
                               
                 <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'

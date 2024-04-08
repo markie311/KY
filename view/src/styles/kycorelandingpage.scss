@@ -17,7 +17,6 @@ margin-right:auto;
 }
 .kycorelandingpage-backgroundimagecontainer {
 position:absolute;
-border:1vh solid red;
 height:100%;
 width:100%;
 transition: opacity 5s ease;
@@ -42,6 +41,14 @@ left:50%;
 transform: translate(-50%,-50%);
 opacity:0;
 }
+.kycorelandingpage-backgroundimagecontainer4 {
+position:absolute;
+width:190%;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+opacity:0;
+}
 .kycorelandingpage-backgroundimage {
 position:relative;
 height:100%;
@@ -49,7 +56,6 @@ width:100%;
 }
 .planet1 {
 position:relative;
-border:1vh solid red;
 height:40vh;
 width:100%;
 }
@@ -87,7 +93,6 @@ transition:all 1s ease;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer {
 position:relative;
-border:1vh solid gray;
 height:100vh;
 display:flex;
 flex-direction:column;
@@ -124,48 +129,160 @@ transform: translate(-50%, -50%);
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1 {
 position:absolute;
-height:13vh;
-width:30vh;
+height:8vh;
+width:14vh;
 top:10%;
-left:-5%;
+left:3%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2 {
 position:absolute;
-height:20vh;
-width:30vh;
+height:8vh;
+width:14vh;
 top:20%;
 left:40%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3 {
 position:absolute;
-height:20vh;
-width:30vh;
-left:47%;
+height:8vh;
+width:14vh;
+left:70%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud4 {
 position:absolute;
-height:20vh;
-width:20vh;
+height:8vh;
+width:14vh;
 top:-15%;
 left:10%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud5 {
 position:absolute;
-height:20vh;
-width:20vh;
+height:8vh;
+width:18vh;
 top:90%;
 left:66%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud6 {
 position:absolute;
-height:20vh;
-width:30vh;
+height:8vh;
+width:14vh;
+top:70%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud7 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud8 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud9 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:70%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud10 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+}
+
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud11 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud12 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud13 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:70%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud14 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud15 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud16 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:70%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud17 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud18 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud19 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:70%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud20 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud21 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud22 {
+position:absolute;
+height:8vh;
+width:14vh;
 top:70%;
 left:10%;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1 {
 position:relative;
-border:1vh solid pink;
 height:40vh;
 width:100%;
 transition:all 1.2s ease;
@@ -206,6 +323,8 @@ opacity:0;
 position:relative;
 font: auto {
 family: $main-font;
+weight:900;
+size:30px;
 }
 color:white;
 text-align:center;
