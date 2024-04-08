@@ -131,6 +131,18 @@ export default function KYcoreLandingPage(props) {
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
 
+    <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer2">
+      <img src="../images/landingpage/backgroundimages/planetfaqsbackgroundimage.jpg"
+           className="kycorelandingpage-backgroundimage"
+           alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
+    </Col>
+
+    <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer3">
+      <img src="../images/landingpage/backgroundimages/planetfaqsbackgroundimage.jpg"
+           className="kycorelandingpage-backgroundimage"
+           alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
+    </Col>
+
     <Row id="kycorelandingpage-core"
             onScroll={(evt)=> {
 
@@ -163,10 +175,22 @@ export default function KYcoreLandingPage(props) {
               case 4: 
                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "1";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
               break;
               case 6: 
                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+              break;
+              case 15: 
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "1";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+              break;
+              case 17: 
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "1";
               break;
               case 4:
                _mainnavigationbutton1.style.left = "-105%";
@@ -440,7 +464,7 @@ export default function KYcoreLandingPage(props) {
             className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3">
                   
-                <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
+                <img src="../images/landingpage/planetsandclouds/planet3rmvdbg.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
                       alt="KY-IMAGE-PLANET"/>
 
