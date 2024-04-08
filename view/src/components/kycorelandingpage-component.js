@@ -154,7 +154,10 @@ export default function KYcoreLandingPage(props) {
 
           if ( props.viewport === "xs") {
 
-            const _kycoremainbackgroundimage = document.getElementById("kycorelandingpage-backgroundimage");
+            const _kycoremainbackgroundimage = document.getElementById("kycorelandingpage-backgroundimage"); 
+            
+            const _mainnavigationbutton = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer");
+          
             const _mainnavigationbutton1 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1");
             const _mainnavigationbutton2 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer2");
             const _mainnavigationbutton3 = document.querySelector(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer3");
@@ -191,29 +194,41 @@ export default function KYcoreLandingPage(props) {
                document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
               break;
               case 15: 
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "1";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
               break;
               case 17: 
                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "1";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
               break;
-              case 2:
+              case 22:
               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "1";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
+              _mainnavigationbutton4.style.right = "-105%";
+              _mainnavigationbutton4.style.opacity = "0";
              break;
               case 24: 
               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "1";
+              _mainnavigationbutton4.style.right = "0%";
+              _mainnavigationbutton4.style.opacity = "1";
              break;
+             case 29: 
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "1";
+             _mainnavigationbutton5.style.top = "0%";
+             _mainnavigationbutton5.style.opacity = "1";
+            break;
               case 4:
                _mainnavigationbutton1.style.left = "-105%";
                _mainnavigationbutton1.style.opacity = "0";
@@ -237,20 +252,20 @@ export default function KYcoreLandingPage(props) {
                _mainnavigationbutton4.style.opacity = "0";
               break;
               case 10: 
-               _mainnavigationbutton4.style.right = "0%";
-               _mainnavigationbutton4.style.opacity = "1";
-               _mainnavigationbutton5.style.top = "-105%";
-               _mainnavigationbutton5.style.opacity = "0";
+       //        _mainnavigationbutton4.style.right = "0%";
+       //        _mainnavigationbutton4.style.opacity = "1";
+       //        _mainnavigationbutton5.style.top = "-105%";
+       //        _mainnavigationbutton5.style.opacity = "0";
               break;
               case 11: 
-               _mainnavigationbutton5.style.top = "0%";
-               _mainnavigationbutton5.style.opacity = "1";
-               _mainnavigationbutton6.style.bottom = "-105%";
-               _mainnavigationbutton6.style.opacity = "0";
+       //        _mainnavigationbutton5.style.top = "0%";
+       //        _mainnavigationbutton5.style.opacity = "1";
+       //        _mainnavigationbutton6.style.bottom = "-105%";
+        //       _mainnavigationbutton6.style.opacity = "0";
               break;
               case 12: 
-               _mainnavigationbutton6.style.bottom = "0%";
-               _mainnavigationbutton6.style.opacity = "1";
+     //          _mainnavigationbutton6.style.bottom = "0%";
+      //         _mainnavigationbutton6.style.opacity = "1";
               break;
               case 30: 
                _astronautcomponent.style.top= "80%";
@@ -403,6 +418,7 @@ export default function KYcoreLandingPage(props) {
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
                     }}>Planet Home</p>
+                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                   onMouseLeave={()=> {
@@ -461,7 +477,8 @@ export default function KYcoreLandingPage(props) {
                   const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                   _navigationtooltipcontainer[0].style.display = "none";
                   }
-                  }}>Planet Home</p>
+                  }}>Planet Faq's</p>
+                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
             </Col>
             <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                 onMouseLeave={()=> {
@@ -520,7 +537,8 @@ export default function KYcoreLandingPage(props) {
                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
-                    }}>Planet Home</p>
+                    }}>Planet Community</p>
+                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                   onMouseLeave={()=> {
@@ -579,7 +597,8 @@ export default function KYcoreLandingPage(props) {
                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
-                    }}>Planet Home</p>
+                    }}>Planet Marketing</p>
+               <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                   onMouseLeave={()=> {
@@ -638,7 +657,8 @@ export default function KYcoreLandingPage(props) {
                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
-                    }}>Planet Home</p>
+                    }}>Planet Project's</p>
+                 <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                   onMouseLeave={()=> {
@@ -657,64 +677,7 @@ export default function KYcoreLandingPage(props) {
               </Col>
           </Col>
 
-          <Col xs={12}
-               md={2}
-               lg={2}
-               className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
-              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer6">
-                  
-                <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
-                      alt="KY-IMAGE-PLANET"/>
-
-                <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud19"
-                      alt="KY-IMAGE-PLANET"/>
-
-                <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud20"
-                      alt="KY-IMAGE-PLANET"/>
-
-                <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud21"
-                      alt="KY-IMAGE-PLANET"/>
-                              
-                <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
-                  onClick={()=> {
-                    if ( props.viewport === "xs" ) {
-                    const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
-                    _planetnavigationtooltipcontainer[0].style.display = "block";
-                    }
-                  }}
-                  onMouseEnter={()=> {
-                    if ( props.viewport !== "xs" ) {
-                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                      _navigationtooltipcontainer[0].style.display = "block";
-                    }
-                  }}
-                  onMouseLeave={()=> {
-                    if ( props.viewport !== "xs" ) {
-                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[0].style.display = "none";
-                    }
-                    }}>Planet Home</p>
-              </Col>
-              <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
-                  onMouseLeave={()=> {
-                    if ( props.viewport !== "xs" ) {
-                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[0].style.display = "none";
-                    }
-                  }}>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-              </Col>
-          </Col>
+     
        
       </Row>
      </Col>
