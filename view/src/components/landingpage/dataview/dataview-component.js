@@ -102,7 +102,7 @@ function DataviewHomeComponent(props) {
           {
            [
             {
-              icon: "",
+              icon: "../images/icons/socialmediaandplatforms/astronaut.png",
               tooltipheaderindication: "go back to astronaut data display"
             },
             {
@@ -130,7 +130,7 @@ function DataviewHomeComponent(props) {
               tooltipheaderindication: "go back to Gambebook data display"
             },
            ].map((icon, iconidx)=> {
-            if ( iconidx ===  0 ) {
+            if ( iconidx ===  0 && props.viewport === "xs" ) {
               return (
                 <Col xs={12}
                      md={12}
@@ -298,7 +298,7 @@ function SocialmediaAndPlatformsHomeDataView(props) {
                     }
                     
                     }}>
-                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Website development</p>
+                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">websites</p>
               </Col>
           </Col>
           <Col xs={12}
@@ -306,7 +306,7 @@ function SocialmediaAndPlatformsHomeDataView(props) {
                 lg={6}
               className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer">
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer">
-                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Mobile application development</p>
+                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Mobile App</p>
               </Col>
           </Col>
           <Col xs={12}
@@ -314,7 +314,7 @@ function SocialmediaAndPlatformsHomeDataView(props) {
                 lg={6}
               className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer">
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer">
-                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Building construction</p>
+                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Building</p>
               </Col>
           </Col>
           <Col xs={12}
@@ -322,7 +322,7 @@ function SocialmediaAndPlatformsHomeDataView(props) {
                 lg={6}
                 className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer">
               <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer">
-                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">E-car service's</p>
+                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">E-car's</p>
               </Col>
           </Col>
           </Row>
@@ -337,7 +337,7 @@ function SocialmediaAndPlatformsHomeDataView(props) {
               lg={6} 
               className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer">
           <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer">
-                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Marketing</p>
+                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Market</p>
           </Col>
           </Col>
           <Col xs={12}
@@ -345,7 +345,7 @@ function SocialmediaAndPlatformsHomeDataView(props) {
               lg={6}
               className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer">
             <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer">
-                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Mapping and deployments</p>
+                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Mapping</p>
             </Col>
           </Col>
           <Col xs={12}

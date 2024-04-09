@@ -385,13 +385,14 @@ text-shadow: 1px 1px 1px #919191,
 1px 22px 10px rgba(16,16,16,0.2),
 1px 25px 35px rgba(16,16,16,0.2),
 1px 30px 60px rgba(16,16,16,0.4);
+outline-style:none;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer {
 position:relative;
 background-color:white;
 border-radius:20px;
-height:60vh;
-width:70%;
+height:70vh;
+width:85%;
 margin-left:auto;
 margin-right:auto;
 display:flex;
@@ -510,6 +511,9 @@ text-shadow: 1px 1px 1px #919191,
 1px 22px 10px rgba(16,16,16,0.2),
 1px 25px 35px rgba(16,16,16,0.2),
 1px 30px 60px rgba(16,16,16,0.4);
+text-decoration:underline;
+margin-top:3.5vh;
+user-select:none;
 }
 ////// xs launching scrolling effect
 #kycorelandingpage-xslaunchingeffectscrollingcontainer {
@@ -1008,7 +1012,52 @@ height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
+padding:0;
 overflow:hidden;
+}
+.kycorelandingpage-backgroundimagecontainer {
+position:absolute;
+height:100%;
+width:100%;
+transition: opacity 5s ease;
+}
+.kycorelandingpage-backgroundimagecontainer1 {
+position:absolute;
+opacity:1;
+}
+.kycorelandingpage-backgroundimagecontainer2 {
+position:absolute;
+width:280%;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+opacity:0;
+}
+.kycorelandingpage-backgroundimagecontainer3 {
+position:absolute;
+width:190%;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+opacity:0;
+}
+.kycorelandingpage-backgroundimagecontainer4 {
+position:absolute;
+width:190%;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+opacity:0;
+}
+.kycorelandingpage-backgroundimage {
+position:relative;
+height:100%;
+width:100%;
+}
+.planet1 {
+position:relative;
+height:40vh;
+width:100%;
 }
 #kycorelandingpage-core {
 position:absolute;
@@ -1016,6 +1065,7 @@ height:100%;
 width:100%;
 margin-left:auto;
 margin-right:auto;
+padding:0;
 }
 #kycorelandingpage-headercontainer{
 position:relative;
@@ -1032,13 +1082,31 @@ align-items:center;
 }
 #keyheader-navigationbuttonscontainer-navigationgridcontainer {
 position:relative;
-background-color:$supportbgcolor;
+background-color:transparent;
 border:0.1vh solid white;
 border-radius:20px;
 height:50%;
 width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 margin-left:auto;
 margin-right:auto;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer {
 position:relative;
@@ -1055,15 +1123,258 @@ display:flex;
 justify-content:center;
 align-items:center;
 }
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet {
+position:absolute;
+height:10vh;
+width:60%;
+top:50%;
+left:50%;
+transform: translate(-50%, -26%);
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet2 {
+position:absolute;
+height:10vh;
+width:100%;
+top:50%;
+left:50%;
+transform: translate(-50%, -26%);
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1 {
+position:absolute;
+height:6vh;
+width:10vh;
+top:0%;
+left:-30%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud2 {
+position:absolute;
+height:6vh;
+width:10vh;
+top:-40%;
+left:80%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud3 {
+position:absolute;
+height:6vh;
+width:10vh;
+top:55%;
+left:-75%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud4 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:55%;
+left:-40%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud5 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+z-index:1;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud6 {
+position:absolute;
+height:6vh;
+width:10vh;
+top:-40%;
+left:90%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud7 {
+position:absolute;
+height:6vh;
+width:10vh;
+top:-15%;
+left:80%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud8 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+z-index:1;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud9 {
+position:absolute;
+height:6vh;
+width:10vh;
+top:-40%;
+left:130%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud10 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:80%;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud11 {
+position:absolute;
+height:6vh;
+width:10vh;
+top:90%;
+left:70%;
+z-index:1;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud12 {
+position:absolute;
+height:6vh;
+width:10vh;
+top:-40%;
+left:160%;
+z-index:1;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud13 {
+position:absolute;
+height:6vh;
+width:10vh;
+z-index:1;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud14 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud15 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud16 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:70%;
+left:10%;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud17 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud18 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud19 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:70%;
+left:10%;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud20 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:-15%;
+left:10%;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud21 {
+position:absolute;
+height:8vh;
+width:18vh;
+top:90%;
+left:66%;
+display:none;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud22 {
+position:absolute;
+height:8vh;
+width:14vh;
+top:70%;
+left:10%;
+display:none;
+}
 .keyheader-navigationbuttonscontainer-navigationheaderindication {
 position:relative;
-font: auto {
-family: $main-font;
-}
-color:white;
+text-transform: uppercase;
+font-family: $sub-font;
+font-size: 2vh;
+font-weight: 700;
+color: #f1f1f1;
 text-align:center;
-user-select:none;
-top:0.5vh;
+letter-spacing:1vh;
+text-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+top:-35%;
+z-index:1;
+}
+.keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton {
+position:relative;
+background-color:rgb(212, 211, 211);
+border-radius:20px;
+height:5vh;
+width:15vh;
+display:block;
+margin-left:auto;
+margin-right:auto;
+box-shadow:0 1px 8px black;
+text-transform: uppercase;
+font-family: $sub-font;
+font-size: auto;
+font-weight: 900;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+text-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+outline-style:none;
+display:none;
 }
 .keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer {
 position:absolute;

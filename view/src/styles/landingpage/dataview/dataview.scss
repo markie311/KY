@@ -798,11 +798,25 @@ text-align:center;
 //// skills compilation specification container
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer {
 position:relative;
-background-color: $supportbgcolor;
+background-color: transparent;
 border-radius:45px;
 height:100%;
 width:100%;
 box-shadow: 0px 0px 5px 2px white;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 padding:30px;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitespecificationsandorders {
@@ -1112,13 +1126,28 @@ margin-right:auto;
 //// social media and platforms container 
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer  {
 position:relative;
-background-color:$subbgcolor;
+background-color:transparent;
 border-radius:20px;
 height:12%;
 width:90%;
 justify-content:space-evenly;
 margin-left:auto;
 margin-right:auto;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+top:5%;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer {
 position:relative;
@@ -1259,7 +1288,7 @@ padding:10px 20px;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer {
 position:relative;
-background-color: aqua;
+background-color: transparent;
 border-radius:20px;
 height:100%;
 width:100%;
@@ -1269,6 +1298,20 @@ justify-content:center;
 align-items:center;
 padding:10px;
 box-shadow: 0px 0px 5px 2px white;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 }
 /// new
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-facebooksocialmediaandplatformsdatacontainer {
@@ -1286,12 +1329,27 @@ box-shadow: 0px 0px 5px 2px white;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication {
 position:relative;
-font: auto  {
- family: $sub-font;
- weight:700;
-}
+text-transform: uppercase;
+font-family: $sub-font;
+font-size: 18px;
+font-weight: 700;
+color: #f5f5f5;
 text-align:center;
-padding:5px;
+letter-spacing:1vh;
+text-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 user-select:none;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-facebooksocialmediaandplatformsheaderindication {
@@ -1476,7 +1534,7 @@ background: #b30000;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer {
 position:relative;
-background-color: $supportbgcolor;
+background-color: transparent;
 border-radius:45px;
 height:100%;
 width:100%;
@@ -1485,6 +1543,20 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 box-shadow: 0px 0px 5px 2px white;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer {
 position:absolute;
@@ -1680,6 +1752,22 @@ margin-right:auto;
 border-radius: 50%;
 top:1vh;
 }
+.circle-wrap {
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+}
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
 height: 100px;
@@ -1692,7 +1780,7 @@ clip: rect(0px, 100px, 100px, 50px);
 }
 .circle-wrap .circle .mask .fill {
 clip: rect(0px, 75px, 150px, 0px);
-background-color: #9e00b1;
+background-color: violet;
 }
 .circle-wrap .circle .mask.full,
 .circle-wrap .circle .fill {
@@ -1730,11 +1818,25 @@ font-size: 2em;
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-headerindication {
 position:relative;
 font: auto {
-    family: $sub-font;
+ family: $sub-font;
 }
 color:white;
 text-align:center;
-top:1.5vh;
+text-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+top:2vh;
 }
 #homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer-layoutcontainer-tooltipcontainer-reactjslogocontainer {
 position:relative;
@@ -1824,11 +1926,25 @@ text-align:center;
 //// skills compilation specification container
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer {
 position:absolute;
-background-color: $supportbgcolor;
+background-color: transparent;
 border-radius:45px;
 height:100%;
 width:100%;
 box-shadow: 0px 0px 5px 2px white;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 padding:30px;
 transition: all 1s ease;
 }
@@ -1913,7 +2029,7 @@ padding:0;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-websitepossibilitiesheaderindication {
 position:relative;
-background-color:black;
+background-color:transparent;
 border:0.1vh solid white;
 border-radius:20px;
 font: auto {
@@ -1925,6 +2041,20 @@ color:white;
 text-align:center;
 padding:10px 25px;
 user-select:none;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 left:1vh;
 }
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-layoutcontainer-websitepossibilitiesspecificationtooltipcontainer {
@@ -2067,9 +2197,24 @@ box-shadow:0 1px 8px rgba(0,0,0,0.5);
 .homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer-headerindication {
 position:relative;
 font: auto {
-    family: $sub-font;
+ family: $sub-font;
+ size:20px;
 }
-color:white;
+color: white;
+text-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 user-select:none;
 top:0.5vh;
 }
@@ -2081,6 +2226,20 @@ font-weight:900;
 color:black;
 padding:5px 15px;
 left:1vh;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 }
 }
 //// facebook component 
