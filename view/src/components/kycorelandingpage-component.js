@@ -435,7 +435,7 @@ export default function KYcoreLandingPage(props) {
                   }}>
                 <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-overflowscrollbarcontainer">
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">01. Explore Home planet</p>
                 </Col>
               </Col>
           </Col>
