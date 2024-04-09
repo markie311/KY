@@ -118,7 +118,6 @@ export default function KYcoreLandingPage(props) {
  return ( 
   <Col id="kycorelandingpage">
  
-
     <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer1">
       <img src="../images/landingpage/backgroundimages/strawberries-7249448_1280.jpg"
            className="kycorelandingpage-backgroundimage"
@@ -131,20 +130,26 @@ export default function KYcoreLandingPage(props) {
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
 
-    <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer2">
-      <img src="../images/landingpage/backgroundimages/planetfaqsbackgroundimage.jpg"
-           className="kycorelandingpage-backgroundimage"
-           alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
-    </Col>
-
     <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer3">
       <img src="../images/landingpage/backgroundimages/planetfaqsbackgroundimage.jpg"
            className="kycorelandingpage-backgroundimage"
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
 
-      <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer4">
+    <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer4">
+      <img src="../images/landingpage/backgroundimages/planetcommunitybackgroundimage.jpg"
+           className="kycorelandingpage-backgroundimage"
+           alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
+    </Col>
+
+    <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer5">
       <img src="../images/landingpage/backgroundimages/planetmarketingbackgroundimage.jpg"
+           className="kycorelandingpage-backgroundimage"
+           alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
+    </Col>
+
+    <Col className="kycorelandingpage-backgroundimagecontainer kycorelandingpage-backgroundimagecontainer6">
+      <img src="../images/landingpage/backgroundimages/planetprojectsbackgroundimage.jpg"
            className="kycorelandingpage-backgroundimage"
            alt="KY-IMAGE-3DIMENSIONALBACKGROUND"/>  
     </Col>
@@ -185,88 +190,88 @@ export default function KYcoreLandingPage(props) {
                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "1";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
                document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer5").style.opacity = "0";
+               document.querySelector(".kycorelandingpage-backgroundimagecontainer6").style.opacity = "0";
+               _mainnavigationbutton1.style.left = "-105%";
+               _mainnavigationbutton1.style.opacity = "0";
               break;
               case 6: 
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer5").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer6").style.opacity = "0";   
+              _mainnavigationbutton1.style.left = "0%";
+              _mainnavigationbutton1.style.opacity = "1";
+              _mainnavigationbutton2.style.top = "-105%";
+              _mainnavigationbutton2.style.opacity = "0";
               break;
-              case 15: 
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+              case 9: 
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "1";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer5").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer6").style.opacity = "0";
+              _mainnavigationbutton2.style.top = "0%";
+              _mainnavigationbutton2.style.opacity = "1";
+              _mainnavigationbutton3.style.bottom = "-105%";
+              _mainnavigationbutton3.style.opacity = "0";
               break;
-              case 17: 
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "1";
-               document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
-              break;
-              case 22:
+              case 11: 
               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "1";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer5").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer6").style.opacity = "0";
+              _mainnavigationbutton3.style.bottom = "0%";
+              _mainnavigationbutton3.style.opacity = "1";
               _mainnavigationbutton4.style.right = "-105%";
               _mainnavigationbutton4.style.opacity = "0";
+              break;
+              case 14:
+                document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+                document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+                document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "1";
+                document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
+                document.querySelector(".kycorelandingpage-backgroundimagecontainer5").style.opacity = "0";
+                document.querySelector(".kycorelandingpage-backgroundimagecontainer6").style.opacity = "0";
+               _mainnavigationbutton4.style.right = "0%";
+               _mainnavigationbutton4.style.opacity = "1";
              break;
-              case 24: 
+              case 16: 
               document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
               document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "1";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer5").style.opacity = "0";
+              document.querySelector(".kycorelandingpage-backgroundimagecontainer6").style.opacity = "0";
               _mainnavigationbutton4.style.right = "0%";
               _mainnavigationbutton4.style.opacity = "1";
              break;
-             case 29: 
+             case 19: 
              document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
              document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
              document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
              document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "1";
-             _mainnavigationbutton5.style.top = "0%";
-             _mainnavigationbutton5.style.opacity = "1";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer5").style.opacity = "0";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer6").style.opacity = "0";
+             _mainnavigationbutton5.style.top = "-105%";
+             _mainnavigationbutton5.style.opacity = "0";
             break;
-              case 4:
-               _mainnavigationbutton1.style.left = "-105%";
-               _mainnavigationbutton1.style.opacity = "0";
-              break;
-              case 5: 
-               _mainnavigationbutton1.style.left = "0%";
-               _mainnavigationbutton1.style.opacity = "1";
-               _mainnavigationbutton2.style.top = "-105%";
-               _mainnavigationbutton2.style.opacity = "0";
-              break;
-              case 8: 
-               _mainnavigationbutton2.style.top = "0%";
-               _mainnavigationbutton2.style.opacity = "1";
-               _mainnavigationbutton3.style.bottom = "-105%";
-               _mainnavigationbutton3.style.opacity = "0";
-              break;
-              case 9: 
-               _mainnavigationbutton3.style.bottom = "0%";
-               _mainnavigationbutton3.style.opacity = "1";
-               _mainnavigationbutton4.style.right = "-105%";
-               _mainnavigationbutton4.style.opacity = "0";
-              break;
-              case 10: 
-       //        _mainnavigationbutton4.style.right = "0%";
-       //        _mainnavigationbutton4.style.opacity = "1";
-       //        _mainnavigationbutton5.style.top = "-105%";
-       //        _mainnavigationbutton5.style.opacity = "0";
-              break;
-              case 11: 
-       //        _mainnavigationbutton5.style.top = "0%";
-       //        _mainnavigationbutton5.style.opacity = "1";
-       //        _mainnavigationbutton6.style.bottom = "-105%";
-        //       _mainnavigationbutton6.style.opacity = "0";
-              break;
-              case 12: 
-     //          _mainnavigationbutton6.style.bottom = "0%";
-      //         _mainnavigationbutton6.style.opacity = "1";
-              break;
+             case 21: 
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer1").style.opacity = "0";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer2").style.opacity = "0";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer3").style.opacity = "0";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer4").style.opacity = "0";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer5").style.opacity = "1";
+             document.querySelector(".kycorelandingpage-backgroundimagecontainer6").style.opacity = "0";
+             _mainnavigationbutton5.style.top = "0%";
+            _mainnavigationbutton5.style.opacity = "1";
+            break;
               case 30: 
                _astronautcomponent.style.top= "80%";
               break;
@@ -362,8 +367,6 @@ export default function KYcoreLandingPage(props) {
       
          }}>
 
-
-
      <Col xs={12}
           md={3}
           lg={3}
@@ -385,7 +388,28 @@ export default function KYcoreLandingPage(props) {
                   
                 <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
-                      alt="KY-IMAGE-PLANET"/>
+                      alt="KY-IMAGE-PLANET"
+                      onMouseEnter={()=> {
+                        if ( props.viewport !== "xs" ) {
+
+                            const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                            const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
+
+                            _kycorebackgroundimage[1].style.opacity = "1";
+                            _kycorebackgroundimage[2].style.opacity = "0";
+                            _kycorebackgroundimage[3].style.opacity = "0";
+                            _kycorebackgroundimage[4].style.opacity = "0";
+
+                            _navigationtooltipcontainer[0].style.display = "block";
+
+                        }
+                      }}
+                      onMouseLeave={()=> {
+                        if ( props.viewport !== "xs" ) {
+                        const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                        _navigationtooltipcontainer[0].style.display = "none";
+                        }
+                        }}/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud1"
@@ -401,23 +425,23 @@ export default function KYcoreLandingPage(props) {
                               
                 <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
                   onClick={()=> {
+
                     if ( props.viewport === "xs" ) {
+
                     const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
-                    _planetnavigationtooltipcontainer[0].style.display = "block";
-                    }
-                  }}
-                  onMouseEnter={()=> {
-                    if ( props.viewport !== "xs" ) {
-                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                      _navigationtooltipcontainer[0].style.display = "block";
-                    }
-                  }}
-                  onMouseLeave={()=> {
-                    if ( props.viewport !== "xs" ) {
                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[0].style.display = "none";
+                    const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
+                  
+                    _kycorebackgroundimage[1].style.opacity = "1";
+                    _kycorebackgroundimage[2].style.opacity = "0";
+                    _kycorebackgroundimage[3].style.opacity = "0";
+                    _kycorebackgroundimage[4].style.opacity = "0";
+                    _kycorebackgroundimage[5].style.opacity = "0";
+
+                    _navigationtooltipcontainer[0].style.display = "block";
+
                     }
-                    }}>Planet Home</p>
+                  }}>Planet Home</p>
                 <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton"
                         onClick={(evt)=> {
                           const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
@@ -451,7 +475,41 @@ export default function KYcoreLandingPage(props) {
                 
               <img src="../images/landingpage/planetsandclouds/planet2rmvdbg.png"
                    className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet2"
-                  alt="KY-IMAGE-PLANET"/>
+                   alt="KY-IMAGE-PLANET"
+                   onMouseEnter={()=> {
+
+                    if ( props.viewport !== "xs" ) {
+
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
+
+                       _kycorebackgroundimage[1].style.opacity = "0";
+                       _kycorebackgroundimage[2].style.opacity = "1";
+                       _kycorebackgroundimage[3].style.opacity = "0";
+                       _kycorebackgroundimage[4].style.opacity = "0";
+
+                       _navigationtooltipcontainer[1].style.display = "block";
+                    }
+
+                  }}
+                  onMouseLeave={()=> {
+
+                    if ( props.viewport !== "xs" ) {
+
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
+
+                      _kycorebackgroundimage[1].style.opacity = "0";
+                      _kycorebackgroundimage[2].style.opacity = "1";
+                      _kycorebackgroundimage[3].style.opacity = "0";
+                      _kycorebackgroundimage[4].style.opacity = "0";
+                      _kycorebackgroundimage[5].style.opacity = "0";
+
+                      _navigationtooltipcontainer[1].style.display = "none";
+
+                    }
+
+                  }}/>
 
               <img src="../images/landingpage/planetsandclouds/cloud5.png"
                     className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud4"
@@ -471,19 +529,7 @@ export default function KYcoreLandingPage(props) {
                   const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
                   _planetnavigationtooltipcontainer[0].style.display = "block";
                   }
-                }}
-                onMouseEnter={()=> {
-                  if ( props.viewport !== "xs" ) {
-                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[0].style.display = "block";
-                  }
-                }}
-                onMouseLeave={()=> {
-                  if ( props.viewport !== "xs" ) {
-                  const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                  _navigationtooltipcontainer[0].style.display = "none";
-                  }
-                  }}>Planet Faq's</p>
+                }}>Planet Faq's</p>
                 <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
             </Col>
             <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
@@ -511,39 +557,38 @@ export default function KYcoreLandingPage(props) {
                   
                 <img src="../images/landingpage/planetsandclouds/planet3rmvdbg.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
-                      alt="KY-IMAGE-PLANET"/>
+                      alt="KY-IMAGE-PLANET"
+                      onMouseEnter={()=> {
 
-                <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud7"
-                      alt="KY-IMAGE-PLANET"/>
+                        if ( props.viewport !== "xs" ) {
 
-                <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud8"
-                      alt="KY-IMAGE-PLANET"/>
+                          const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                          const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
 
-                <img src="../images/landingpage/planetsandclouds/cloud1.png"
-                      className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud9"
-                      alt="KY-IMAGE-PLANET"/>
-                              
-                <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
-                  onClick={()=> {
-                    if ( props.viewport === "xs" ) {
-                    const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
-                    _planetnavigationtooltipcontainer[0].style.display = "block";
-                    }
-                  }}
-                  onMouseEnter={()=> {
-                    if ( props.viewport !== "xs" ) {
-                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                      _navigationtooltipcontainer[0].style.display = "block";
-                    }
-                  }}
-                  onMouseLeave={()=> {
-                    if ( props.viewport !== "xs" ) {
-                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[0].style.display = "none";
-                    }
-                    }}>Planet Community</p>
+                          _kycorebackgroundimage[1].style.opacity = "0";
+                          _kycorebackgroundimage[2].style.opacity = "0";
+                          _kycorebackgroundimage[3].style.opacity = "1";
+                          _kycorebackgroundimage[4].style.opacity = "0";
+                          _kycorebackgroundimage[5].style.opacity = "0";
+
+                          _navigationtooltipcontainer[2].style.display = "block";
+
+                        }
+                      }}
+                      onMouseLeave={()=> {
+                        if ( props.viewport !== "xs" ) {
+                         const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                         _navigationtooltipcontainer[2].style.display = "none";
+                        }
+                      }}/>
+
+              <p className='keyheader-navigationbuttonscontainer-navigationheaderindication'
+                onClick={()=> {
+                  if ( props.viewport === "xs" ) {
+                  const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                  _planetnavigationtooltipcontainer[0].style.display = "block";
+                  }
+                }}>Planet Community</p>
                 <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
@@ -571,7 +616,29 @@ export default function KYcoreLandingPage(props) {
                   
                 <img src="../images/landingpage/planetsandclouds/planet4rmvdbg.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
-                      alt="KY-IMAGE-PLANET"/>
+                      alt="KY-IMAGE-PLANET"
+                      onMouseEnter={()=> {
+                        if ( props.viewport !== "xs" ) {
+
+                          const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                          const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
+
+                          _kycorebackgroundimage[1].style.opacity = "0";
+                          _kycorebackgroundimage[2].style.opacity = "0";
+                          _kycorebackgroundimage[3].style.opacity = "0";
+                          _kycorebackgroundimage[4].style.opacity = "1";
+                           _kycorebackgroundimage[5].style.opacity = "0";
+
+                          _navigationtooltipcontainer[3].style.display = "block";
+
+                        }
+                      }}
+                      onMouseLeave={()=> {
+                        if ( props.viewport !== "xs" ) {
+                        const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                        _navigationtooltipcontainer[3].style.display = "none";
+                        }
+                        }}/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud10"
@@ -589,21 +656,9 @@ export default function KYcoreLandingPage(props) {
                   onClick={()=> {
                     if ( props.viewport === "xs" ) {
                     const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
-                    _planetnavigationtooltipcontainer[0].style.display = "block";
+                    _planetnavigationtooltipcontainer[4].style.display = "block";
                     }
-                  }}
-                  onMouseEnter={()=> {
-                    if ( props.viewport !== "xs" ) {
-                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                      _navigationtooltipcontainer[0].style.display = "block";
-                    }
-                  }}
-                  onMouseLeave={()=> {
-                    if ( props.viewport !== "xs" ) {
-                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[0].style.display = "none";
-                    }
-                    }}>Planet Marketing</p>
+                  }}>Planet Marketing</p>
                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
@@ -631,7 +686,29 @@ export default function KYcoreLandingPage(props) {
                   
                 <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
-                      alt="KY-IMAGE-PLANET"/>
+                      alt="KY-IMAGE-PLANET"
+                       onMouseEnter={()=> {
+                        if ( props.viewport !== "xs" ) {
+
+                          const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                          const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
+
+                          _kycorebackgroundimage[1].style.opacity = "0";
+                          _kycorebackgroundimage[2].style.opacity = "0";
+                          _kycorebackgroundimage[3].style.opacity = "0";
+                          _kycorebackgroundimage[4].style.opacity = "0";
+                          _kycorebackgroundimage[5].style.opacity = "1";
+
+                          _navigationtooltipcontainer[4].style.display = "block";
+
+                        }
+                      }}
+                     onMouseLeave={()=> {
+                        if ( props.viewport !== "xs" ) {
+                        const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                        _navigationtooltipcontainer[4].style.display = "none";
+                        }
+                        }}/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-cloud14"
@@ -649,21 +726,9 @@ export default function KYcoreLandingPage(props) {
                   onClick={()=> {
                     if ( props.viewport === "xs" ) {
                     const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
-                    _planetnavigationtooltipcontainer[0].style.display = "block";
+                    _planetnavigationtooltipcontainer[4].style.display = "block";
                     }
-                  }}
-                  onMouseEnter={()=> {
-                    if ( props.viewport !== "xs" ) {
-                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                      _navigationtooltipcontainer[0].style.display = "block";
-                    }
-                  }}
-                  onMouseLeave={()=> {
-                    if ( props.viewport !== "xs" ) {
-                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    _navigationtooltipcontainer[0].style.display = "none";
-                    }
-                    }}>Planet Project's</p>
+                  }}>Planet Project's</p>
                  <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"

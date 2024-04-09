@@ -298,7 +298,7 @@ function SocialmediaAndPlatformsHomeDataView(props) {
                     }
                     
                     }}>
-                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">websites</p>
+                <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsdatagridcontainer-navigationdatacontainer-progresscollayoutcontainer-colcontainer-datacontainer-headerindication">Websites</p>
               </Col>
           </Col>
           <Col xs={12}
