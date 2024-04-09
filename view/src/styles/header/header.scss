@@ -27,14 +27,17 @@ justify-content:center;
 align-items:center;
 padding:30px 0px;
 }
+//#f5f5f5
+// #919191
 .kyheader-headerinication {
 position:relative;
 text-transform: uppercase;
 font-family: $sub-font;
-font-size: 10vh;
+font-size: 3vh;
 font-weight: 700;
 color: #f5f5f5;
 text-align:center;
+letter-spacing:1vh;
 text-shadow: 1px 1px 1px #919191,
 1px 2px 1px #919191,
 1px 3px 1px #919191,
@@ -55,10 +58,11 @@ top:1vh;
 position:relative;
 text-transform: uppercase;
 font-family: $sub-font;
-font-size: 10vh;
+font-size: 6vh;
 font-weight: 700;
 color: #f5f5f5;
 text-align:center;
+letter-spacing:1vh;
 text-shadow: 1px 1px 1px #919191,
 1px 2px 1px #919191,
 1px 3px 1px #919191,

@@ -418,7 +418,13 @@ export default function KYcoreLandingPage(props) {
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
                     }}>Planet Home</p>
-                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
+                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton"
+                        onClick={(evt)=> {
+                          const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                          _navigationtooltipcontainer[0].style.display = "block";
+                        }}>
+                  about
+                </button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                   onMouseLeave={()=> {
@@ -427,13 +433,10 @@ export default function KYcoreLandingPage(props) {
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
                   }}>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-overflowscrollbarcontainer">
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
+                </Col>
               </Col>
           </Col>
 
