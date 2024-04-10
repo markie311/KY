@@ -371,6 +371,7 @@ text-transform: uppercase;
 font-family: $sub-font;
 font-size: auto;
 font-weight: 900;
+color:white;
 box-shadow: 1px 1px 1px #919191,
 1px 2px 1px #919191,
 1px 3px 1px #919191,
@@ -508,30 +509,22 @@ text-transform: uppercase;
 font-family: sans-serif;
 font-size: 3vh;
 font-variant:small-caps;
-color: #70869d;
+color: #f1f1f1;
 text-align:center;
-color: #70869d;
-letter-spacing: .15em;
-text-shadow: -1px -1px 1px #efede3, 
-0px 1px 0 #2e2e2e, 
-0px 2px 0 #2c2c2c, 
-0px 3px 0 #2a2a2a, 
-0px 4px 0 #282828, 
-0px 5px 0 #262626, 
-0px 6px 0 #242424, 
-0px 7px 0 #222, 
-0px 8px 0 #202020, 
-0px 9px 0 #1e1e1e, 
-0px 10px 0 #1c1c1c, 
-0px 11px 0 #1a1a1a, 
-0px 12px 0 #181818, 
-0px 13px 0 #161616, 
-0px 14px 0 #141414, 
-0px 15px 0 #121212,
-2px 20px 5px rgba(0, 0, 0, 0.9),
-5px 23px 5px rgba(0, 0, 0, 0.3),
-8px 27px 8px rgba(0, 0, 0, 0.5),
-8px 28px 35px rgba(0, 0, 0, 0.9);
+text-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 margin-top:3.5vh;
 user-select:none;
 }
@@ -1014,7 +1007,7 @@ justify-content:flex-end;
 #kycorelandingpage-coreloadingeffect-3dmodal {
 position:absolute;
 background-color:white;
-height:96%;
+height: 80%;
 width:96%;
 box-shadow: 1px 1px 1px #919191,
 1px 2px 1px #919191,
@@ -1054,7 +1047,7 @@ text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 3
 transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
 outline: none;
 padding:2px 10px;
-left:95%;
+left:93%;
 }
 .kycorelandingpage-coreloadingeffect-3dmodal-contentcontainer {
 position:relative;
@@ -1077,6 +1070,7 @@ box-shadow: 1px 1px 1px #919191,
 1px 25px 35px rgba(16,16,16,0.2),
 1px 30px 60px rgba(16,16,16,0.4);
 padding:5px 10px;
+margin-top:3.5vh;
 }
 .kycorelandingpage-coreloadingeffect-3dmodal-headerindication {
 position:relative;
@@ -1090,6 +1084,31 @@ perspective: 80px;
 display: inline-block;
 text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
 transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+outline: none;
+top:1.5vh;
+}
+.kycorelandingpage-coreloadingeffect-3dmodal-subheaderindication {
+position:relative;
+font: auto {
+ family: $sub-font;
+ weight:700;
+ size: 3vh;
+}
+color:#f1f1f1;
+text-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
 outline: none;
 top:1.5vh;
 }

@@ -859,6 +859,9 @@ export default function KYcoreLandingPage(props) {
      <Col className="kycorelandingpage-coreloadingeffect-3dmodal-contentcontainer">
       <p className="kycorelandingpage-coreloadingeffect-3dmodal-headerindication">Sample content</p>
      </Col>
+     <Col className="kycorelandingpage-coreloadingeffect-3dmodal-contentcontainer">
+      <p className="kycorelandingpage-coreloadingeffect-3dmodal-subheaderindication">Sample content</p>
+     </Col>
     </Col>
 
     <Row id="kycorelandingpage-dataview"> 
