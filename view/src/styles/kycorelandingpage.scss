@@ -525,7 +525,7 @@ text-shadow: 1px 1px 1px #919191,
 1px 22px 10px rgba(16,16,16,0.2),
 1px 25px 35px rgba(16,16,16,0.2),
 1px 30px 60px rgba(16,16,16,0.4);
-margin-top:3.5vh;
+margin-top:5vh;
 user-select:none;
 }
 ////// xs launching scrolling effect
@@ -1549,8 +1549,7 @@ family: $sub-font;
 weight:900;
 }
 text-align:center;
-top:50%;
-left:50%;
+top:50%; 
 transform: translate(-50%, -50%);
 }
 #kycorelandingpage-datasdisplaylayoutcontainer{

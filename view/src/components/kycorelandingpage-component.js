@@ -381,9 +381,9 @@ export default function KYcoreLandingPage(props) {
       <Row id="keyheader-navigationbuttonscontainer-navigationgridcontainer">
   
           <Col xs={12}
-            md={2}
-            lg={2}
-            className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
+               md={2}
+               lg={2}
+               className="keyheader-navigationbuttonscontainer-navigationcolcontainer">
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationpositioningcontainer1">
                   
                 <img src="../images/landingpage/planetsandclouds/planet1rmvdbg.png"
@@ -470,7 +470,7 @@ export default function KYcoreLandingPage(props) {
                        const _3dmodal = document.getElementById("kycorelandingpage-coreloadingeffect-3dmodal");
                        _3dmodal.style.top = "50%";
                      }}>01. Being an Astronaut</p>
-                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">02. Environtment</p>
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">02. Environment</p>
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">03. Categories</p>
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">04. Specifications</p>
                 </Col>
