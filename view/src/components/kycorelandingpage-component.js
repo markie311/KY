@@ -499,6 +499,7 @@ export default function KYcoreLandingPage(props) {
                        _kycorebackgroundimage[4].style.opacity = "0";
 
                        _navigationtooltipcontainer[1].style.display = "block";
+
                     }
 
                   }}
@@ -803,9 +804,7 @@ export default function KYcoreLandingPage(props) {
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
               </Col>
           </Col>
-
-     
-       
+          
       </Row>
      </Col>
 
