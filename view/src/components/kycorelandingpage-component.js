@@ -458,8 +458,18 @@ export default function KYcoreLandingPage(props) {
                     }
                   }}>
                 <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-overflowscrollbarcontainer">
-                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
-                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">01. Being an Astronaut</p>
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication"
+                     onClick={()=> {
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      _navigationtooltipcontainer[0].style.display = "none";
+                     }} >
+                    x
+                  </p>
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication"
+                     onClick={()=> {
+                       const _3dmodal = document.getElementById("kycorelandingpage-coreloadingeffect-3dmodal");
+                       _3dmodal.style.top = "50%";
+                     }}>01. Being an Astronaut</p>
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">02. Environtment</p>
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">03. Categories</p>
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">04. Specifications</p>
@@ -530,16 +540,26 @@ export default function KYcoreLandingPage(props) {
                   _planetnavigationtooltipcontainer[0].style.display = "block";
                   }
                 }}>Planet Faq's</p>
-                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
+                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton"
+                        onClick={(evt)=> {
+                          const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                          _navigationtooltipcontainer[1].style.display = "block";
+                        }}>
+                          about
+                </button>
             </Col>
             <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                 onMouseLeave={()=> {
                   if ( props.viewport !== "xs" ) {
                   const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                  _navigationtooltipcontainer[0].style.display = "none";
+                  _navigationtooltipcontainer[1].style.display = "none";
                   }
                 }}>
-              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+              <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication"
+                  onClick={(evt)=> {
+                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                    _navigationtooltipcontainer[1].style.display = "none";
+                  }}>x</p>
               <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
               <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
               <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
@@ -588,8 +608,18 @@ export default function KYcoreLandingPage(props) {
                   const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
                   _planetnavigationtooltipcontainer[0].style.display = "block";
                   }
+                }}
+                onClick={(evt)=> {
+                  const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                  _navigationtooltipcontainer[2].style.display = "block";
                 }}>Planet Community</p>
-                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
+                <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton"
+                         onClick={(evt)=> {
+                          const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                          _navigationtooltipcontainer[2].style.display = "block";
+                        }}>
+                    about
+                 </button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                   onMouseLeave={()=> {
@@ -598,7 +628,13 @@ export default function KYcoreLandingPage(props) {
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
                   }}>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication"
+                     onClick={(evt)=> {
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      _navigationtooltipcontainer[2].style.display = "none";
+                    }}>
+                  x
+                </p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
@@ -659,7 +695,11 @@ export default function KYcoreLandingPage(props) {
                     _planetnavigationtooltipcontainer[4].style.display = "block";
                     }
                   }}>Planet Marketing</p>
-               <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
+               <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton"
+                        onClick={(evt)=> {
+                          const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                          _navigationtooltipcontainer[3].style.display = "block";
+                        }}>about</button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                   onMouseLeave={()=> {
@@ -668,7 +708,11 @@ export default function KYcoreLandingPage(props) {
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
                   }}>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication"
+                     onClick={(evt)=> {
+                      const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                      _navigationtooltipcontainer[3].style.display = "none";
+                    }}>x</p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
@@ -729,7 +773,13 @@ export default function KYcoreLandingPage(props) {
                     _planetnavigationtooltipcontainer[4].style.display = "block";
                     }
                   }}>Planet Project's</p>
-                 <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton">about</button>
+                 <button className="keyheader-navigationbuttonscontainer-navigationcolcontainer-aboutviewbutton"   
+                         onClick={(evt)=> {
+                            const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                            _navigationtooltipcontainer[4].style.display = "block";
+                         }}>
+                  about
+                 </button>
               </Col>
               <Col className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"
                   onMouseLeave={()=> {
@@ -738,7 +788,13 @@ export default function KYcoreLandingPage(props) {
                     _navigationtooltipcontainer[0].style.display = "none";
                     }
                   }}>
-                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
+                <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication"
+                   onClick={()=> {
+                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                     _navigationtooltipcontainer[4].style.display = "none";
+                   }}>
+                  x
+                </p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-closebuttonheaderindication">x</p>
                 <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">Explore Home planet</p>
@@ -796,6 +852,13 @@ export default function KYcoreLandingPage(props) {
            className="kycorelandingpage-coreloadingeffect-launchoffloadingeffect-backgroundimage"
            alt="KY-IMAGE-FIREBG"/>
       
+    </Col>
+
+    <Col id="kycorelandingpage-coreloadingeffect-3dmodal">
+     <p id="kycorelandingpage-coreloadingeffect-3dmodal-closebuttonheaderindication">x</p>
+     <Col className="kycorelandingpage-coreloadingeffect-3dmodal-contentcontainer">
+      <p className="kycorelandingpage-coreloadingeffect-3dmodal-headerindication">Sample content</p>
+     </Col>
     </Col>
 
     <Row id="kycorelandingpage-dataview"> 
@@ -898,6 +961,8 @@ export default function KYcoreLandingPage(props) {
       
       
     </Row>
+
+    
 
     <Row id="kycorelandingpage-socialmediaandplatformsnavigationindicator"> 
 
