@@ -861,7 +861,6 @@ export default function KYcoreLandingPage(props) {
       {
        [
         "../images/icons/socialmediaandplatforms/astronaut.png",
-        "../images/icons/socialmediaandplatforms/astronaut.png",
         "../images/icons/socialmediaandplatforms/facebook.png",
         "../images/icons/socialmediaandplatforms/gmail.png",
         "../images/icons/socialmediaandplatforms/youtube.png",
@@ -881,7 +880,8 @@ export default function KYcoreLandingPage(props) {
      </Row>
 
      <Col className="kycorelandingpage-coreloadingeffect-3dmodal-contentcontainer">
-      <p className="kycorelandingpage-coreloadingeffect-3dmodal-headerindication">Sample content</p>
+       <PlanetsThreeDModal  threedimensionalplanetsview={props.threedimensionalplanetsview}
+                            threedimensionalplanetsviewcb={props.threedimensionalplanetsviewcb}/>
      </Col>
 
     </Col>
@@ -1037,4 +1037,14 @@ function HomeDataView(props) {
       </Row>
     )
    }
+}
+
+function PlanetsThreeDModal(props) {
+ if ( props.threedimensionalplanetsview === "Home" ) {
+  return (
+   <Row id="3dmodalplanetsview">
+      <h1>3D modal planets view</h1>
+   </Row>
+   )
+ }
 }
