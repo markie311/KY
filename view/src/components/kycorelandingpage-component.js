@@ -854,13 +854,36 @@ export default function KYcoreLandingPage(props) {
     </Col>
 
     <Col id="kycorelandingpage-coreloadingeffect-3dmodal">
+
      <p id="kycorelandingpage-coreloadingeffect-3dmodal-closebuttonheaderindication">x</p>
+  
+     <Row className="kycorelandingpage-coreloadingeffect-3dmodal-gridcontentcontainer">
+      {
+       [
+        "../images/icons/socialmediaandplatforms/astronaut.png",
+        "../images/icons/socialmediaandplatforms/astronaut.png",
+        "../images/icons/socialmediaandplatforms/facebook.png",
+        "../images/icons/socialmediaandplatforms/gmail.png",
+        "../images/icons/socialmediaandplatforms/youtube.png",
+        "../images/icons/socialmediaandplatforms/letter-x.png",
+        "../images/icons/socialmediaandplatforms/letter-g.png"
+       ].map((icon, iconidx)=> {
+        return (
+          <Col className="kycorelandingpage-coreloadingeffect-3dmodal-colcontentcontainer">
+            <img key={iconidx}
+                 src={icon}
+                 className="kycorelandingpage-coreloadingeffect-3dmodal-colcontentcontainer-icon"
+                 alt="KY-IMAGE-ICON"/>
+          </Col>
+        )
+       })
+      }
+     </Row>
+
      <Col className="kycorelandingpage-coreloadingeffect-3dmodal-contentcontainer">
       <p className="kycorelandingpage-coreloadingeffect-3dmodal-headerindication">Sample content</p>
      </Col>
-     <Col className="kycorelandingpage-coreloadingeffect-3dmodal-contentcontainer">
-      <p className="kycorelandingpage-coreloadingeffect-3dmodal-subheaderindication">Sample content</p>
-     </Col>
+
     </Col>
 
     <Row id="kycorelandingpage-dataview"> 
