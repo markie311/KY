@@ -857,7 +857,11 @@ export default function KYcoreLandingPage(props) {
 
     <Col id="kycorelandingpage-coreloadingeffect-3dmodal">
 
-     <p id="kycorelandingpage-coreloadingeffect-3dmodal-closebuttonheaderindication">x</p>
+     <p id="kycorelandingpage-coreloadingeffect-3dmodal-closebuttonheaderindication"
+        onClick={()=> {
+          const _3dmodal = document.getElementById("kycorelandingpage-coreloadingeffect-3dmodal");
+          _3dmodal.style.top = "200%";
+        }}>x</p>
 
      <PlanetsThreeDModal threedimensionalplanetsview={props.threedimensionalplanetsview}
                         threedimensionalplanetsviewcb={props.threedimensionalplanetsviewcb} />
