@@ -9,6 +9,8 @@ import KYlandingpageCommunicationComponent from "./communications/kylandingpage/
 import DataLoaderComponent from "./landingpage/loaders/data/dataloader-component.js";
 import DataviewComponent from "./landingpage/dataview/dataview-component.js";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 export default function KYcoreLandingPage(props) {
 
  const [kycoreloadingeffectbackgorund1topposition, kycoreloadingeffectbackgorund1toppositioncb] = useState("-100%");
@@ -963,13 +965,13 @@ export default function KYcoreLandingPage(props) {
       
     </Row>
 
-    
-
+  
     <Row id="kycorelandingpage-socialmediaandplatformsnavigationindicator"> 
 
      <Col id="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicatorcontainer">
+
       <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
-        </Col>
+      </Col>
         <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
         </Col>
         <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
@@ -980,6 +982,7 @@ export default function KYcoreLandingPage(props) {
         </Col>
         <Col className="kycorelandingpage-socialmediaandplatformsnavigationindicator-positionindicator"> 
         </Col>
+
      </Col>
 
      <Col id="kycorelandingpage-socialmediaandplatformsnavigationindicator-locationindicator">
@@ -996,7 +999,94 @@ export default function KYcoreLandingPage(props) {
      </Col>
 
     </Row>
-
+   
+    <Col id="kycorelandingpage-planetsextradetailscontainer">
+      <Col id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer">
+        <Row id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails">
+          <Col xs={12}
+              md={12}
+              lg={12}
+              cassName="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-planetsextradetails"
+              id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-planetsextradetails">
+             <button id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-planetsextradetails-togglebutton"
+                     onClick={()=> {
+                      const _astronautplanetextradetailsmodal = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer");
+                      const _astronautplanetsextradetails3dmodal = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails");
+                      _astronautplanetsextradetails3dmodal.style.animation = "astronautplanetextradetailstransitionanimation 2s infinite";
+                      _astronautplanetextradetailsmodal.style.left = "0%";
+                     }}>
+               x
+             </button>
+            <Col id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagecontainer-planetsextradetails">
+            <img src="../images/icons/socialmediaandplatforms/astronaut.png"
+                  id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-astronautimage-planetsextradetails"
+                  alt="KY-IMAGE-ASTRONAUT"
+                  onMouseEnter={()=> {
+                    if (props.viewport !== "xs")  {
+                      const _astronautimagetooltip = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-planetsextradetails");
+                      _astronautimagetooltip.style.display = "block";
+                    }
+                  }}
+                  onMouseLeave={()=> {
+                    if (props.viewport !== "xs")  {
+                      const _astronautimagetooltip = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-planetsextradetails");
+                      _astronautimagetooltip.style.display = "none";
+                    }
+                    
+                    }}/>
+            </Col>
+            <Col id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-planetsextradetails">
+              <p className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-closebuttonheaderindication-planetsextradetails">x</p>
+              <h1 className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication-planetsextradetails">Astronaut as best example image</h1>     
+              <br />
+              <h4 className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication-planetsextradetails">Longing finding ways to earn, there a lot to consider in what to do, welding, planting, developing and investments</h4>
+              <br />
+              <h4 className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication-planetsextradetails">Are they not the same topic of building? if they are did together on a sequence?</h4>
+              <br />
+              <h4 className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication-planetsextradetails">You will now find to sustain everyone's finance helping them to survive, giving money to each member of the family making them happy</h4>
+              <br />
+              <h4 className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer-headerindication-planetsextradetails">We all an astronaut on acting, yet must be done is realization not to bring Gas on Space instead, gather soil and trees to be with the Sun</h4>
+            </Col>
+          </Col>
+          <Col xs={12}
+              md={12}
+              lg={12}
+              className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-planetsextradetails">
+          <Swiper slidesPerView={1}
+                  id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiper-planetsextradetails">
+            {
+            [
+              "",
+              "../images/landingpage/astronaut/leaves.jpg",
+              "../images/landingpage/astronaut/earth.jpg",
+              "../images/landingpage/astronaut/people.jpg"
+            ].map((contentimage, contentimageidx)=> {
+              if ( contentimage === "" ) {
+                return (
+                  <SwiperSlide key={contentimageidx}
+                              id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-topicthumbnail-planetsextradetails">
+                    <h3 className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-topicthumbnail-headerindication-planetsextradetails">Changeable window</h3> 
+                    <p className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-topicthumbnail-headerindication-planetsextradetails">swipe</p>
+                </SwiperSlide>
+                )
+              } else {
+                return (
+                  <SwiperSlide key={contentimageidx}
+                              className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-planetsextradetails">
+                      <img src={contentimage}
+                          className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-swiperslide-image-planetsextradetails"
+                          alt="KY-IMAGE-CONTENT"/>
+                  </SwiperSlide>
+                )  
+              }
+            
+            })
+            }
+          </Swiper>
+          </Col>
+        </Row>
+      </Col>
+    </Col>
     
 
   </Col>
@@ -1029,6 +1119,17 @@ function PlanetsThreeDModal(props) {
          md={8}
          lg={8}
          className="threedimensionalmodalplanetsview-contentcontainer">
+       <p className="threedimensional-headerindication">Are you the one also desiring to be an aastronaut?</p>
+       <p className="threedimensional-headerindication">See the images on this modal with this topic <button className="threedimensional-topicviewbutton"
+                                                                                                             onClick={()=> { 
+                                                                                                              const _astronautplanetextradetailsmodal = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer");
+                                                                                                              const _astronautplanetsextradetails3dmodal = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails")
+                                                                                                              _astronautplanetextradetailsmodal.style.left = "105%";
+                                                                                                              setTimeout(()=> { 
+                                                                                                                _astronautplanetsextradetails3dmodal.style.animation = "astronautplanetextradetailstransitionanimationnone 5s infinite";
+                                                                                                              }, 11000)
+                                                                                                             }}>drop view modal</button></p>
+       <p className="threedimensional-headerindication">Concers will be about Unity and Global warming</p>
     </Col>
    </Row>
    )
