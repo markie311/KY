@@ -856,33 +856,9 @@ export default function KYcoreLandingPage(props) {
     <Col id="kycorelandingpage-coreloadingeffect-3dmodal">
 
      <p id="kycorelandingpage-coreloadingeffect-3dmodal-closebuttonheaderindication">x</p>
-  
-     <Row className="kycorelandingpage-coreloadingeffect-3dmodal-gridcontentcontainer">
-      {
-       [
-        "../images/icons/socialmediaandplatforms/astronaut.png",
-        "../images/icons/socialmediaandplatforms/facebook.png",
-        "../images/icons/socialmediaandplatforms/gmail.png",
-        "../images/icons/socialmediaandplatforms/youtube.png",
-        "../images/icons/socialmediaandplatforms/letter-x.png",
-        "../images/icons/socialmediaandplatforms/letter-g.png"
-       ].map((icon, iconidx)=> {
-        return (
-          <Col className="kycorelandingpage-coreloadingeffect-3dmodal-colcontentcontainer">
-            <img key={iconidx}
-                 src={icon}
-                 className="kycorelandingpage-coreloadingeffect-3dmodal-colcontentcontainer-icon"
-                 alt="KY-IMAGE-ICON"/>
-          </Col>
-        )
-       })
-      }
-     </Row>
 
-     <Col className="kycorelandingpage-coreloadingeffect-3dmodal-contentcontainer">
-       <PlanetsThreeDModal  threedimensionalplanetsview={props.threedimensionalplanetsview}
-                            threedimensionalplanetsviewcb={props.threedimensionalplanetsviewcb}/>
-     </Col>
+     <PlanetsThreeDModal threedimensionalplanetsview={props.threedimensionalplanetsview}
+                        threedimensionalplanetsviewcb={props.threedimensionalplanetsviewcb} />
 
     </Col>
 
@@ -1042,8 +1018,18 @@ function HomeDataView(props) {
 function PlanetsThreeDModal(props) {
  if ( props.threedimensionalplanetsview === "Home" ) {
   return (
-   <Row id="3dmodalplanetsview">
-      <h1>3D modal planets view</h1>
+   <Row className="threedimensionalmodalplanetsview">
+    <Col xs={12}
+         md={4}
+         lg={4}
+         className="threedimensionalmodalplanetsview-headercontainer">
+      <p className="threedimensional-headerindication">Being an Astronaut</p>
+    </Col>
+    <Col xs={12}
+         md={8}
+         lg={8}
+         className="threedimensionalmodalplanetsview-contentcontainer">
+    </Col>
    </Row>
    )
  }

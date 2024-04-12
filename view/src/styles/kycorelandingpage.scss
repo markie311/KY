@@ -1050,6 +1050,56 @@ outline: none;
 padding:2px 10px;
 left:93%;
 }
+.threedimensionalmodalplanetsview {
+position:relative;
+height:90%;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+padding:0px 10px;
+}
+.threedimensionalmodalplanetsview-headercontainer {
+position:relative;
+background-color:white;
+border-radius:17px;
+height:15%;
+padding:5px 10px;
+margin-top:0vh;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(187, 136, 136, 0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+}
+.threedimensional-headerindication {
+position:relative;
+font: auto {
+family: $sub-font;
+weight:700;
+size: 3vh;
+}
+color: hsla(0,0%,0%,0);
+text-align:center;
+perspective: 80px;
+display: inline-block;
+text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+outline: none;
+top:1.5vh;
+}
 .kycorelandingpage-coreloadingeffect-3dmodal-gridcontentcontainer {
 position:relative;
 background-color:white;
@@ -1071,7 +1121,7 @@ box-shadow: 1px 1px 1px #919191,
 1px 9px 1px #919191,
 1px 10px 1px #919191,
 1px 18px 6px rgba(16,16,16,0.4),
-1px 22px 10px rgba(16,16,16,0.2),
+1px 22px 10px rgba(187, 136, 136, 0.2),
 1px 25px 35px rgba(16,16,16,0.2),
 }
 .kycorelandingpage-coreloadingeffect-3dmodal-colcontentcontainer {
@@ -1148,14 +1198,6 @@ text-shadow: 1px 1px 1px #919191,
 1px 30px 60px rgba(16,16,16,0.4);
 outline: none;
 top:1.5vh;
-}
-#threedmodalplanetsview {
-position:relative;
-border:1vh solid red;
-height:100%;
-width:100%;
-margin-left:auto;
-margin-right:auto;
 }
 }
 
