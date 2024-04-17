@@ -1362,8 +1362,8 @@ align-items:center;
 position:relative;
 background-color:red;
 border-radius:50%;
-height:80%;
-width:10%;
+height:70%;
+width:9%;
 font: auto {
  family: $sub-font;
 }
@@ -1384,36 +1384,32 @@ box-shadow: 1px 1px 1px rgb(27, 25, 25),
 1px 30px 60px black;
 padding:0px 0px 0px 0px;
 outline-style:none;
+right:0.8vh;
 }
 .kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer {
 position:relative;
-border:0.1vh solid red;
 height:85%;
 width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
 padding:10px;
 }
 .kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer-headerindication {
 position:relative;
 font: auto {
- family: $sub-font;
+family: $sub-font;
+weight:700;
+size: 2.8vh;
 }
-color:#f1f1f1;
-text-transform:uppercase;
-text-shadow: 1px 1px 1px #919191,
-1px 2px 1px #919191,
-1px 3px 1px #919191,
-1px 4px 1px #919191,
-1px 5px 1px #919191,
-1px 6px 1px #919191,
-1px 7px 1px #919191,
-1px 8px 1px #919191,
-1px 9px 1px #919191,
-1px 10px 1px #919191,
-1px 18px 6px rgba(16,16,16,0.4),
-1px 22px 10px rgba(16,16,16,0.2),
-1px 25px 35px rgba(16,16,16,0.2),
-1px 30px 60px rgba(16,16,16,0.4);
+color: hsla(0,0%,0%,0);
+perspective: 80px;
+display: inline-block;
+text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+text-align:center;
 outline: none;
+top:1vh;
 }
 @keyframes homeenvirontmentplanetextradetailstransitionanimation {
 0% {transform:rotate(2deg);}

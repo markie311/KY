@@ -1120,12 +1120,18 @@ export default function KYcoreLandingPage(props) {
               </Col>
               <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer">
                 <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebuttoncontainer">
-                  <button className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebutton">
+                  <button className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebutton"
+                          onClick={()=> {
+                            const _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal = document.querySelectorAll(".kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer");
+                            _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal[socialmediaiconidx].style.display = "none";
+                          }}>
                     x
                   </button>
                 </Col>
                 <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer">
-                  <p className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer-headerindication">Phrase</p>
+                  <p className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer-headerindication">
+                    To be renowned as one self-loving, so much, Truth is Truely Loving, that it's simplicity it will gather attention knowing how to protect each others no matter what content.  
+                  </p>
                 </Col>
               </Col>
             </Col>
