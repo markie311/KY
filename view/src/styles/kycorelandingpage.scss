@@ -1099,11 +1099,26 @@ transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
 outline: none;
 top:1.5vh;
 }
+.threedimensional-buttonheaderindication {
+position:relative;
+font: auto {
+family: $sub-font;
+weight:700;
+size: 3vh;
+}
+color: hsla(0,0%,0%,0);
+text-align:center;
+perspective: 80px;
+text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+outline: none;
+text-decoration:underline;
+} 
 .threedimensionalmodalplanetsview-contentcontainer {
 position:relative;
 background-color:#f1f1f1;
 border-radius:17px;
-height:70%;
+height:75%;
 box-shadow: 1px 1px 1px #919191,
 1px 2px 1px #919191,
 1px 3px 1px #919191,
@@ -1292,8 +1307,6 @@ z-index:5;
 //// social media platforms 
 #kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal {
 position:absolute;
-background-color:white;
-border:1vh solid green;
 height:85vh;
 width:90%;
 transition: left 10s ease;
@@ -1301,6 +1314,36 @@ left:105%;
 z-index:5;
 margin-left:auto;
 margin-right:auto;
+transition:left 10s ease;
+left:0%;
+}
+#kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-socialmediaplatformsmodalclosebutton {
+position:relative;
+background-color:tomato;
+border-radius:50%;
+height:5vh;
+width:5vh;
+font: auto {
+ family: $sub-font;
+}
+color:white;
+box-shadow: 1px 1px 1px rgb(27, 25, 25),
+1px 2px 1px rgb(27, 25, 25),
+1px 3px 1px rgb(27, 25, 25),
+1px 4px 1px rgb(27, 25, 25),
+1px 5px 1px rgb(27, 25, 25),
+1px 6px 1px rgb(27, 25, 25),
+1px 7px 1px rgb(27, 25, 25),
+1px 8px 1px rgb(27, 25, 25),
+1px 9px 1px rgb(27, 25, 25),
+1px 10px 1px rgb(27, 25, 25),
+1px 18px 6px black,
+1px 22px 10px black,
+1px 25px 35px black,
+1px 30px 60px black;
+padding:0px 0px 0px 0px;
+outline-style:none;
+left:90%;
 }
 .kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer {
 position:relative;
@@ -1426,7 +1469,6 @@ top:1vh;
 //// planets, astronaut extra details modal
 #homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails {
 position:absolute;
-border:1vh solid red;
 height:100%;
 width:100%;
 margin-left:auto;

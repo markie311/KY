@@ -1016,14 +1016,14 @@ export default function KYcoreLandingPage(props) {
           <Col xs={12}
               md={12}
               lg={12}
-              cassName="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-planetsextradetails"
+              className="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-planetsextradetails"
               id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-planetsextradetails">
              <button id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-planetsextradetails-togglebutton"
-                     onClick={()=> {
-                      const _astronautplanetextradetailsmodal = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer");
-                      const _astronautplanetsextradetails3dmodal = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails");
+                     onClick={(evt)=> {
+                      const _astronautplanetextradetailsmodal = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-astronautmodal"); 
+                      const _astronautplanetsextradetails3dmodal =  document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails"); 
                       _astronautplanetsextradetails3dmodal.style.animation = "astronautplanetextradetailstransitionanimation 2s infinite";
-                      _astronautplanetextradetailsmodal.style.left = "0%";
+                     _astronautplanetextradetailsmodal.style.left = "0%";
                      }}>
                x
              </button>
@@ -1097,12 +1097,23 @@ export default function KYcoreLandingPage(props) {
         </Row>
       </Col>
       <Row id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal">
+
+      <button id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-socialmediaplatformsmodalclosebutton"
+              onClick={()=> {
+               const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal");
+               _socialmediaandplatformsicons.style.left = "0%";
+              }}>
+          x
+      </button>
+
        {
         [
           "../images/icons/socialmediaandplatforms/facebook.png",
           "../images/icons/socialmediaandplatforms/gmail.png",
           "../images/icons/socialmediaandplatforms/youtube.png"
         ].map((socialmediaicon, socialmediaiconidx)=> {
+
+        if ( socialmediaiconidx === 0 ) {
           return (
             <Col xs={12}
                  md={12}
@@ -1136,6 +1147,80 @@ export default function KYcoreLandingPage(props) {
               </Col>
             </Col>
           )
+        }
+
+        if ( socialmediaiconidx === 1 ) {
+          return (
+            <Col xs={12}
+                 md={12}
+                 lg={12}
+                 key={socialmediaiconidx}
+                 className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer"> 
+              <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagecontainer">
+               <img src={socialmediaicon}
+                    className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-socialmediaicon"
+                    alt="KY-IMAGE-SOCIALMEDIAICON"
+                    onClick={()=> {
+                        const _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal = document.querySelectorAll(".kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer");
+                        _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal[socialmediaiconidx].style.display = "block";
+                     }}/>
+              </Col>
+              <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer">
+                <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebuttoncontainer">
+                  <button className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebutton"
+                          onClick={()=> {
+                            const _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal = document.querySelectorAll(".kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer");
+                            _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal[socialmediaiconidx].style.display = "none";
+                          }}>
+                    x
+                  </button>
+                </Col>
+                <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer">
+                  <p className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer-headerindication">
+                   Enjoying message's is such a FUN! Full pocket for a week! Confident being financial stable 4-ever! 
+                  </p>
+                </Col>
+              </Col>
+            </Col>
+          )
+        }
+
+        if ( socialmediaiconidx === 2 ) {
+          return (
+            <Col xs={12}
+                 md={12}
+                 lg={12}
+                 key={socialmediaiconidx}
+                 className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer"> 
+              <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagecontainer">
+               <img src={socialmediaicon}
+                    className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-socialmediaicon"
+                    alt="KY-IMAGE-SOCIALMEDIAICON"
+                    onClick={()=> {
+                        const _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal = document.querySelectorAll(".kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer");
+                        _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal[socialmediaiconidx].style.display = "block";
+                     }}/>
+              </Col>
+              <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer">
+                <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebuttoncontainer">
+                  <button className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebutton"
+                          onClick={()=> {
+                            const _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal = document.querySelectorAll(".kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer");
+                            _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal[socialmediaiconidx].style.display = "none";
+                          }}>
+                    x
+                  </button>
+                </Col>
+                <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer">
+                  <p className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer-headerindication">
+                    Mistake's is present everywhere! Here enjoy thoughful contents for a global change! 
+                  </p>
+                </Col>
+              </Col>
+            </Col>
+          )
+        }
+
         })
        }
       </Row>
@@ -1156,9 +1241,11 @@ function HomeDataView(props) {
       </Row>
     )
    }
+
 }
 
 function PlanetsThreeDModal(props) {
+
  if ( props.threedimensionalplanetsview === "Planet Home Astronaut" ) {
   return (
    <Row className="threedimensionalmodalplanetsview">
@@ -1187,6 +1274,7 @@ function PlanetsThreeDModal(props) {
    </Row>
    )
  }
+
  if ( props.threedimensionalplanetsview === "Planet Home Environtment" ) {
   return (
    <Row className="threedimensionalmodalplanetsview">
@@ -1194,15 +1282,20 @@ function PlanetsThreeDModal(props) {
          md={4}
          lg={4}
          className="threedimensionalmodalplanetsview-headercontainer">
-      <p className="threedimensional-headerindication">Environtment</p>
+      <p className="threedimensional-headerindication">Environment</p>
     </Col>
     <Col xs={12}
          md={8}
          lg={8}
          className="threedimensionalmodalplanetsview-contentcontainer">
-       <p className="threedimensional-headerindication">A Home means what surrouds us. What surrounds us we must be connected to the same feeling, a topic speaking our Hearts. Popular platforms being used today. Contents may be different from attention, How's your Environtment?</p>
+       <p className="threedimensional-headerindication">A Home means what surrouds us. What surrounds us we must be connected to the same feeling, a topic speaking our Hearts. Popular platforms being used today. Contents may be different from attention, How's your Environtment? <span className="threedimensional-buttonheaderindication"
+                                                                                                                                                                                                                                                                                             onClick={()=> {
+                                                                                                                                                                                                                                                                                              const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal");
+                                                                                                                                                                                                                                                                                              _socialmediaandplatformsicons.style.left = "105%";
+                                                                                                                                                                                                                                                                                             }}>View platforms</span></p>
     </Col>
    </Row>
    )
  }
+
 }
