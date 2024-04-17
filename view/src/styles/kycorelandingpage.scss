@@ -1331,7 +1331,6 @@ height:30vh;
 width:100%;
 z-index:1;
 top:50%;
-
 left:50%;
 transform:translate(-50%,-50%);
 box-shadow: 1px 1px 1px rgb(27, 25, 25),
@@ -1400,7 +1399,7 @@ position:relative;
 font: auto {
 family: $sub-font;
 weight:700;
-size: 2.8vh;
+size: 2.5vh;
 }
 color: hsla(0,0%,0%,0);
 perspective: 80px;
