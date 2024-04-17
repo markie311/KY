@@ -469,10 +469,16 @@ export default function KYcoreLandingPage(props) {
                   </p>
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication"
                      onClick={()=> {
+                       props.threedimensionalplanetsviewcb((view)=> view = "Planet Home Astronaut")
                        const _3dmodal = document.getElementById("kycorelandingpage-coreloadingeffect-3dmodal");
                        _3dmodal.style.top = "50%";
                      }}>01. Being an Astronaut</p>
-                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">02. Environment</p>
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication"
+                      onClick={()=> {
+                        props.threedimensionalplanetsviewcb((view)=> view = "Planet Home Environtment")
+                        const _3dmodal = document.getElementById("kycorelandingpage-coreloadingeffect-3dmodal");
+                         _3dmodal.style.top = "50%";
+                       }}>02. Environtment</p>
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">03. Categories</p>
                   <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">04. Specifications</p>
                 </Col>
@@ -864,7 +870,7 @@ export default function KYcoreLandingPage(props) {
         }}>x</p>
 
      <PlanetsThreeDModal threedimensionalplanetsview={props.threedimensionalplanetsview}
-                        threedimensionalplanetsviewcb={props.threedimensionalplanetsviewcb} />
+                         threedimensionalplanetsviewcb={props.threedimensionalplanetsviewcb} />
 
     </Col>
 
@@ -1005,7 +1011,7 @@ export default function KYcoreLandingPage(props) {
     </Row>
    
     <Col id="kycorelandingpage-planetsextradetailscontainer">
-      <Col id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer">
+      <Col id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-astronautmodal">
         <Row id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails">
           <Col xs={12}
               md={12}
@@ -1090,6 +1096,43 @@ export default function KYcoreLandingPage(props) {
           </Col>
         </Row>
       </Col>
+      <Row id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal">
+       {
+        [
+          "../images/icons/socialmediaandplatforms/facebook.png",
+          "../images/icons/socialmediaandplatforms/gmail.png",
+          "../images/icons/socialmediaandplatforms/youtube.png"
+        ].map((socialmediaicon, socialmediaiconidx)=> {
+          return (
+            <Col xs={12}
+                 md={12}
+                 lg={12}
+                 key={socialmediaiconidx}
+                 className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer"> 
+              <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagecontainer">
+               <img src={socialmediaicon}
+                    className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-socialmediaicon"
+                    alt="KY-IMAGE-SOCIALMEDIAICON"
+                    onClick={()=> {
+                        const _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal = document.querySelectorAll(".kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer");
+                        _astronautplanetextradetailssocialmediaplatformicontooltip3dmodal[socialmediaiconidx].style.display = "block";
+                     }}/>
+              </Col>
+              <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer">
+                <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebuttoncontainer">
+                  <button className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebutton">
+                    x
+                  </button>
+                </Col>
+                <Col className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer">
+                  <p className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer-headerindication">Phrase</p>
+                </Col>
+              </Col>
+            </Col>
+          )
+        })
+       }
+      </Row>
     </Col>
     
 
@@ -1110,7 +1153,7 @@ function HomeDataView(props) {
 }
 
 function PlanetsThreeDModal(props) {
- if ( props.threedimensionalplanetsview === "Home" ) {
+ if ( props.threedimensionalplanetsview === "Planet Home Astronaut" ) {
   return (
    <Row className="threedimensionalmodalplanetsview">
     <Col xs={12}
@@ -1126,14 +1169,32 @@ function PlanetsThreeDModal(props) {
        <p className="threedimensional-headerindication">Are you the one also desiring to be an aastronaut?</p>
        <p className="threedimensional-headerindication">See the images on this modal with this topic <button className="threedimensional-topicviewbutton"
                                                                                                              onClick={()=> { 
-                                                                                                              const _astronautplanetextradetailsmodal = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer");
-                                                                                                              const _astronautplanetsextradetails3dmodal = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails")
+                                                                                                              const _astronautplanetextradetailsmodal = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-astronautmodal");
+                                                                                                              const _astronautplanetsextradetails3dmodal = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails");
                                                                                                               _astronautplanetextradetailsmodal.style.left = "105%";
                                                                                                               setTimeout(()=> { 
                                                                                                                 _astronautplanetsextradetails3dmodal.style.animation = "astronautplanetextradetailstransitionanimationnone 5s infinite";
                                                                                                               }, 11000)
                                                                                                              }}>drop view modal</button></p>
        <p className="threedimensional-headerindication">Concers will be about Unity and Global warming</p>
+    </Col>
+   </Row>
+   )
+ }
+ if ( props.threedimensionalplanetsview === "Planet Home Environtment" ) {
+  return (
+   <Row className="threedimensionalmodalplanetsview">
+    <Col xs={12}
+         md={4}
+         lg={4}
+         className="threedimensionalmodalplanetsview-headercontainer">
+      <p className="threedimensional-headerindication">Environtment</p>
+    </Col>
+    <Col xs={12}
+         md={8}
+         lg={8}
+         className="threedimensionalmodalplanetsview-contentcontainer">
+       <p className="threedimensional-headerindication">A Home means what surrouds us. What surrounds us we must be connected to the same feeling, a topic speaking our Hearts. Popular platforms being used today. Contents may be different from attention, How's your Environtment?</p>
     </Col>
    </Row>
    )

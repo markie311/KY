@@ -27,7 +27,7 @@ function KYcore() {
  
   const [homedataview, homedataviewcb] = useState("Home");
 
-  const [threedimensionalplanetsview, threedimensionalplanetsviewcb] = useState("Home");
+  const [threedimensionalplanetsview, threedimensionalplanetsviewcb] = useState("Astronaut");
   
   const $viewportscreenbreakpoints = {
     xsviewportscreenbreakpoint: async () => {

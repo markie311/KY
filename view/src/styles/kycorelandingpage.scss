@@ -1280,7 +1280,8 @@ justify-content:center;
 align-items:center;
 left:-100%;
 }
-#kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer {
+/// astronaut
+#kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-astronautmodal {
 position:absolute;
 height:85vh;
 width:90%;
@@ -1288,9 +1289,140 @@ transition: left 10s ease;
 left:0%;
 z-index:5;
 }
+//// social media platforms 
+#kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal {
+position:absolute;
+background-color:white;
+border:1vh solid green;
+height:85vh;
+width:90%;
+transition: left 10s ease;
+left:105%;
+z-index:5;
+margin-left:auto;
+margin-right:auto;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer {
+position:relative;
+height:33%;
+padding:0;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagecontainer {
+position:absolute;
+height:100%;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:0;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-socialmediaicon {
+position:relative;
+height:70%;
+width:35%;
+color:#f1f1f1;
+transition: all 1s ease;
+animation: homeenvirontmentplanetextradetailstransitionanimation 2s infinite;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer {
+position:absolute;
+background-color:rgb(29, 27, 27);
+height:30vh;
+width:100%;
+z-index:1;
+top:50%;
+
+left:50%;
+transform:translate(-50%,-50%);
+box-shadow: 1px 1px 1px rgb(27, 25, 25),
+1px 2px 1px rgb(27, 25, 25),
+1px 3px 1px rgb(27, 25, 25),
+1px 4px 1px rgb(27, 25, 25),
+1px 5px 1px rgb(27, 25, 25),
+1px 6px 1px rgb(27, 25, 25),
+1px 7px 1px rgb(27, 25, 25),
+1px 8px 1px rgb(27, 25, 25),
+1px 9px 1px rgb(27, 25, 25),
+1px 10px 1px rgb(27, 25, 25),
+1px 18px 6px black,
+1px 22px 10px black,
+1px 25px 35px black,
+1px 30px 60px black;
+display:none;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebuttoncontainer {
+position:relative; 
+height:20%;
+width:100%;
+display:flex;
+justify-content:flex-end;
+align-items:center;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-closebutton {
+position:relative;
+background-color:red;
+border-radius:50%;
+height:80%;
+width:10%;
+font: auto {
+ family: $sub-font;
+}
+color:white;
+box-shadow: 1px 1px 1px rgb(27, 25, 25),
+1px 2px 1px rgb(27, 25, 25),
+1px 3px 1px rgb(27, 25, 25),
+1px 4px 1px rgb(27, 25, 25),
+1px 5px 1px rgb(27, 25, 25),
+1px 6px 1px rgb(27, 25, 25),
+1px 7px 1px rgb(27, 25, 25),
+1px 8px 1px rgb(27, 25, 25),
+1px 9px 1px rgb(27, 25, 25),
+1px 10px 1px rgb(27, 25, 25),
+1px 18px 6px black,
+1px 22px 10px black,
+1px 25px 35px black,
+1px 30px 60px black;
+padding:0px 0px 0px 0px;
+outline-style:none;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer {
+position:relative;
+border:0.1vh solid red;
+height:85%;
+width:100%;
+padding:10px;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-explanationcontainer-headerindication {
+position:relative;
+font: auto {
+family: $sub-font;
+weight:700;
+size: 3vh;
+}
+color: hsla(0,0%,0%,0);
+text-align:center;
+perspective: 80px;
+text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+outline: none;
+}
+@keyframes homeenvirontmentplanetextradetailstransitionanimation {
+0% {transform:rotate(2deg);}
+10% {transform:rotate(4deg);}
+20% {transform:rotate(6deg);}
+30% {transform:rotate(8deg);}
+40% {transform:rotate(10deg);}
+50% {transform:rotate(10deg);}
+60% {transform:rotate(8deg);}
+70% {transform:rotate(60%);}
+80% {transform:rotate(4deg);}
+90% {transform:rotate(3deg);}
+90% {transform:rotate(2deg);}
+}
 //// planets, astronaut extra details modal
 #homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails {
 position:absolute;
+border:1vh solid red;
 height:100%;
 width:100%;
 margin-left:auto;
