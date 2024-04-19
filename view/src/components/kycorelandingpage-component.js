@@ -479,8 +479,18 @@ export default function KYcoreLandingPage(props) {
                         const _3dmodal = document.getElementById("kycorelandingpage-coreloadingeffect-3dmodal");
                          _3dmodal.style.top = "50%";
                        }}>02. Environtment</p>
-                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">03. Categories</p>
-                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication">04. Specifications</p>
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication"
+                     onClick={()=> {
+                      props.threedimensionalplanetsviewcb((view)=> view = "Planet Home Categories")
+                        const _3dmodal = document.getElementById("kycorelandingpage-coreloadingeffect-3dmodal");
+                        _3dmodal.style.top = "50%";
+                       }}>03. Categories</p>
+                  <p className="keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer-headerindication"
+                     onClick={()=> {
+                      props.threedimensionalplanetsviewcb((view)=> view = "Planet Home Specifications")
+                        const _3dmodal = document.getElementById("kycorelandingpage-coreloadingeffect-3dmodal");
+                        _3dmodal.style.top = "50%";
+                      }}>04. Specifications</p>
                 </Col>
               </Col>
           </Col>
@@ -1224,6 +1234,18 @@ export default function KYcoreLandingPage(props) {
         })
        }
       </Row>
+      <Col id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-categoriesmodal">
+        <button id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-categoriesmodalclosebutton"
+              onClick={()=> {
+               const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-categoriesmodal");
+               _socialmediaandplatformsicons.style.left = "0%";
+              }}>
+          x
+        </button>
+        <img src="../images/icons/socialmediaandplatforms/3dbrain.png"
+             id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-categoriesmodal-3diconbrain"
+             alt="KY-IMAGE-3DBRAIN"/>
+      </Col>
     </Col>
     
 
@@ -1293,6 +1315,52 @@ function PlanetsThreeDModal(props) {
                                                                                                                                                                                                                                                                                               const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal");
                                                                                                                                                                                                                                                                                               _socialmediaandplatformsicons.style.left = "105%";
                                                                                                                                                                                                                                                                                              }}>View platforms</span></p>
+    </Col>
+   </Row>
+   )
+ }
+
+ if ( props.threedimensionalplanetsview === "Planet Home Categories" ) {
+  return (
+   <Row className="threedimensionalmodalplanetsview">
+    <Col xs={12}
+         md={4}
+         lg={4}
+         className="threedimensionalmodalplanetsview-headercontainer">
+      <p className="threedimensional-headerindication">Categories</p>
+    </Col>
+    <Col xs={12}
+         md={8}
+         lg={8}
+         className="threedimensionalmodalplanetsview-contentcontainer">
+       <p className="threedimensional-headerindication">Importance!!! Also included a Market, Mapping, Research and People categories aside from managing Website's, Mobile Apps, Building and E'car service's. <span className="threedimensional-buttonheaderindication"
+                                                                                                                                                                                                                      onClick={()=> {
+                                                                                                                                                                                                                      const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-categoriesmodal");
+                                                                                                                                                                                                                      _socialmediaandplatformsicons.style.left = "105%";
+                                                                                                                                                                                                                      }}>Particepate.</span></p>
+    </Col>
+   </Row>
+   )
+ }
+
+ if ( props.threedimensionalplanetsview === "Planet Home Specifications" ) {
+  return (
+   <Row className="threedimensionalmodalplanetsview">
+    <Col xs={12}
+         md={4}
+         lg={4}
+         className="threedimensionalmodalplanetsview-headercontainer">
+      <p className="threedimensional-headerindication">Specifications</p>
+    </Col>
+    <Col xs={12}
+         md={8}
+         lg={8}
+         className="threedimensionalmodalplanetsview-contentcontainer">
+       <p className="threedimensional-headerindication">What category again? Pretending, See what as much you can to each individual categories on this Planet with it's simpliest specifications with efforts and beyond expectations. <span className="threedimensional-buttonheaderindication"
+                                                                                                                                                                                                                      onClick={()=> {
+                                                                                                                                                                                                                      const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-categoriesmodal");
+                                                                                                                                                                                                                      _socialmediaandplatformsicons.style.left = "105%";
+                                                                                                                                                                                                                      }}>PERCENT.</span></p>
     </Col>
    </Row>
    )
