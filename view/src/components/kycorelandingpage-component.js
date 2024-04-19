@@ -1246,6 +1246,59 @@ export default function KYcoreLandingPage(props) {
              id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-categoriesmodal-3diconbrain"
              alt="KY-IMAGE-3DBRAIN"/>
       </Col>
+      <Row id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationsgridmodal">
+        {
+          [
+           {
+            icon: "../images/icons/socialmediaandplatforms/website3dimage.png",
+            description: "Get your own personal website :)"
+           },
+           {
+           icon: "../images/icons/socialmediaandplatforms/website3dimage.png",
+           description: "Get your own personal website :)"
+           },
+           {
+            icon: "../images/icons/socialmediaandplatforms/cellphone3dimage.png",
+            description: "Have an Mobile App theme on your own :)"
+           },
+           {
+            icon: "../images/icons/socialmediaandplatforms/website3dimage.png",
+            description: "New infastractures designs with KY :)"
+            },
+            {
+             icon: "../images/icons/socialmediaandplatforms/cellphone3dimage.png",
+             description: "E-car service's :)"
+            }
+          ].map((specification, specificationidx)=> {
+            if ( specificationidx === 0 ) {
+              return (
+                  <button id="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-specificationsmodalclosebutton"
+                          onClick={()=> {
+                            const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationsgridmodal");
+                            _socialmediaandplatformsicons.style.left = "0%";
+                          }}>
+                    x
+                  </button>
+              )
+            } else {
+              return (
+                <Col key={specificationidx}
+                     xs={12}
+                     md={12}
+                     lg={12}
+                     className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationscolcontainer">
+                  <img src={specification.icon}
+                       className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationscolcontainer-iconimage"
+                       alt="KY-IMAGE-ICON" />
+                  <p className="kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationscolcontainer-specificationheaderindication">
+                    {specification.description}
+                  </p>
+                </Col>
+              )
+            }
+          })
+        }
+      </Row>
     </Col>
     
 
@@ -1358,7 +1411,7 @@ function PlanetsThreeDModal(props) {
          className="threedimensionalmodalplanetsview-contentcontainer">
        <p className="threedimensional-headerindication">What category again? Pretending, See what as much you can to each individual categories on this Planet with it's simpliest specifications with efforts and beyond expectations. <span className="threedimensional-buttonheaderindication"
                                                                                                                                                                                                                       onClick={()=> {
-                                                                                                                                                                                                                      const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-categoriesmodal");
+                                                                                                                                                                                                                      const _socialmediaandplatformsicons = document.getElementById("kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationsgridmodal");
                                                                                                                                                                                                                       _socialmediaandplatformsicons.style.left = "105%";
                                                                                                                                                                                                                       }}>PERCENT.</span></p>
     </Col>

@@ -1555,6 +1555,124 @@ animation: homeenvirontmentplanetextradetailsbraincategories3dtransitionanimatio
 90% {transform:rotate(3deg);}
 90% {transform:rotate(2deg);}
 }
+/// planets, specification extra details modal 
+#kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationsgridmodal {
+position:absolute;
+height:90vh;
+width:90%;
+margin-left:auto;
+margin-right:auto;
+transition: left 10s ease;
+left:105%;
+z-index:5;
+transition:left 10s ease;
+left:0%;
+}
+#kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-socialmediaplatformsmodal-socialmediaiconcontainer-imagetooltipcontainer-specificationsmodalclosebutton {
+position:relative;
+background-color:tomato;
+border-radius:50%;
+height:6%;
+width:10%;
+font: auto {
+ family: $sub-font;
+}
+color:white;
+box-shadow: 1px 1px 1px #1b1919,
+1px 2px 1px rgb(27, 25, 25),
+1px 3px 1px rgb(27, 25, 25),
+1px 4px 1px rgb(27, 25, 25),
+1px 5px 1px rgb(27, 25, 25),
+1px 6px 1px rgb(27, 25, 25),
+1px 7px 1px rgb(27, 25, 25),
+1px 8px 1px rgb(27, 25, 25),
+1px 9px 1px rgb(27, 25, 25),
+1px 10px 1px rgb(27, 25, 25),
+1px 18px 6px black,
+1px 22px 10px black,
+1px 25px 35px black,
+1px 30px 60px black;
+padding:0px 0px 0px 0px;
+outline-style:none;
+top:2%;
+left:87%;
+animation: homeenvironmentspecificationsextradetailsclosebuttoniconanimation 2s infinite;
+z-index:5;
+}
+@keyframes homeenvironmentspecificationsextradetailsclosebuttoniconanimation {
+0% {transform:rotate(4deg);}
+10% {transform:rotate(8deg);}
+20% {transform:rotate(12deg);}
+30% {transform:rotate(16deg);}
+40% {transform:rotate(20deg);}
+50% {transform:rotate(24deg);}
+60% {transform:rotate(24deg);}
+70% {transform:rotate(20%);}
+80% {transform:rotate(16deg);}
+90% {transform:rotate(12deg);}
+100% {transform:rotate(8deg);}
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationscolcontainer {
+position:relative;
+height:25%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-top:-1vh;
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationscolcontainer-iconimage {
+position:absolute;
+height:140%;
+width:65%;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+animation: homeenvironmentspecificationsextradetailsiconsanimation 2s ease infinite;
+}
+@keyframes homeenvironmentspecificationsextradetailsiconsanimation {
+0% {transform:translate(-50%, -50%) rotate(2deg);}
+10% {transform:translate(-50%, -50%) rotate(4deg);}
+20% {transform:translate(-50%, -50%) rotate(6deg);}
+30% {transform:translate(-50%, -50%) rotate(8deg);}
+40% {transform:translate(-50%, -50%) rotate(10deg);}
+50% {transform:translate(-50%, -50%) rotate(10deg);}
+60% {transform:translate(-50%, -50%) rotate(8deg);}
+70% {transform:translate(-50%, -50%) rotate(60%);}
+80% {transform:translate(-50%, -50%) rotate(4deg);}
+90% {transform:translate(-50%, -50%) rotate(3deg);}
+90% {transform:translate(-50%, -50%) rotate(2deg);}
+}
+.kycorelandingpage-planetsextradetailscontainer-astronautplanetsextradetailscontainer-specificationscolcontainer-specificationheaderindication {
+position:absolute;
+font: auto {
+ family: $sub-font;
+ size:20px;
+}
+width:115%;
+word-break: keep-all;
+color: rgb(240, 60, 29);
+text-align:center;
+text-transform: uppercase;
+text-shadow: 1px 1px 1px #919191,
+1px 2px 1px #919191,
+1px 3px 1px #919191,
+1px 4px 1px #919191,
+1px 5px 1px #919191,
+1px 6px 1px #919191,
+1px 7px 1px #919191,
+1px 8px 1px #919191,
+1px 9px 1px #919191,
+1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+top:91%;
+}
 //// planets, astronaut extra details modal
 #homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-planetsextradetails {
 position:absolute;
