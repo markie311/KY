@@ -99,12 +99,18 @@ function DataviewHomeComponent(props) {
 
         <Row id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer">
           
+        <Col xs={12}
+              md={12}
+              lg={12}
+              id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer">
+          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication"></p>
+          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Arrival at Planet Home</p>
+          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Scroll to gather data here.</p>
+          <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Current location: Base landing</p>
+        </Col>
+
           {
            [
-            {
-              icon: "../images/icons/socialmediaandplatforms/astronaut.png",
-              tooltipheaderindication: "go back to astronaut data display"
-            },
             {
               icon: "../images/icons/socialmediaandplatforms/astronaut.png",
               tooltipheaderindication: "go back to astronaut data display"
@@ -130,19 +136,8 @@ function DataviewHomeComponent(props) {
               tooltipheaderindication: "go back to Gambebook data display"
             },
            ].map((icon, iconidx)=> {
-            if ( iconidx ===  0 && props.viewport === "xs" ) {
-              return (
-                <Col xs={12}
-                     md={12}
-                     lg={12}
-                     id="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer">
-                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication"></p>
-                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Arrival at Planet Home</p>
-                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Scroll to gather data here.</p>
-                  <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-notificationcontainer-notificationheaderindication">Current location: Base landing</p>
-                </Col>
-              )
-            } else {
+
+            if (  props.viewport !== "xs" ) {
               return (
                 <Col key={iconidx}
                      xs={4}
@@ -153,48 +148,55 @@ function DataviewHomeComponent(props) {
                      <img src={icon.icon} 
                           className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-icon"
                           alt="KY-IMAGE-ICON"
+
                           onClick={()=> {
 
-                           const _astronautcpmponentcontainer = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
-                           const _socialmediaandplatformshomedatamodal =   document.querySelector(".socilamediaandplatformshomedataview")
-                           const _socialmediaandplatformsrapporthomedatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-home")
-                           const _facebookprofilecomponentcontainer =  document.getElementById("facebookprofilecomponent");
-                           const _socialmediaandplatformsfacebookdatamodal =   document.querySelector(".socialmediaandplatformsfacebookdataview")
-                           const _socialmediaandplatformsrapportfacebookdatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-facebook")
-   
-                           const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
-                           const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
-   
-                           switch(iconidx) {
-                             case 1:
+                            const _astronautcpmponentcontainer = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
+                            const _socialmediaandplatformshomedatamodal =   document.querySelector(".socilamediaandplatformshomedataview")
+                            const _socialmediaandplatformsrapporthomedatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-home")
+                            const _facebookprofilecomponentcontainer =  document.getElementById("facebookprofilecomponent");
+                            const _socialmediaandplatformsfacebookdatamodal =   document.querySelector(".socialmediaandplatformsfacebookdataview")
+                            const _socialmediaandplatformsrapportfacebookdatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-facebook")
+    
+                            const _skillscompilationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationcontainer");
+                            const _skillspecificationcontainer = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-skillscompilationspecificationcontainer");
+    
 
-                              simplelaunchofffiredisplay();
-                              donesimplelaunchofffiredisplay();
+                            if ( props.viewport === "xs" ) {
+                            switch(iconidx) {
+                              case 1:
+                               
+                               alert("Synced");
+                               simplelaunchofffiredisplay();
+                               donesimplelaunchofffiredisplay();
+ 
+                              //   props.socialmediaandplatformsdataviewcb((view)=> view = "home");
+                              //   _astronautcpmponentcontainer.style.top = "0%";
+                              //   _facebookprofilecomponentcontainer.style.left = "-105%";
+                              //   _socialmediaandplatformshomedatamodal.style.top = "0%";
+                              //   _socialmediaandplatformsfacebookdatamodal.style.top = "100%";
+                              //   _socialmediaandplatformsrapporthomedatamodal.style.top = "-3%";
+                              //   _socialmediaandplatformsrapportfacebookdatamodal.style.top = "100%";
+                              //   _skillscompilationcontainer[0].style.height = "23%"; 
+                              //   skillscompilationwebsitedevelopmentcb((view)=> view = "skills");
+ 
+                              break;
+                              case 2:
+                               alert("Synced")
+                              //   props.socialmediaandplatformsdataviewcb((view)=> view = "facebook");
+                              //  _facebookprofilecomponentcontainer.style.left = "0%";
+                              //  _astronautcpmponentcontainer.style.top = "100%";
+                              //  _socialmediaandplatformshomedatamodal.style.top = "100%";
+                              //  _socialmediaandplatformsfacebookdatamodal.style.top = "0%";
+                             //  _socialmediaandplatformsrapporthomedatamodal.style.top = "100%";
+                            //  _socialmediaandplatformsrapportfacebookdatamodal.style.top = "0%";
+                              break;
+                              default:
+                            }
+                            }
 
-                            //   props.socialmediaandplatformsdataviewcb((view)=> view = "home");
-                           //   _astronautcpmponentcontainer.style.top = "0%";
-                           //   _facebookprofilecomponentcontainer.style.left = "-105%";
-                           //   _socialmediaandplatformshomedatamodal.style.top = "0%";
-                           //   _socialmediaandplatformsfacebookdatamodal.style.top = "100%";
-                           //   _socialmediaandplatformsrapporthomedatamodal.style.top = "-3%";
-                           //   _socialmediaandplatformsrapportfacebookdatamodal.style.top = "100%";
-                           //   _skillscompilationcontainer[0].style.height = "23%"; 
-                           //   skillscompilationwebsitedevelopmentcb((view)=> view = "skills")
-                             break;
-                             case 2:
-                              alert("Synced")
-                            //   props.socialmediaandplatformsdataviewcb((view)=> view = "facebook");
-                          //  _facebookprofilecomponentcontainer.style.left = "0%";
-                          //  _astronautcpmponentcontainer.style.top = "100%";
-                          //  _socialmediaandplatformshomedatamodal.style.top = "100%";
-                          //  _socialmediaandplatformsfacebookdatamodal.style.top = "0%";
-                          //  _socialmediaandplatformsrapporthomedatamodal.style.top = "100%";
-                          //  _socialmediaandplatformsrapportfacebookdatamodal.style.top = "0%";
-                             break;
-                             default:
-                            }
-   
-                            }
+                          }
+
                           }
                           onMouseEnter={()=> {
                              if (props.viewport !== "xs") {
@@ -202,12 +204,11 @@ function DataviewHomeComponent(props) {
                               _navigationimagetooltip[iconidx].style.display = "block";
                              }
                          }}
-                         onMouseLeave={()=> {
-                          if (props.viewport !== "xs") {
-                            const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
-                            _navigationimagetooltip[iconidx].style.display = "none";
-                           }
-                        
+                          onMouseLeave={()=> {
+                            if (props.viewport !== "xs") {
+                              const _navigationimagetooltip = document.querySelectorAll(".homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer");
+                              _navigationimagetooltip[iconidx].style.display = "none";
+                           }         
                            }}/>
                      </Col>
                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer">

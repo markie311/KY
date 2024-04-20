@@ -392,6 +392,7 @@ export default function KYcoreLandingPage(props) {
                       className="keyheader-navigationbuttonscontainer-navigationcolcontainer-3dplanet"
                       alt="KY-IMAGE-PLANET"
                       onMouseEnter={()=> {
+
                         if ( props.viewport !== "xs" ) {
 
                             const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
@@ -403,14 +404,16 @@ export default function KYcoreLandingPage(props) {
                             _kycorebackgroundimage[4].style.opacity = "0";
 
                             _navigationtooltipcontainer[0].style.display = "block";
-
+                        
                         }
                       }}
                       onMouseLeave={()=> {
+
                         if ( props.viewport !== "xs" ) {
-                        const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                        _navigationtooltipcontainer[0].style.display = "none";
+                          const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                          _navigationtooltipcontainer[0].style.display = "none";
                         }
+
                         }}/>
 
                 <img src="../images/landingpage/planetsandclouds/cloud1.png"
@@ -430,17 +433,17 @@ export default function KYcoreLandingPage(props) {
 
                     if ( props.viewport === "xs" ) {
 
-                    const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
-                    const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
-                    const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
+                     const _planetnavigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer"); 
+                     const _navigationtooltipcontainer = document.querySelectorAll(".keyheader-navigationbuttonscontainer-navigationcolcontainer-navigationtooltipcontainer");
+                     const _kycorebackgroundimage = document.querySelectorAll(".kycorelandingpage-backgroundimagecontainer");
                   
-                    _kycorebackgroundimage[1].style.opacity = "1";
-                    _kycorebackgroundimage[2].style.opacity = "0";
-                    _kycorebackgroundimage[3].style.opacity = "0";
-                    _kycorebackgroundimage[4].style.opacity = "0";
-                    _kycorebackgroundimage[5].style.opacity = "0";
+                     _kycorebackgroundimage[1].style.opacity = "1";
+                     _kycorebackgroundimage[2].style.opacity = "0";
+                     _kycorebackgroundimage[3].style.opacity = "0";
+                     _kycorebackgroundimage[4].style.opacity = "0";
+                     _kycorebackgroundimage[5].style.opacity = "0";
 
-                    _navigationtooltipcontainer[0].style.display = "block";
+                     _navigationtooltipcontainer[0].style.display = "block";
 
                     }
                   }}>Planet Home</p>
@@ -1262,13 +1265,13 @@ export default function KYcoreLandingPage(props) {
             description: "Have an Mobile App theme on your own :)"
            },
            {
-            icon: "../images/icons/socialmediaandplatforms/website3dimage.png",
+            icon: "../images/icons/socialmediaandplatforms/3dhouseimage.png",
             description: "New infastractures designs with KY :)"
-            },
-            {
-             icon: "../images/icons/socialmediaandplatforms/cellphone3dimage.png",
-             description: "E-car service's :)"
-            }
+           },
+           {
+            icon: "../images/icons/socialmediaandplatforms/3decarimage.png",
+            description: "E-car service's :)"
+           }
           ].map((specification, specificationidx)=> {
             if ( specificationidx === 0 ) {
               return (
@@ -1300,7 +1303,6 @@ export default function KYcoreLandingPage(props) {
         }
       </Row>
     </Col>
-    
 
   </Col>
  )

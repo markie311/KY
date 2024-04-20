@@ -31,7 +31,6 @@ export default function AstronautComponent(props) {
                 const _astronautimagetooltip = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer");
                 _astronautimagetooltip.style.display = "none";
               }
-               
               }}/>
       </Col>
       <Col id="homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer-colcontainer-astronautdatacontainer-astronautimagetooltipcontainer">
