@@ -152,9 +152,9 @@ function DataviewHomeComponent(props) {
                           onClick={()=> {
 
                             const _astronautcpmponentcontainer = document.getElementById("homenavigationsnippetcomponent-socialmedaiandplatformaccountsgridcontainer");
+                            const _facebookprofilecomponentcontainer =  document.getElementById("facebookprofilecomponent");
                             const _socialmediaandplatformshomedatamodal =   document.querySelector(".socilamediaandplatformshomedataview")
                             const _socialmediaandplatformsrapporthomedatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-home")
-                            const _facebookprofilecomponentcontainer =  document.getElementById("facebookprofilecomponent");
                             const _socialmediaandplatformsfacebookdatamodal =   document.querySelector(".socialmediaandplatformsfacebookdataview")
                             const _socialmediaandplatformsrapportfacebookdatamodal =  document.querySelector(".socilamediaandplatformsrapportdataview-facebook")
     
@@ -163,7 +163,7 @@ function DataviewHomeComponent(props) {
     
 
                             if ( props.viewport === "xs" ) {
-                            switch(iconidx) {
+                             switch(iconidx) {
                               case 1:
                                
                                alert("Synced");
@@ -192,7 +192,51 @@ function DataviewHomeComponent(props) {
                             //  _socialmediaandplatformsrapportfacebookdatamodal.style.top = "0%";
                               break;
                               default:
-                            }
+                             }
+                            } else {
+                              switch(iconidx) {
+                                case 0: 
+                                 _astronautcpmponentcontainer.style.top = "0%";
+                                 _facebookprofilecomponentcontainer.style.left = "-105%";
+                                 _socialmediaandplatformshomedatamodal.style.top = "0%";
+                                 _socialmediaandplatformsfacebookdatamodal.style.top = "100%";
+                                 _socialmediaandplatformsrapporthomedatamodal.style.top = "-3%";
+                                 _socialmediaandplatformsrapportfacebookdatamodal.style.top = "100%";
+                                break;
+                                case 1:
+                                 
+                                   //    simplelaunchofffiredisplay();
+                                  //     donesimplelaunchofffiredisplay();
+   
+                                   props.socialmediaandplatformsdataviewcb((view)=> view = "home");
+                                   _astronautcpmponentcontainer.style.top = "100%";
+                                   _facebookprofilecomponentcontainer.style.left = "0%";
+                                   _socialmediaandplatformshomedatamodal.style.top = "100%";
+                                   _socialmediaandplatformsfacebookdatamodal.style.top = "-5%";
+                                   _socialmediaandplatformsrapporthomedatamodal.style.top = "100%";
+                                   _socialmediaandplatformsrapportfacebookdatamodal.style.top = "0%"
+
+                               //    _facebookprofilecomponentcontainer.style.left = "-105%";
+                               //    _socialmediaandplatformshomedatamodal.style.top = "0%";
+                               //    _socialmediaandplatformsfacebookdatamodal.style.top = "100%";
+                               //    _socialmediaandplatformsrapporthomedatamodal.style.top = "-3%";
+                               //    _socialmediaandplatformsrapportfacebookdatamodal.style.top = "100%";
+                               //    _skillscompilationcontainer[0].style.height = "23%"; 
+                               //    skillscompilationwebsitedevelopmentcb((view)=> view = "skills");
+
+   
+                                break;
+                                case 2:
+                                //   props.socialmediaandplatformsdataviewcb((view)=> view = "facebook");
+                                //  _facebookprofilecomponentcontainer.style.left = "0%";
+                                //  _astronautcpmponentcontainer.style.top = "100%";
+                                //  _socialmediaandplatformshomedatamodal.style.top = "100%";
+                                //  _socialmediaandplatformsfacebookdatamodal.style.top = "0%";
+                               //  _socialmediaandplatformsrapporthomedatamodal.style.top = "100%";
+                              //  _socialmediaandplatformsrapportfacebookdatamodal.style.top = "0%";
+                                break;
+                                default:
+                              }
                             }
 
                           }
@@ -212,9 +256,9 @@ function DataviewHomeComponent(props) {
                            }}/>
                      </Col>
                      <Col className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer">
-                     <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
-                     <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-headerindication">{icon.tooltipheaderindication}</p>
-                   </Col>
+                      <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-closebuttonheaderindication">x</p>
+                      <p className="homesnippetcomponent-colcontainer-gridcontainer-colcontainer-socialmediaandplatformsgridcontainer-colcontainer-tooltipcontainer-headerindication">{icon.tooltipheaderindication}</p>
+                    </Col>
                 </Col>
               )
             }
@@ -1363,7 +1407,7 @@ function DataviewFacebookComponent() {
 function DataviewFaqsComponent() {
   return (
   <Row id="faqssnippetcomponent"> 
-    <Col
+    <Col xs={3}
          md={3}
          lg={3}
          className="faqssnippetcomponent-colcontainer-content">
